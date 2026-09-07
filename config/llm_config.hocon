@@ -1,11 +1,22 @@
 {
     # Shared LLM configuration for every agent network that includes this file.
-    # Requires the OPENAI_API_KEY environment variable to be set.
+    # Change the model here and every network picks it up.
     #
-    # Other OpenAI models available out of the box include "gpt-4o-mini" (cheaper),
-    # "gpt-4.1", "gpt-5.2" and "gpt-5.4". The full list of supported models and
-    # per-model parameters lives in neuro-san's default_llm_info.hocon.
+    # Google AI Studio (Gemini API). Requires GOOGLE_API_KEY in .env - get one at
+    # https://aistudio.google.com/apikey
+    #
+    # Other Gemini models available out of the box:
+    #   "gemini-3.5-flash-lite"  cheaper and faster, fine for simple networks
+    #   "gemini-3.1-pro"         strongest reasoning, slower and pricier
+    # The full list of supported models and per-model parameters lives in neuro-san's
+    # default_llm_info.hocon.
     "llm_config": {
-        "model_name": "gpt-4o"
+        "model_name": "gemini-3.5-flash",
+
+        # Gemini 3.0+ wants temperature at 1.0. Google's own guidance is that lowering it
+        # causes infinite loops, degraded reasoning and failures on complex tasks - which
+        # matters here because the AAOSA networks do multi-step tool calling.
+        # See https://ai.google.dev/gemini-api/docs/gemini-3#temperature
+        "temperature": 1.0
     }
 }

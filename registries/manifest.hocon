@@ -14,6 +14,10 @@
     # Single agent + a CodedTool that calls the keyless Open-Meteo weather API.
     "basic/weather_agent.hocon": true,
 
+    # Personal finance coach: AAOSA front man over income / spend / balance / goals /
+    # insights specialists, all persisting to a local SQLite ledger.
+    "finance_agent.hocon": true,
+
     #
     # Agent Network Designer family. Installed so a brand-new project can design agent networks
     # immediately -- the nsflow NEW button, the tutorial, and the docs all assume the designer

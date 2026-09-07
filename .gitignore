@@ -11,3 +11,13 @@ wheels/
 
 # Local secrets
 .env
+
+# Machine-specific CA bundle (see .env for how it is generated)
+config/ca_bundle.pem
+
+# Local ledgers and runtime state
+finance_local.db
+finance_local.db-wal
+finance_local.db-shm
+nss_local.db
+logs/

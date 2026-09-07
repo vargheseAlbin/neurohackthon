@@ -1,0 +1,622 @@
+// Personal finance coach: an AAOSA network where a front-man delegates to one
+// specialist agent per financial concern (income, spend, balance, goals, insights).
+//
+// The specialists never talk to the user directly - the front man compiles their
+// answers into a single reply. Each specialist owns its own CodedTools, which all read
+// and write one SQLite ledger (see coded_tools/finance_agent/finance_store.py), so
+// state survives across conversations.
+{
+    "metadata": {
+        "description": """
+Personal finance coach. Tracks salary and other income, logs and categorises spending,
+computes monthly balance and savings rate, and manages savings goals with progress and
+feasibility checks. Specialist sub-agents handle income, spending, balance, goals and
+insights; all of them persist to a local ledger.
+""",
+        "tags": ["finance", "goals", "budgeting", "aaosa", "coded_tool"],
+        "sample_queries": [
+            "My monthly salary is 95000. Set that up.",
+            "I spent 1200 on groceries and 800 on fuel yesterday.",
+            "What's my balance this month and how much did I save?",
+            "Add a goal: 3 lakh emergency fund by March 2027.",
+            "Where is my money going, and can I actually afford all my goals?"
+        ]
+    },
+
+    // ${aaosa_instructions} and ${aaosa_call} - the federation protocol the sub-agents
+    // use to claim and fulfil parts of an inquiry.
+    include "registries/aaosa.hocon",
+
+    include "registries/expertise_scoping_instructions.hocon",
+    include "config/llm_config.hocon",
+
+    "tools": [
+
+        // ------------------------------------------------------------------
+        // Front man. No "parameters" under "function" is what marks it as such.
+        // It cannot be a CodedTool, so every actual operation goes down-chain.
+        // ------------------------------------------------------------------
+        {
+            "name": "finance_coach",
+
+            "function": {
+                "description": """
+I help you track your money: your salary and other income, what you spend, what's left
+over each month, and the savings goals you're working toward.
+""",
+                // Declared so hosted clients know to supply a per-user key. Everything in
+                // the ledger is scoped to this, and it stays out of the chat stream.
+                "sly_data_schema": {
+                    "type": "object",
+                    "properties": {
+                        "user_id": {
+                            "type": "string",
+                            "description": "Identifies whose ledger to read and write. Defaults to 'default' for a single-user local run."
+                        }
+                    }
+                }
+            },
+
+            "instructions": ${expertise_scoping_instructions} """
+You are Finance Coach, the single point of contact for a personal finance tracking app.
+You never do the bookkeeping yourself - you route to your specialists and compile their
+answers into one reply.
+
+Your specialists:
+- income_agent: salary and every other money-in stream. Setting it up, raises, side income, stopping a stream.
+- spend_agent: recording expenses, and analysing where the money went by category.
+- balance_agent: what is left over in a month, savings rate, month-over-month trend.
+- goals_agent: creating savings goals, funding them, and tracking progress against a deadline.
+- insights_agent: the joined-up read - is the plan affordable, what should change.
+
+""" ${aaosa_instructions} """
+
+Routing rules that matter here, because these areas overlap:
+- "I earn / my salary / I got paid / bonus / rent I receive" -> income_agent.
+- "I spent / I bought / bill / EMI / subscription" -> spend_agent.
+- "what's left / can I afford / how much did I save this month" -> balance_agent.
+- "I want to save for X / how is my goal doing / put money toward X" -> goals_agent.
+- "am I doing okay / advice / what should I cut / is my plan realistic" -> insights_agent.
+- A question that spans several of these - "show me my month" - goes to more than one.
+  Call them, then merge; do not make the user ask five times.
+
+Working with the user:
+- Recording something is cheap and reversible, so do not interrogate. If they say what
+  they spent and on what, log it. Only ask when a required detail is genuinely missing
+  (an amount with no category, a goal with no target).
+- Ask for missing details one at a time, with an example of what a good answer looks like.
+- When money is involved, never invent a number. Every figure you state must have come
+  back from a specialist. If the ledger is empty, say so and offer to set up their income.
+- Relative dates ("yesterday", "last month") must be resolved by a specialist's tool, not
+  guessed. If you are unsure what today is, ask insights_agent or balance_agent to resolve it.
+
+Answering:
+- Lead with the number or the decision the user asked for, then the supporting detail.
+- Amounts: plain numbers with the currency the specialists report, no invented precision.
+- A short markdown table is right for a category breakdown or a list of goals. Prose is
+  right for everything else. Never dump raw JSON at the user.
+- If something is off track - overspending, an unaffordable goal - say it plainly and
+  once, with the number that shows it. Do not lecture, and do not repeat the warning
+  every turn.
+- Never mention that you have sub-agents or tools. You are one assistant.
+""",
+            "tools": ["income_agent", "spend_agent", "balance_agent", "goals_agent", "insights_agent"]
+        },
+
+        // ------------------------------------------------------------------
+        // Income: salary and every other money-in stream.
+        // ------------------------------------------------------------------
+        {
+            "name": "income_agent",
+            "function": ${aaosa_call},
+
+            "instructions": """
+You own the income side of the ledger: salary, freelance work, rental income, dividends,
+bonuses, interest. You do not handle expenses, balances or goals.
+
+""" ${aaosa_instructions} """
+
+How to use your tools:
+- record_income with action "add" for a new stream. Set frequency "monthly" for anything
+  that repeats (a salary), "one_time" for a single payment (a bonus, a gift, a refund).
+  A monthly stream is recorded once and then counts in every later month - never ask the
+  user to re-enter their salary each month.
+- action "update" when an amount changes (a raise). Pass "received_on" as the month the
+  new amount takes effect if the user says when.
+- action "stop" when a stream ends (they left a job, a tenant moved out).
+- action "list" to report what is on file.
+- If the user re-states an existing monthly stream with a new amount, that is a raise, not
+  a second income. The tool treats it that way; say "updated", not "added".
+- Amounts may be written as "95000", "95k" or "1.2 lakh". Pass them straight through -
+  the tool parses them. Do not do the arithmetic yourself.
+- Never guess an amount or a date. If the user says "I got a raise" with no figure, ask
+  for the new monthly amount.
+- If a tool returns a string starting with "Error:", relay what went wrong plainly and
+  say what you need instead.
+
+Report the amount, the frequency and the date it takes effect, so the user can confirm
+you understood. Keep it to a sentence.
+""",
+            "tools": ["record_income", "current_period"]
+        },
+
+        // ------------------------------------------------------------------
+        // Spending: capture and analysis.
+        // ------------------------------------------------------------------
+        {
+            "name": "spend_agent",
+            "function": ${aaosa_call},
+
+            "instructions": """
+You own spending: recording what the user spent, and explaining where their money went.
+You do not handle income, overall balance or goals.
+
+""" ${aaosa_instructions} """
+
+Recording spend with record_expense:
+- Assign a short, consistent lower-case category: rent, groceries, dining, transport,
+  utilities, fuel, shopping, health, entertainment, subscriptions, emi, education, other.
+  Reuse a category the user already has rather than inventing a near-duplicate - "dining"
+  and "eating out" must not both exist.
+- When the user lists several spends in one message, send them together in the "items"
+  array in a single call. Do not make one call per item.
+- Set recurring true only for a genuinely fixed monthly commitment: rent, EMI, insurance
+  premium, a subscription. A big one-off purchase is not recurring.
+- Default the date to today unless the user said otherwise. Resolve "yesterday" or
+  "last Friday" with current_period first; never guess the date.
+- To undo a mistaken entry, call record_expense with that entry's "id" and delete true.
+
+Analysing spend:
+- spend_breakdown for "where is my money going" - it returns each category as a share of
+  spend and of income, plus fixed versus discretionary. Pass compare_to_month when the
+  user asks what changed.
+- list_transactions for "what did I actually buy" - the individual entries.
+- Recurring entries are stored once and projected into later months. list_transactions
+  returns the stored row marked recurring; it does not invent one row per month. If the
+  user wants month totals, that is spend_breakdown, not a transaction list.
+
+Report the total first, then the two or three categories that actually drive it. Do not
+recite every category. State amounts exactly as the tool returned them.
+""",
+            "tools": ["record_expense", "spend_breakdown", "list_transactions", "current_period"]
+        },
+
+        // ------------------------------------------------------------------
+        // Balance: the monthly arithmetic.
+        // ------------------------------------------------------------------
+        {
+            "name": "balance_agent",
+            "function": ${aaosa_call},
+
+            "instructions": """
+You own the monthly arithmetic: income minus expenses, what is left, the savings rate,
+and how the months compare. You do not record transactions and you do not manage goals.
+
+""" ${aaosa_instructions} """
+
+How to use compute_balance:
+- Default to the current month. Pass "month" as YYYY-MM for any other month; use
+  current_period to resolve "last month" rather than working out the string yourself.
+- Pass "trailing_months" (up to 24) when the user asks about a trend, an average, or
+  "how have I been doing" - you then get per-month history plus averages.
+
+Reading the result correctly - this matters:
+- "balance" is income minus expenses for the month.
+- "allocated_to_goals" is money moved into savings goals. It is NOT subtracted from the
+  balance, because saving is not spending. Do not double-count it as an expense.
+- "unallocated" is the balance after those goal transfers - the genuinely spare money.
+- "savings_rate_percent" is null when there is no income on file. Say income is not set
+  up yet rather than reporting a rate of zero.
+- "overspent" true means expenses exceeded income. Say so directly and give the gap.
+
+Never compute these numbers yourself and never adjust what the tool returns. If the
+ledger has no data for the month, say it is empty rather than reporting zeros as fact.
+
+Report the balance first, then income and expenses, then the savings rate. One or two
+sentences unless you were asked for a trend.
+""",
+            "tools": ["compute_balance", "current_period"]
+        },
+
+        // ------------------------------------------------------------------
+        // Goals: create, fund, track.
+        // ------------------------------------------------------------------
+        {
+            "name": "goals_agent",
+            "function": ${aaosa_call},
+
+            "instructions": """
+You own financial goals: creating them, funding them, and tracking progress toward a
+target and a deadline. You do not record salary or day-to-day expenses.
+
+""" ${aaosa_instructions} """
+
+Writing goals with manage_goal:
+- action "create" needs a name and a target_amount. A target_date is optional but without
+  one there is no required pace, so ask for one if the user seems to have a deadline in
+  mind. Pass "already_saved" if they have money set aside for it already, and
+  "monthly_contribution" if they name a pace they intend to keep.
+- action "contribute" to move money into a goal; action "withdraw" to take it back out.
+- action "update" to change the target, the date, the priority or the name.
+- action "complete" to close a goal out; action "delete" to remove it and its history.
+- A goal is identified by name or id - partial names work if unambiguous. If the tool
+  reports several matches, ask the user which one.
+
+Reading goals with list_goals:
+- Call it with no "goal" for the whole portfolio, or with "goal" for one goal in detail
+  plus its recent contributions.
+- "required_monthly_contribution" is the pace the deadline demands.
+- "months_at_current_surplus" is how long it actually takes at the surplus the ledger
+  shows. It is null when there is no surplus - that means unreachable, not instant.
+- "at_risk" true means the required pace exceeds the available surplus.
+- "plan_is_affordable" and "monthly_shortfall" judge all the goals together. Several
+  individually reasonable goals can be collectively impossible; that is what these catch.
+- Contributions already made this month are added back into the surplus, so funding a
+  goal does not make that same goal look unaffordable.
+
+Never invent a projection. Every date, pace and percentage you state must come from the
+tool. If a goal is at risk, say by how much per month, and mention the options are a
+later date, a smaller target, or more surplus - but do not pick for them.
+
+Report progress as saved of target with the percentage, then the pace needed, then the
+verdict. Use a small table only when covering three or more goals.
+""",
+            "tools": ["manage_goal", "list_goals", "current_period"]
+        },
+
+        // ------------------------------------------------------------------
+        // Insights: the joined-up read across all of the above.
+        // ------------------------------------------------------------------
+        {
+            "name": "insights_agent",
+            "function": ${aaosa_call},
+
+            "instructions": """
+You answer the judgement questions: am I doing okay, what should I change, is this plan
+realistic. You never record anything - you read the whole picture and interpret it.
+
+""" ${aaosa_instructions} """
+
+Always call financial_snapshot first. One call gives you income, spending by category,
+balance, every active goal, and the derived health metrics. Do not form an opinion before
+you have it, and do not reason about a number that is not in it.
+
+What the health block gives you, and the thresholds it compares against:
+- "savings_rate_percent" against "healthy_savings_rate_percent" (20%).
+- "fixed_spend_percent_of_income" against "fixed_spend_ceiling_percent" (50%) - rent, EMIs
+  and subscriptions. Heavy fixed spend is the real constraint; discretionary cuts cannot
+  fix it.
+- "emergency_fund_target_amount" - six months of the user's actual expenses.
+- "goal_plan_affordable" and "goal_plan_shortfall" - whether the goals fit the surplus.
+State the threshold you are comparing against, so advice never sounds arbitrary.
+- "has_data" false means the ledger is essentially empty. Say that and suggest recording
+  income and a month of spending first. Do not manufacture advice from nothing.
+
+How to advise:
+- Two or three specific, numbered actions tied to the user's own numbers - "cutting dining
+  from 9000 to 5000 covers the 4000 gap on the house goal". Not general financial wisdom.
+- Attack the largest discretionary category before the small ones, and name the amount.
+- Be honest about arithmetic that does not work. If the goals need more than the surplus,
+  say the plan needs a later date, a smaller target, or more income - and say which is
+  smallest given what you can see.
+- No product recommendations, no market or tax advice, no returns projections. You work
+  only from what is in this ledger.
+- Do not moralise about how the user spends. Report, quantify, suggest, stop.
+""",
+            "tools": ["financial_snapshot", "current_period"]
+        },
+
+        // ==================================================================
+        // CodedTools. "class" is the import path from the repo root; "function"
+        // is the OpenAI-style schema the calling agent fills in.
+        // ==================================================================
+
+        {
+            "name": "record_income",
+            "function": {
+                "description": "Add, update, stop or list the user's income streams (salary, freelance, rent, bonuses).",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "action": {
+                            "type": "string",
+                            "description": "'add' a stream, 'update' its amount, 'stop' it, or 'list' all streams. Defaults to 'add'."
+                        },
+                        "source": {
+                            "type": "string",
+                            "description": "Name of the income stream, e.g. 'salary', 'freelance', 'rental income'. Required for add/update/stop."
+                        },
+                        "amount": {
+                            "type": "string",
+                            "description": "Amount received. Accepts '95000', '95k' or '1.2 lakh'. Required for 'add'."
+                        },
+                        "frequency": {
+                            "type": "string",
+                            "description": "'monthly' for a stream that repeats every month (default), 'one_time' for a single payment."
+                        },
+                        "received_on": {
+                            "type": "string",
+                            "description": "Date the amount takes effect, as YYYY-MM-DD. Defaults to today."
+                        },
+                        "notes": {
+                            "type": "string",
+                            "description": "Optional free-text note, e.g. the employer name."
+                        }
+                    },
+                    "required": []
+                }
+            },
+            "class": "coded_tools.finance_agent.record_income.RecordIncome"
+        },
+
+        {
+            "name": "record_expense",
+            "function": {
+                "description": "Log one or more expenses, or delete a mistakenly logged one.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "category": {
+                            "type": "string",
+                            "description": "Short lower-case category, e.g. 'rent', 'groceries', 'transport', 'dining'. Required unless using 'items'."
+                        },
+                        "amount": {
+                            "type": "string",
+                            "description": "Amount spent. Accepts '1200', '1.2k'. Required unless using 'items'."
+                        },
+                        "spent_on": {
+                            "type": "string",
+                            "description": "Date of the spend as YYYY-MM-DD. Defaults to today."
+                        },
+                        "description": {
+                            "type": "string",
+                            "description": "Optional detail, e.g. 'weekly big shop'."
+                        },
+                        "recurring": {
+                            "type": "boolean",
+                            "description": "True for a fixed monthly commitment (rent, EMI, subscription), which then counts in every later month. Defaults to false."
+                        },
+                        "items": {
+                            "type": "array",
+                            "description": "Several expenses in one call. Each item takes the same fields as above. Use this instead of repeated calls.",
+                            "items": {
+                                "type": "object",
+                                "properties": {
+                                    "category": {"type": "string", "description": "Short lower-case category."},
+                                    "amount": {"type": "string", "description": "Amount spent."},
+                                    "spent_on": {"type": "string", "description": "Date as YYYY-MM-DD. Defaults to today."},
+                                    "description": {"type": "string", "description": "Optional detail."},
+                                    "recurring": {"type": "boolean", "description": "True for a fixed monthly commitment."}
+                                },
+                                "required": ["category", "amount"]
+                            }
+                        },
+                        "id": {
+                            "type": "integer",
+                            "description": "Id of an existing expense, for deletion."
+                        },
+                        "delete": {
+                            "type": "boolean",
+                            "description": "Set true together with 'id' to remove that expense."
+                        }
+                    },
+                    "required": []
+                }
+            },
+            "class": "coded_tools.finance_agent.record_expense.RecordExpense"
+        },
+
+        {
+            "name": "compute_balance",
+            "function": {
+                "description": "Compute a month's income, expenses, balance and savings rate, with optional trailing history.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "month": {
+                            "type": "string",
+                            "description": "Month as YYYY-MM. Defaults to the current month."
+                        },
+                        "trailing_months": {
+                            "type": "integer",
+                            "description": "Include this many months of history ending at 'month' (1-24) plus averages. Use for trend questions."
+                        }
+                    },
+                    "required": []
+                }
+            },
+            "class": "coded_tools.finance_agent.compute_balance.ComputeBalance"
+        },
+
+        {
+            "name": "spend_breakdown",
+            "function": {
+                "description": "Break a month's spending down by category, as a share of spend and of income, optionally versus another month.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "month": {
+                            "type": "string",
+                            "description": "Month as YYYY-MM. Defaults to the current month."
+                        },
+                        "compare_to_month": {
+                            "type": "string",
+                            "description": "Another month as YYYY-MM to diff against, for 'what changed' questions."
+                        },
+                        "category": {
+                            "type": "string",
+                            "description": "Restrict the analysis to a single category."
+                        }
+                    },
+                    "required": []
+                }
+            },
+            "class": "coded_tools.finance_agent.spend_breakdown.SpendBreakdown"
+        },
+
+        {
+            "name": "manage_goal",
+            "function": {
+                "description": "Create, update, fund, complete or delete a savings goal.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "action": {
+                            "type": "string",
+                            "description": "'create', 'update', 'contribute', 'withdraw', 'complete' or 'delete'. Defaults to 'create'."
+                        },
+                        "goal": {
+                            "type": "string",
+                            "description": "Existing goal's name or id. Required for every action except 'create'."
+                        },
+                        "name": {
+                            "type": "string",
+                            "description": "Name for a new goal, e.g. 'Emergency fund'. Required for 'create'."
+                        },
+                        "target_amount": {
+                            "type": "string",
+                            "description": "Amount to reach. Accepts '300000' or '3 lakh'. Required for 'create'."
+                        },
+                        "target_date": {
+                            "type": "string",
+                            "description": "Deadline as YYYY-MM-DD. Optional, but needed for a required-pace calculation."
+                        },
+                        "amount": {
+                            "type": "string",
+                            "description": "Amount to move in or out. Required for 'contribute' and 'withdraw'."
+                        },
+                        "already_saved": {
+                            "type": "string",
+                            "description": "Opening balance for a new goal, if money is already set aside for it."
+                        },
+                        "monthly_contribution": {
+                            "type": "string",
+                            "description": "The pace the user intends to save at, recorded as their plan."
+                        },
+                        "priority": {
+                            "type": "string",
+                            "description": "'high', 'medium' or 'low'. Defaults to 'medium'."
+                        },
+                        "status": {
+                            "type": "string",
+                            "description": "'active', 'achieved', 'paused' or 'abandoned'. For use with 'update'."
+                        },
+                        "new_name": {
+                            "type": "string",
+                            "description": "Rename the goal, for use with 'update'."
+                        },
+                        "contributed_on": {
+                            "type": "string",
+                            "description": "Date of a contribution as YYYY-MM-DD. Defaults to today."
+                        },
+                        "note": {
+                            "type": "string",
+                            "description": "Optional note on a contribution or withdrawal."
+                        },
+                        "notes": {
+                            "type": "string",
+                            "description": "Optional note on the goal itself."
+                        }
+                    },
+                    "required": []
+                }
+            },
+            "class": "coded_tools.finance_agent.manage_goal.ManageGoal"
+        },
+
+        {
+            "name": "list_goals",
+            "function": {
+                "description": "Report goal progress plus whether the monthly surplus can sustain the required pace.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "goal": {
+                            "type": "string",
+                            "description": "Name or id of a single goal, for detail plus recent contributions. Omit for the whole portfolio."
+                        },
+                        "status": {
+                            "type": "string",
+                            "description": "Filter by 'active', 'achieved', 'paused' or 'abandoned'. Omit for all."
+                        },
+                        "month": {
+                            "type": "string",
+                            "description": "Month as YYYY-MM whose surplus is used to judge affordability. Defaults to the current month."
+                        }
+                    },
+                    "required": []
+                }
+            },
+            "class": "coded_tools.finance_agent.list_goals.ListGoals"
+        },
+
+        {
+            "name": "list_transactions",
+            "function": {
+                "description": "List the individual ledger entries behind a total, over a month or an explicit date range.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "kind": {
+                            "type": "string",
+                            "description": "'expenses' (default), 'income', 'contributions' or 'all'."
+                        },
+                        "month": {
+                            "type": "string",
+                            "description": "Month as YYYY-MM. Defaults to the current month. Ignored if from_date/to_date are given."
+                        },
+                        "from_date": {
+                            "type": "string",
+                            "description": "Start of an explicit range, as YYYY-MM-DD."
+                        },
+                        "to_date": {
+                            "type": "string",
+                            "description": "End of an explicit range, as YYYY-MM-DD."
+                        },
+                        "category": {
+                            "type": "string",
+                            "description": "Restrict expenses to one category."
+                        },
+                        "limit": {
+                            "type": "integer",
+                            "description": "Maximum entries per kind, 1-200. Defaults to 50."
+                        }
+                    },
+                    "required": []
+                }
+            },
+            "class": "coded_tools.finance_agent.list_transactions.ListTransactions"
+        },
+
+        {
+            "name": "financial_snapshot",
+            "function": {
+                "description": "Return income, spending, balance, active goals and derived health metrics for a month in one call.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "month": {
+                            "type": "string",
+                            "description": "Month as YYYY-MM. Defaults to the current month."
+                        }
+                    },
+                    "required": []
+                }
+            },
+            "class": "coded_tools.finance_agent.financial_snapshot.FinancialSnapshot"
+        },
+
+        {
+            "name": "current_period",
+            "function": {
+                "description": "Return today's local date plus the YYYY-MM keys for this month and last month. Use this to resolve relative dates instead of guessing.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {},
+                    "required": []
+                }
+            },
+            "class": "coded_tools.finance_agent.current_period.CurrentPeriod"
+        }
+    ]
+}
