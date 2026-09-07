@@ -1,0 +1,463 @@
+INFO:     Will watch for changes in these directories: ['C:\\projectV2\\nuerohackthon']
+INFO:     Uvicorn running on http://localhost:4173 (Press CTRL+C to quit)
+INFO:     Started reloader process [23156] using StatReload
+C:\projectV2\nuerohackthon\.venv\Lib\site-packages\jwt\api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 14 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+  return self._jws.encode(
+C:\projectV2\nuerohackthon\.venv\Lib\site-packages\pydub\utils.py:300: SyntaxWarning: "\(" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\("? A raw string is also an option.
+  m = re.match('([su]([0-9]{1,2})p?) \(([0-9]{1,2}) bit\)$', token)
+C:\projectV2\nuerohackthon\.venv\Lib\site-packages\pydub\utils.py:301: SyntaxWarning: "\(" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\("? A raw string is also an option.
+  m2 = re.match('([su]([0-9]{1,2})p?)( \(default\))?$', token)
+C:\projectV2\nuerohackthon\.venv\Lib\site-packages\pydub\utils.py:310: SyntaxWarning: "\(" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\("? A raw string is also an option.
+  elif re.match('(flt)p?( \(default\))?$', token):
+C:\projectV2\nuerohackthon\.venv\Lib\site-packages\pydub\utils.py:314: SyntaxWarning: "\(" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\("? A raw string is also an option.
+  elif re.match('(dbl)p?( \(default\))?$', token):
+C:\projectV2\nuerohackthon\.venv\Lib\site-packages\pydub\utils.py:170: RuntimeWarning: Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work
+  warn("Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)
+2026-09-07 21:54:15 - root - INFO - frontend_dist_path: C:\projectV2\nuerohackthon\.venv\Lib\site-packages\nsflow\prebuilt_frontend\dist
+2026-09-07 21:54:15 - root - INFO - Serving frontend from: C:\projectV2\nuerohackthon\.venv\Lib\site-packages\nsflow\prebuilt_frontend\dist
+INFO:     Started server process [33824]
+INFO:     Waiting for application startup.
+2026-09-07 21:54:15 - root - INFO - FastAPI is starting up...
+2026-09-07 21:54:15 - root - INFO - Initializing NeuroSan config from environment variables...
+2026-09-07 21:54:15 - root - INFO - [Startup] Default NsConfig set to http://localhost:8080
+2026-09-07 21:54:15 - root - INFO - Initializing local database 'nss_local.db'...
+2026-09-07 21:54:16 - root - INFO - Local database 'nss_local.db' initialized
+INFO:     Application startup complete.
+INFO:     127.0.0.1:56694 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56694 - "GET /assets/index.js HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60956 - "GET /assets/index.css HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56694 - "GET /api/v1/vite_config.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60956 - "GET /vite.svg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60956 - "GET /api/v1/version/nsflow HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56200 - "GET /api/v1/ping HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56694 - "GET /api/v1/get_ns_config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60956 - "GET /api/v1/version/neuro-san HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56200 - "GET /api/v1/ping HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56200 - "GET /api/v1/mcp/oauth/redirect_uri HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56694 - "GET /api/v1/get_ns_config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56200 - "GET /api/v1/version/nsflow HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60956 - "GET /api/v1/mcp/oauth/connections HTTP/1.1" 200 OK
+2026-09-07 21:54:52 - root - ERROR - Failed to retrieve concierge list: 503: NeuroSan server at localhost:8080 is not reachable
+INFO:     127.0.0.1:56694 - "GET /api/v1/list?connection_type=http&host=localhost&port=8080 HTTP/1.1" 500 Internal Server Error
+Traceback (most recent call last):
+INFO:     127.0.0.1:60956 - "GET /api/v1/version/neuro-san HTTP/1.1" 200 OK
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\nsflow\backend\api\v1\fastapi_concierge_endpoints.py", line 45, in get_concierge_list
+INFO:     127.0.0.1:56200 - "GET /api/v1/get_ns_config HTTP/1.1" 200 OK
+    result = await ns_concierge_utils.list_concierge(metadata)
+INFO:     127.0.0.1:56200 - "GET /api/v1/get_ns_config HTTP/1.1" 200 OK
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\nsflow\backend\utils\agentutils\ns_concierge_utils.py", line 82, in list_concierge
+    raise HTTPException(
+        status_code=503, detail=f"NeuroSan server at {self.server_host}:{self.server_port} is not reachable"
+    )
+fastapi.exceptions.HTTPException: 503: NeuroSan server at localhost:8080 is not reachable
+INFO:     127.0.0.1:60500 - "POST /api/v1/set_ns_config HTTP/1.1" 200 OK
+2026-09-07 21:55:08 - root - ERROR - Failed to retrieve concierge list: 503: NeuroSan server at localhost:8080 is not reachable
+INFO:     127.0.0.1:60500 - "GET /api/v1/list?connection_type=http&host=localhost&port=8080 HTTP/1.1" 500 Internal Server Error
+Traceback (most recent call last):
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\nsflow\backend\api\v1\fastapi_concierge_endpoints.py", line 45, in get_concierge_list
+    result = await ns_concierge_utils.list_concierge(metadata)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\nsflow\backend\utils\agentutils\ns_concierge_utils.py", line 82, in list_concierge
+    raise HTTPException(
+        status_code=503, detail=f"NeuroSan server at {self.server_host}:{self.server_port} is not reachable"
+    )
+fastapi.exceptions.HTTPException: 503: NeuroSan server at localhost:8080 is not reachable
+INFO:     127.0.0.1:49666 - "POST /api/v1/set_ns_config HTTP/1.1" 200 OK
+2026-09-07 21:56:22 - root - ERROR - Failed to retrieve concierge list: 503: NeuroSan server at localhost:8081 is not reachable
+INFO:     127.0.0.1:49666 - "GET /api/v1/list?connection_type=http&host=localhost&port=8081 HTTP/1.1" 500 Internal Server Error
+Traceback (most recent call last):
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\nsflow\backend\api\v1\fastapi_concierge_endpoints.py", line 45, in get_concierge_list
+    result = await ns_concierge_utils.list_concierge(metadata)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\nsflow\backend\utils\agentutils\ns_concierge_utils.py", line 82, in list_concierge
+    raise HTTPException(
+        status_code=503, detail=f"NeuroSan server at {self.server_host}:{self.server_port} is not reachable"
+    )
+fastapi.exceptions.HTTPException: 503: NeuroSan server at localhost:8081 is not reachable
+INFO:     127.0.0.1:61543 - "POST /api/v1/set_ns_config HTTP/1.1" 200 OK
+2026-09-07 21:57:48 - httpx - INFO - HTTP Request: GET http://localhost:8080/api/v1/list "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:61543 - "GET /api/v1/list?connection_type=http&host=localhost&port=8080 HTTP/1.1" 200 OK
+2026-09-07 21:58:33 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 21:58:33 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 21:58:33 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_designer/http
+INFO:     127.0.0.1:60816 - "GET /api/v1/connectivity/agent_network_designer HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62324 - "WebSocket /api/v1/ws/logs/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+INFO:     127.0.0.1:64886 - "GET /api/v1/mcp/oauth/required/agent_network_designer HTTP/1.1" 200 OK
+INFO:     connection open
+2026-09-07 21:58:37 - agent_network_designer - INFO - New logs client connected
+2026-09-07 21:58:37 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 21:58:37 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 21:58:37 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_designer/http
+2026-09-07 21:58:37 - root - INFO - network_name: agent_network_designer
+INFO:     127.0.0.1:60816 - "GET /api/v1/connectivity/agent_network_designer HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50224 - "GET /vite.svg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56346 - "WebSocket /api/v1/ws/logs/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+2026-09-07 21:58:37 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 21:58:37 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 21:58:37 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_designer/http
+INFO:     127.0.0.1:63217 - "WebSocket /api/v1/ws/chat/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+2026-09-07 21:58:37 - agent_network_designer - INFO - Chat client session_1788798289383_e450849a78d885 connected to agent: agent_network_designer
+INFO:     127.0.0.1:49666 - "WebSocket /api/v1/ws/internalchat/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+2026-09-07 21:58:37 - agent_network_designer - INFO - Internal chat connected: agent_network_designer
+INFO:     127.0.0.1:52452 - "GET /api/v1/networkconfig/agent_network_designer HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60446 - "WebSocket /api/v1/ws/slydata/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:62676 - "WebSocket /api/v1/ws/progress/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52452 - "GET /api/v1/networkconfig/agent_network_designer/agent//agent_network_query_generator HTTP/1.1" 404 Not Found
+2026-09-07 21:59:04 - root - INFO - network_name: agent_network_designer, agent_name: agent_network_designer
+INFO:     127.0.0.1:51541 - "GET /api/v1/networkconfig/agent_network_designer/agent/agent_network_designer HTTP/1.1" 200 OK
+2026-09-07 21:59:09 - agent_network_designer - INFO - WebSocket chat client disconnected: session_1788798289383_e450849a78d885
+2026-09-07 21:59:09 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 21:59:09 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 21:59:09 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_test_generator/http
+INFO:     127.0.0.1:49852 - "GET /api/v1/connectivity/agent_network_test_generator HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51541 - "GET /api/v1/mcp/oauth/required/agent_network_test_generator HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51829 - "GET /vite.svg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60724 - "WebSocket /api/v1/ws/logs/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+2026-09-07 21:59:12 - agent_network_test_generator - INFO - New logs client connected
+2026-09-07 21:59:12 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+INFO:     127.0.0.1:49852 - "GET /api/v1/connectivity/agent_network_test_generator HTTP/1.1" 200 OK
+2026-09-07 21:59:12 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 21:59:12 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_test_generator/http
+2026-09-07 21:59:12 - root - INFO - network_name: agent_network_test_generator
+INFO:     127.0.0.1:65016 - "WebSocket /api/v1/ws/logs/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+2026-09-07 21:59:12 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 21:59:12 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 21:59:12 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_test_generator/http
+INFO:     127.0.0.1:62390 - "WebSocket /api/v1/ws/chat/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+2026-09-07 21:59:12 - agent_network_test_generator - INFO - Chat client session_1788798289383_e450849a78d885 connected to agent: agent_network_test_generator
+INFO:     127.0.0.1:53871 - "WebSocket /api/v1/ws/internalchat/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+2026-09-07 21:59:12 - agent_network_test_generator - INFO - Internal chat connected: agent_network_test_generator
+INFO:     127.0.0.1:64884 - "WebSocket /api/v1/ws/slydata/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:62325 - "GET /api/v1/networkconfig/agent_network_test_generator HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53078 - "WebSocket /api/v1/ws/progress/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+2026-09-07 21:59:14 - root - INFO - network_name: agent_network_test_generator, agent_name: test_scenario_planner
+INFO:     127.0.0.1:62325 - "GET /api/v1/networkconfig/agent_network_test_generator/agent/test_scenario_planner HTTP/1.1" 200 OK
+2026-09-07 21:59:15 - root - INFO - network_name: agent_network_test_generator, agent_name: agent_network_test_generator
+INFO:     127.0.0.1:62325 - "GET /api/v1/networkconfig/agent_network_test_generator/agent/agent_network_test_generator HTTP/1.1" 200 OK
+2026-09-07 21:59:18 - agent_network_test_generator - INFO - chat_context received: {}
+2026-09-07 21:59:20 - agent_network_test_generator - INFO - {"otrace": ["agent_network_test_generator"]}
+2026-09-07 21:59:20 - agent_network_test_generator - INFO - {'otrace': ['agent_network_test_generator'], 'text': None}
+2026-09-07 21:59:20 - agent_network_test_generator - INFO - {'otrace': ['agent_network_test_generator'], 'text': ''}
+2026-09-07 21:59:20 - agent_network_test_generator - INFO - {"otrace": ["agent_network_test_generator"]}
+2026-09-07 21:59:20 - agent_network_test_generator - INFO - {'otrace': ['agent_network_test_generator'], 'text': ''}
+2026-09-07 21:59:20 - agent_network_test_generator - INFO - Streaming response sent: {"message": {"type": "AI", "text": "Error from agent_network_test_generator: Agent stopped due to exception Anthropic authentication failed: no API key or authorization credentials were provided. Set the ANTHROPIC_API_KEY environment variable, pass api_key=... to ChatAnthropic, or provide credentials via default_headers={\"Authorization\": ...}. If you are routing through the LangSmith gateway, set LANGSMITH_GATEWAY and LANGSMITH_GATEWAY_API_KEY."}}
+2026-09-07 21:59:20 - agent_network_test_generator - INFO - Streaming chat finished for client: session_1788798289383_e450849a78d885
+2026-09-07 22:04:02 - root - INFO - network_name: agent_network_test_generator, agent_name: validate_test_fixture
+INFO:     127.0.0.1:59283 - "GET /api/v1/networkconfig/agent_network_test_generator/agent/validate_test_fixture HTTP/1.1" 200 OK
+2026-09-07 22:10:16 - root - INFO - network_name: agent_network_test_generator, agent_name: persist_test_fixture
+INFO:     127.0.0.1:52262 - "GET /api/v1/networkconfig/agent_network_test_generator/agent/persist_test_fixture HTTP/1.1" 200 OK
+2026-09-07 22:10:22 - agent_network_test_generator - INFO - WebSocket chat client disconnected: session_1788798289383_e450849a78d885
+INFO:     127.0.0.1:56447 - "WebSocket /api/v1/ws/logs/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+2026-09-07 22:10:23 - agent_network_designer - INFO - New logs client connected
+2026-09-07 22:10:23 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:10:23 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:10:23 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_designer/http
+INFO:     127.0.0.1:53639 - "GET /api/v1/connectivity/agent_network_designer HTTP/1.1" 200 OK
+2026-09-07 22:10:23 - root - INFO - network_name: agent_network_designer
+2026-09-07 22:10:23 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:10:23 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:10:23 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_designer/http
+INFO:     127.0.0.1:53639 - "GET /api/v1/connectivity/agent_network_designer HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56672 - "GET /vite.svg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61993 - "WebSocket /api/v1/ws/logs/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+INFO:     127.0.0.1:53887 - "GET /api/v1/mcp/oauth/required/agent_network_designer HTTP/1.1" 200 OK
+INFO:     connection open
+2026-09-07 22:10:23 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:10:23 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:10:23 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_designer/http
+INFO:     127.0.0.1:60929 - "WebSocket /api/v1/ws/chat/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+2026-09-07 22:10:23 - agent_network_designer - INFO - Chat client session_1788798289383_e450849a78d885 connected to agent: agent_network_designer
+INFO:     127.0.0.1:52732 - "WebSocket /api/v1/ws/internalchat/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+2026-09-07 22:10:23 - agent_network_designer - INFO - Internal chat connected: agent_network_designer
+INFO:     127.0.0.1:56365 - "GET /api/v1/networkconfig/agent_network_designer HTTP/1.1" 200 OK
+INFO:     127.0.0.1:53241 - "WebSocket /api/v1/ws/slydata/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:63401 - "WebSocket /api/v1/ws/progress/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:59691 - "WebSocket /api/v1/ws/sustainability/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+2026-09-07 22:10:24 - root - INFO - network_name: agent_network_designer, agent_name: agent_network_designer
+INFO:     127.0.0.1:56365 - "GET /api/v1/networkconfig/agent_network_designer/agent/agent_network_designer HTTP/1.1" 200 OK
+2026-09-07 22:10:31 - agent_network_designer - INFO - chat_context received: {}
+2026-09-07 22:10:33 - agent_network_designer - INFO - {"otrace": ["agent_network_designer"]}
+2026-09-07 22:10:33 - agent_network_designer - INFO - {'otrace': ['agent_network_designer'], 'text': None}
+2026-09-07 22:10:33 - agent_network_designer - INFO - {'otrace': ['agent_network_designer'], 'text': ''}
+2026-09-07 22:10:33 - agent_network_designer - INFO - {"otrace": ["agent_network_designer"]}
+2026-09-07 22:10:33 - agent_network_designer - INFO - {'otrace': ['agent_network_designer'], 'text': ''}
+2026-09-07 22:10:33 - agent_network_designer - INFO - Streaming response sent: {"message": {"type": "AI", "text": "\n```json\n{\n    \"error\": \"Agent stopped due to exception Anthropic authentication failed: no API key or authorization credentials were provided. Set the ANTHROPIC_API_KEY environment variable, pass api_key=... to ChatAnthropic, or provide credentials via default_headers={\\\"Authorization\\\": ...}. If you are routing through the LangSmith gateway, set LANGSMITH_GATEWAY and LANGSMITH_GATEWAY_API_KEY.\",\n    \"tool\": \"agent_network_designer\"\n}\n```"}}
+2026-09-07 22:10:33 - agent_network_designer - INFO - Streaming chat finished for client: session_1788798289383_e450849a78d885
+INFO:     127.0.0.1:58063 - "GET /api/v1/networkconfig/agent_network_designer/agent//agent_network_query_generator HTTP/1.1" 404 Not Found
+2026-09-07 22:42:56 - agent_network_designer - INFO - WebSocket chat client disconnected: session_1788798289383_e450849a78d885
+INFO:     127.0.0.1:50668 - "WebSocket /api/v1/ws/logs/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+2026-09-07 22:42:56 - agent_network_test_generator - INFO - New logs client connected
+2026-09-07 22:42:56 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:42:56 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:42:56 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_test_generator/http
+INFO:     127.0.0.1:59884 - "GET /api/v1/connectivity/agent_network_test_generator HTTP/1.1" 200 OK
+2026-09-07 22:43:01 - root - INFO - network_name: agent_network_test_generator
+2026-09-07 22:43:01 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:43:01 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:43:01 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_test_generator/http
+INFO:     127.0.0.1:59884 - "GET /api/v1/connectivity/agent_network_test_generator HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60310 - "GET /api/v1/mcp/oauth/required/agent_network_test_generator HTTP/1.1" 200 OK
+INFO:     127.0.0.1:50451 - "WebSocket /api/v1/ws/logs/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:52532 - "GET /vite.svg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:55458 - "GET /api/v1/networkconfig/agent_network_test_generator HTTP/1.1" 200 OK
+2026-09-07 22:43:02 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:43:02 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:43:02 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_test_generator/http
+INFO:     127.0.0.1:57296 - "WebSocket /api/v1/ws/chat/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+2026-09-07 22:43:02 - agent_network_test_generator - INFO - Chat client session_1788798289383_e450849a78d885 connected to agent: agent_network_test_generator
+INFO:     127.0.0.1:58743 - "WebSocket /api/v1/ws/internalchat/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+2026-09-07 22:43:02 - agent_network_test_generator - INFO - Internal chat connected: agent_network_test_generator
+INFO:     127.0.0.1:58692 - "WebSocket /api/v1/ws/slydata/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55754 - "WebSocket /api/v1/ws/progress/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+2026-09-07 22:43:03 - root - INFO - network_name: agent_network_test_generator, agent_name: test_scenario_planner
+INFO:     127.0.0.1:55458 - "GET /api/v1/networkconfig/agent_network_test_generator/agent/test_scenario_planner HTTP/1.1" 200 OK
+2026-09-07 22:43:10 - agent_network_test_generator - INFO - chat_context received: {}
+2026-09-07 22:43:11 - agent_network_test_generator - INFO - Streaming response sent: {"message": {"type": "AI", "text": "No fully-specified LLM found in llm_config or fallbacks.\n\nLLM operation for this agent requires at least one LLM provider API key to be set as an environment variable.\nThe following errors occurred while looking for LLM API keys:\n\nA value for the OPENAI_API_KEY environment variable must be correctly set in the neuro-san\nserver or run-time environment in order to use this agent network.\n\nSome things to try:\n1) Double check that your value for OPENAI_API_KEY is set correctly\n2) If you do not have a value for OPENAI_API_KEY, visit the LLM provider's website to get one \n3) It's possible that your credit balance on your account with the LLM provider is too low\n   to make the request.  Check that.\n4) Sometimes these errors happen because of firewall blockages to the site that hosts the LLM.\n   Try checking that you can reach the regular UI for the LLM from a web browser\n   on the same machine making this request.\n"}}
+2026-09-07 22:43:11 - agent_network_test_generator - INFO - Streaming chat finished for client: session_1788798289383_e450849a78d885
+2026-09-07 22:46:53 - agent_network_test_generator - INFO - WebSocket chat client disconnected: session_1788798289383_e450849a78d885
+2026-09-07 22:46:53 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:46:53 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:46:53 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/basic/music_nerd/http
+INFO:     127.0.0.1:63441 - "GET /api/v1/connectivity/basic/music_nerd HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59760 - "WebSocket /api/v1/ws/logs/basic/music_nerd/session_1788798289383_e450849a78d885" [accepted]
+INFO:     127.0.0.1:55189 - "GET /api/v1/networkconfig/basic/music_nerd HTTP/1.1" 404 Not Found
+INFO:     connection open
+INFO:     127.0.0.1:63441 - "GET /api/v1/connectivity/basic/music_nerd HTTP/1.1" 200 OK
+2026-09-07 22:46:56 - basic/music_nerd - INFO - New logs client connected
+INFO:     127.0.0.1:49951 - "GET /api/v1/mcp/oauth/required/basic/music_nerd HTTP/1.1" 200 OK
+2026-09-07 22:46:56 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+INFO:     127.0.0.1:56235 - "GET /vite.svg HTTP/1.1" 200 OK
+2026-09-07 22:46:56 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:46:56 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/basic/music_nerd/http
+INFO:     127.0.0.1:51998 - "WebSocket /api/v1/ws/logs/basic/music_nerd/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+2026-09-07 22:46:56 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:46:56 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:46:56 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/basic/music_nerd/http
+INFO:     127.0.0.1:61307 - "WebSocket /api/v1/ws/chat/basic/music_nerd/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+2026-09-07 22:46:56 - basic/music_nerd - INFO - Chat client session_1788798289383_e450849a78d885 connected to agent: basic/music_nerd
+INFO:     127.0.0.1:60760 - "WebSocket /api/v1/ws/internalchat/basic/music_nerd/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+2026-09-07 22:46:56 - basic/music_nerd - INFO - Internal chat connected: basic/music_nerd
+INFO:     127.0.0.1:53842 - "WebSocket /api/v1/ws/slydata/basic/music_nerd/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:61514 - "WebSocket /api/v1/ws/progress/basic/music_nerd/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+2026-09-07 22:46:59 - basic/music_nerd - INFO - chat_context received: {}
+2026-09-07 22:47:00 - basic/music_nerd - INFO - Streaming response sent: {"message": {"type": "AI", "text": "No fully-specified LLM found in llm_config or fallbacks.\n\nLLM operation for this agent requires at least one LLM provider API key to be set as an environment variable.\nThe following errors occurred while looking for LLM API keys:\n\nA value for the OPENAI_API_KEY environment variable must be correctly set in the neuro-san\nserver or run-time environment in order to use this agent network.\n\nSome things to try:\n1) Double check that your value for OPENAI_API_KEY is set correctly\n2) If you do not have a value for OPENAI_API_KEY, visit the LLM provider's website to get one \n3) It's possible that your credit balance on your account with the LLM provider is too low\n   to make the request.  Check that.\n4) Sometimes these errors happen because of firewall blockages to the site that hosts the LLM.\n   Try checking that you can reach the regular UI for the LLM from a web browser\n   on the same machine making this request.\n"}}
+2026-09-07 22:47:00 - basic/music_nerd - INFO - Streaming chat finished for client: session_1788798289383_e450849a78d885
+2026-09-07 22:49:55 - basic/music_nerd - INFO - WebSocket chat client disconnected: session_1788798289383_e450849a78d885
+INFO:     127.0.0.1:54728 - "WebSocket /api/v1/ws/logs/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+2026-09-07 22:49:55 - agent_network_test_generator - INFO - New logs client connected
+2026-09-07 22:49:55 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:49:55 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:49:55 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_test_generator/http
+INFO:     127.0.0.1:60487 - "GET /api/v1/connectivity/agent_network_test_generator HTTP/1.1" 200 OK
+2026-09-07 22:49:55 - root - INFO - network_name: agent_network_test_generator
+INFO:     127.0.0.1:60487 - "GET /vite.svg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52804 - "WebSocket /api/v1/ws/logs/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+2026-09-07 22:49:55 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:49:55 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:49:55 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_test_generator/http
+INFO:     127.0.0.1:60487 - "GET /api/v1/connectivity/agent_network_test_generator HTTP/1.1" 200 OK
+2026-09-07 22:49:56 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:49:56 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:49:56 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_test_generator/http
+INFO:     127.0.0.1:54242 - "WebSocket /api/v1/ws/chat/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+2026-09-07 22:49:56 - agent_network_test_generator - INFO - Chat client session_1788798289383_e450849a78d885 connected to agent: agent_network_test_generator
+INFO:     127.0.0.1:56125 - "WebSocket /api/v1/ws/internalchat/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+2026-09-07 22:49:56 - agent_network_test_generator - INFO - Internal chat connected: agent_network_test_generator
+INFO:     127.0.0.1:58625 - "WebSocket /api/v1/ws/slydata/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:54518 - "GET /api/v1/mcp/oauth/required/agent_network_test_generator HTTP/1.1" 200 OK
+INFO:     127.0.0.1:49667 - "WebSocket /api/v1/ws/progress/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:62558 - "WebSocket /api/v1/ws/sustainability/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:63897 - "GET /api/v1/networkconfig/agent_network_test_generator HTTP/1.1" 200 OK
+2026-09-07 22:50:00 - agent_network_test_generator - INFO - WebSocket chat client disconnected: session_1788798289383_e450849a78d885
+2026-09-07 22:50:00 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:50:00 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:50:00 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_designer/http
+INFO:     127.0.0.1:54518 - "GET /api/v1/connectivity/agent_network_designer HTTP/1.1" 200 OK
+INFO:     127.0.0.1:52344 - "GET /vite.svg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63897 - "GET /api/v1/mcp/oauth/required/agent_network_designer HTTP/1.1" 200 OK
+ng.txt
+2026-09-07 22:50:02 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:50:02 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_designer/http
+2026-09-07 22:50:02 - root - INFO - network_name: agent_network_designer
+INFO:     127.0.0.1:54518 - "GET /api/v1/connectivity/agent_network_designer HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63621 - "WebSocket /api/v1/ws/logs/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+2026-09-07 22:50:02 - agent_network_designer - INFO - New logs client connected
+INFO:     127.0.0.1:57001 - "WebSocket /api/v1/ws/logs/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+2026-09-07 22:50:02 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:50:02 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:50:02 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_designer/http
+INFO:     127.0.0.1:61840 - "WebSocket /api/v1/ws/chat/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+2026-09-07 22:50:02 - agent_network_designer - INFO - Chat client session_1788798289383_e450849a78d885 connected to agent: agent_network_designer
+INFO:     127.0.0.1:59545 - "WebSocket /api/v1/ws/internalchat/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+2026-09-07 22:50:02 - agent_network_designer - INFO - Internal chat connected: agent_network_designer
+INFO:     127.0.0.1:60487 - "GET /api/v1/networkconfig/agent_network_designer HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64005 - "WebSocket /api/v1/ws/slydata/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:50716 - "WebSocket /api/v1/ws/progress/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:50879 - "WebSocket /api/v1/ws/sustainability/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+2026-09-07 22:50:03 - agent_network_designer - INFO - WebSocket chat client disconnected: session_1788798289383_e450849a78d885
+2026-09-07 22:50:03 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:50:03 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:50:03 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/basic/music_nerd/http
+INFO:     127.0.0.1:54518 - "GET /api/v1/connectivity/basic/music_nerd HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63897 - "GET /api/v1/networkconfig/basic/music_nerd HTTP/1.1" 404 Not Found
+2026-09-07 22:50:03 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:50:03 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:50:03 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/basic/music_nerd/http
+INFO:     127.0.0.1:54518 - "GET /api/v1/connectivity/basic/music_nerd HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63897 - "GET /vite.svg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:60487 - "GET /api/v1/mcp/oauth/required/basic/music_nerd HTTP/1.1" 200 OK
+INFO:     127.0.0.1:56035 - "WebSocket /api/v1/ws/logs/basic/music_nerd/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+2026-09-07 22:50:03 - basic/music_nerd - INFO - New logs client connected
+INFO:     127.0.0.1:51259 - "WebSocket /api/v1/ws/logs/basic/music_nerd/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+2026-09-07 22:50:03 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:50:03 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:50:03 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/basic/music_nerd/http
+INFO:     127.0.0.1:59832 - "WebSocket /api/v1/ws/chat/basic/music_nerd/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+2026-09-07 22:50:03 - basic/music_nerd - INFO - Chat client session_1788798289383_e450849a78d885 connected to agent: basic/music_nerd
+INFO:     127.0.0.1:62653 - "WebSocket /api/v1/ws/internalchat/basic/music_nerd/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+2026-09-07 22:50:03 - basic/music_nerd - INFO - Internal chat connected: basic/music_nerd
+INFO:     127.0.0.1:55116 - "WebSocket /api/v1/ws/slydata/basic/music_nerd/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:60815 - "WebSocket /api/v1/ws/progress/basic/music_nerd/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:56077 - "WebSocket /api/v1/ws/sustainability/basic/music_nerd/session_1788798289383_e450849a78d885" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:58947 - "GET /?network=basic%2Fmusic_nerd HTTP/1.1" 200 OK
+2026-09-07 22:50:15 - basic/music_nerd - INFO - WebSocket chat client disconnected: session_1788798289383_e450849a78d885
+INFO:     127.0.0.1:62763 - "GET /assets/index.css HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:58947 - "GET /assets/index.js HTTP/1.1" 304 Not Modified
+INFO:     127.0.0.1:58947 - "GET /api/v1/vite_config.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58947 - "GET /vite.svg HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58947 - "GET /api/v1/version/nsflow HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58947 - "GET /api/v1/ping HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62763 - "GET /api/v1/get_ns_config HTTP/1.1" 200 OK
+2026-09-07 22:50:16 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:50:16 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:50:16 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/basic/music_nerd/http
+INFO:     127.0.0.1:58947 - "GET /api/v1/connectivity/basic/music_nerd HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62763 - "GET /api/v1/networkconfig/basic/music_nerd HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:58947 - "GET /api/v1/ping HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62763 - "GET /api/v1/get_ns_config HTTP/1.1" 200 OK
+2026-09-07 22:50:16 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:50:16 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:50:16 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/basic/music_nerd/http
+INFO:     127.0.0.1:58947 - "GET /api/v1/connectivity/basic/music_nerd HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58947 - "GET /api/v1/version/nsflow HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58947 - "GET /api/v1/mcp/oauth/connections HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58947 - "GET /api/v1/mcp/oauth/redirect_uri HTTP/1.1" 200 OK
+INFO:     127.0.0.1:58947 - "GET /api/v1/get_ns_config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59470 - "GET /api/v1/version/neuro-san HTTP/1.1" 200 OK
+2026-09-07 22:50:16 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:50:16 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:50:16 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/basic/music_nerd/http
+INFO:     127.0.0.1:58947 - "GET /api/v1/connectivity/basic/music_nerd HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62763 - "GET /api/v1/mcp/oauth/required/basic/music_nerd HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59470 - "GET /api/v1/version/neuro-san HTTP/1.1" 200 OK
+INFO:     127.0.0.1:61002 - "GET /api/v1/get_ns_config HTTP/1.1" 200 OK
+INFO:     127.0.0.1:51424 - "WebSocket /api/v1/ws/logs/basic/music_nerd/session_1788801616101_4bef6ffcf99cd8" [accepted]
+INFO:     connection open
+2026-09-07 22:50:17 - basic/music_nerd - INFO - New logs client connected
+2026-09-07 22:50:17 - httpx - INFO - HTTP Request: GET http://localhost:8080/api/v1/list "HTTP/1.1 200 OK"
+INFO:     127.0.0.1:60020 - "GET /api/v1/list?connection_type=http&host=localhost&port=8080 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:64807 - "WebSocket /api/v1/ws/logs/basic/music_nerd/session_1788801616101_4bef6ffcf99cd8" [accepted]
+INFO:     connection open
+2026-09-07 22:50:17 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:50:17 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:50:17 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/basic/music_nerd/http
+INFO:     127.0.0.1:52042 - "WebSocket /api/v1/ws/chat/basic/music_nerd/session_1788801616101_4bef6ffcf99cd8" [accepted]
+INFO:     connection open
+2026-09-07 22:50:17 - basic/music_nerd - INFO - Chat client session_1788801616101_4bef6ffcf99cd8 connected to agent: basic/music_nerd
+INFO:     127.0.0.1:53720 - "WebSocket /api/v1/ws/internalchat/basic/music_nerd/session_1788801616101_4bef6ffcf99cd8" [accepted]
+INFO:     connection open
+2026-09-07 22:50:17 - basic/music_nerd - INFO - Internal chat connected: basic/music_nerd
+INFO:     127.0.0.1:58387 - "WebSocket /api/v1/ws/progress/basic/music_nerd/session_1788801616101_4bef6ffcf99cd8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:63376 - "WebSocket /api/v1/ws/slydata/basic/music_nerd/session_1788801616101_4bef6ffcf99cd8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:55542 - "WebSocket /api/v1/ws/sustainability/basic/music_nerd/session_1788801616101_4bef6ffcf99cd8" [accepted]
+INFO:     connection open
+2026-09-07 22:50:18 - root - INFO - network_name: basic/music_nerd, agent_name: MusicNerd
+INFO:     127.0.0.1:60020 - "GET /api/v1/networkconfig/basic/music_nerd/agent/MusicNerd HTTP/1.1" 200 OK
+2026-09-07 22:50:20 - basic/music_nerd - INFO - WebSocket chat client disconnected: session_1788801616101_4bef6ffcf99cd8
+2026-09-07 22:50:20 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:50:20 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:50:20 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/basic/weather_agent/http
+INFO:     127.0.0.1:61002 - "GET /api/v1/connectivity/basic/weather_agent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:59470 - "GET /api/v1/networkconfig/basic/weather_agent HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:62763 - "GET /vite.svg HTTP/1.1" 200 OK
+2026-09-07 22:50:23 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:50:23 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+INFO:     127.0.0.1:61002 - "GET /api/v1/connectivity/basic/weather_agent HTTP/1.1" 200 OK
+2026-09-07 22:50:23 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/basic/weather_agent/http
+INFO:     127.0.0.1:60020 - "GET /api/v1/mcp/oauth/required/basic/weather_agent HTTP/1.1" 200 OK
+INFO:     127.0.0.1:62964 - "WebSocket /api/v1/ws/logs/basic/weather_agent/session_1788801616101_4bef6ffcf99cd8" [accepted]
+INFO:     connection open
+2026-09-07 22:50:23 - basic/weather_agent - INFO - New logs client connected
+INFO:     127.0.0.1:56057 - "WebSocket /api/v1/ws/logs/basic/weather_agent/session_1788801616101_4bef6ffcf99cd8" [accepted]
+INFO:     connection open
+2026-09-07 22:50:23 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:50:23 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:50:23 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/basic/weather_agent/http
+INFO:     127.0.0.1:56682 - "WebSocket /api/v1/ws/chat/basic/weather_agent/session_1788801616101_4bef6ffcf99cd8" [accepted]
+INFO:     connection open
+2026-09-07 22:50:23 - basic/weather_agent - INFO - Chat client session_1788801616101_4bef6ffcf99cd8 connected to agent: basic/weather_agent
+INFO:     127.0.0.1:56621 - "WebSocket /api/v1/ws/internalchat/basic/weather_agent/session_1788801616101_4bef6ffcf99cd8" [accepted]
+INFO:     connection open
+2026-09-07 22:50:23 - basic/weather_agent - INFO - Internal chat connected: basic/weather_agent
+INFO:     127.0.0.1:64651 - "WebSocket /api/v1/ws/slydata/basic/weather_agent/session_1788801616101_4bef6ffcf99cd8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:62406 - "WebSocket /api/v1/ws/progress/basic/weather_agent/session_1788801616101_4bef6ffcf99cd8" [accepted]
+INFO:     connection open
+INFO:     127.0.0.1:62746 - "WebSocket /api/v1/ws/sustainability/basic/weather_agent/session_1788801616101_4bef6ffcf99cd8" [accepted]
+INFO:     connection open
+2026-09-07 22:50:24 - basic/weather_agent - INFO - chat_context received: {}
+2026-09-07 22:50:25 - basic/weather_agent - INFO - Streaming response sent: {"message": {"type": "AI", "text": "No fully-specified LLM found in llm_config or fallbacks.\n\nLLM operation for this agent requires at least one LLM provider API key to be set as an environment variable.\nThe following errors occurred while looking for LLM API keys:\n\nA value for the OPENAI_API_KEY environment variable must be correctly set in the neuro-san\nserver or run-time environment in order to use this agent network.\n\nSome things to try:\n1) Double check that your value for OPENAI_API_KEY is set correctly\n2) If you do not have a value for OPENAI_API_KEY, visit the LLM provider's website to get one \n3) It's possible that your credit balance on your account with the LLM provider is too low\n   to make the request.  Check that.\n4) Sometimes these errors happen because of firewall blockages to the site that hosts the LLM.\n   Try checking that you can reach the regular UI for the LLM from a web browser\n   on the same machine making this request.\n"}}
+2026-09-07 22:50:25 - basic/weather_agent - INFO - Streaming chat finished for client: session_1788801616101_4bef6ffcf99cd8
+2026-09-07 23:03:11 - basic/weather_agent - INFO - WebSocket chat client disconnected: session_1788801616101_4bef6ffcf99cd8

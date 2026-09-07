@@ -1,0 +1,83 @@
+{
+    "metadata": {
+        "description": "A single agent that answers weather questions by calling a keyless weather API through a CodedTool."
+        "tags": ["weather", "coded_tool", "api"]
+        "sample_queries": [
+            "What's the weather in Chennai right now?",
+            "Should I pack a jacket for London this week?",
+            "Compare the next 5 days in Austin and Seattle.",
+        ]
+    },
+
+    include "registries/expertise_scoping_instructions.hocon",
+
+    # Shared LLM configuration (currently an OpenAI model; needs OPENAI_API_KEY).
+    # Path is relative to the repo root.
+    include "config/llm_config.hocon",
+
+    "tools": [
+        # The "front man": the only agent that talks to the client. It cannot
+        # itself be a CodedTool, so it delegates the API call to get_weather.
+        {
+            "name": "WeatherAssistant",
+
+            # No "parameters" under "function" is what marks this agent as the front man.
+            "function": {
+                "description": """
+I can tell you the current weather and the forecast for anywhere in the world.
+"""
+            },
+
+            "instructions": ${expertise_scoping_instructions} """
+You are Weather Assistant. You answer questions about current conditions and short-range
+forecasts for any place on Earth.
+
+How to work:
+1. Pull the place name out of the user's question. If they mention several places, call
+   your get_weather tool once per place.
+2. Always call get_weather for factual weather data. Never guess temperatures or conditions
+   from memory - you have no weather knowledge of your own.
+3. Pass "days" when the user asks about a range ("this week" -> 7, "tomorrow" -> 2).
+   Otherwise leave it out and take the default.
+4. If the question is genuinely ambiguous about the location (for example "Springfield"),
+   ask one short clarifying question instead of guessing a country.
+5. If the tool returns an error string, tell the user plainly what went wrong.
+
+How to answer:
+- Lead with the direct answer, then a sentence or two of useful detail.
+- Temperatures come back in Celsius; convert to Fahrenheit as well if the user's place or
+  phrasing suggests they expect it.
+- Turn the numbers into advice when the user asked for advice ("pack a jacket", "take an
+  umbrella") rather than dumping the raw forecast table.
+- Keep it conversational and short. No markdown tables unless comparing 3+ places.
+""",
+            "tools": ["get_weather"]
+        },
+
+        # The CodedTool. "class" is the import path from the repo root, and
+        # "function" is the OpenAI-style schema the front man fills in.
+        {
+            "name": "get_weather",
+
+            "function": {
+                "description": "Fetch current weather and a daily forecast for a named place.",
+                "parameters": {
+                    "type": "object",
+                    "properties": {
+                        "location": {
+                            "type": "string",
+                            "description": "Place to look up, e.g. 'Chennai', 'Austin, Texas', 'Paris, France'."
+                        },
+                        "days": {
+                            "type": "integer",
+                            "description": "Number of forecast days to return, 1 through 7. Defaults to 3."
+                        }
+                    },
+                    "required": ["location"]
+                }
+            },
+
+            "class": "coded_tools.weather_agent.get_weather.GetWeather"
+        }
+    ]
+}

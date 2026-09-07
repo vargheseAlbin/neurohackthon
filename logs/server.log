@@ -1,0 +1,675 @@
+C:\projectV2\nuerohackthon\.venv\Lib\site-packages\neuro_san_studio\runner\neuro_san_server_wrapper.py:36: DeprecationWarning: 'asyncio.WindowsSelectorEventLoopPolicy' is deprecated and slated for removal in Python 3.16
+  asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+C:\projectV2\nuerohackthon\.venv\Lib\site-packages\neuro_san_studio\runner\neuro_san_server_wrapper.py:36: DeprecationWarning: 'asyncio.set_event_loop_policy' is deprecated and slated for removal in Python 3.16
+  asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+Loading plugin: ProcessLogBridgePlugin from module: neuro_san_studio.plugins.log_bridge.process_log_bridge_plugin
+Loaded plugin: ProcessLogBridgePlugin Plugin
+Initializing plugin: ProcessLogBridgePlugin Plugin
+[ProcessLogBridgePlugin] Initializing (PID=36484)
+[ProcessLogBridgePlugin] Initialized (PID=36484)
+Manifest file C:\projectV2\nuerohackthon\registries\manifest.hocon restored in 101.66 seconds.
+Reading C:\projectV2\nuerohackthon\.venv\Lib\site-packages\neuro_san\deploy\logging.hocon
+GIL state at server startup:  standard CPython build (GIL always enabled). CPython 3.14.0.  PYTHON_GIL=unset
+{"message": "Using Authorizer: neuro_san.service.authorization.null.always_yes_authorizer.AlwaysYesAuthorizer", "user_id": "None", "Timestamp": "2026-09-07T21:55:14.642054", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+>>>>>>>>>>>> Enabling MCP service...
+{"message": "Added agent agent_network_test_generator to allowed http service list", "user_id": "None", "Timestamp": "2026-09-07T21:55:14.697527", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_test_generator (44956 bytes): 2708424963168", "user_id": "None", "Timestamp": "2026-09-07T21:55:14.697781", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent basic/music_nerd to allowed http service list", "user_id": "None", "Timestamp": "2026-09-07T21:55:14.697966", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent basic/music_nerd (4643 bytes): 2708425637968", "user_id": "None", "Timestamp": "2026-09-07T21:55:14.698066", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_designer to allowed http service list", "user_id": "None", "Timestamp": "2026-09-07T21:55:14.698168", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_designer (26440 bytes): 2708425387664", "user_id": "None", "Timestamp": "2026-09-07T21:55:14.698257", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_query_generator to allowed http service list", "user_id": "None", "Timestamp": "2026-09-07T21:55:14.698333", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_query_generator (7993 bytes): 2708425111888", "user_id": "None", "Timestamp": "2026-09-07T21:55:14.698387", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent experimental/cruse_theme_agent to allowed http service list", "user_id": "None", "Timestamp": "2026-09-07T21:55:14.698444", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent experimental/cruse_theme_agent (25797 bytes): 2708424960448", "user_id": "None", "Timestamp": "2026-09-07T21:55:14.698495", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent experimental/cruse_widget_agent to allowed http service list", "user_id": "None", "Timestamp": "2026-09-07T21:55:14.698563", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent experimental/cruse_widget_agent (12910 bytes): 2708425029200", "user_id": "None", "Timestamp": "2026-09-07T21:55:14.698610", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_instructions_editor to allowed http service list", "user_id": "None", "Timestamp": "2026-09-07T21:55:14.698649", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_instructions_editor (25512 bytes): 2708425109760", "user_id": "None", "Timestamp": "2026-09-07T21:55:14.698702", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Added agent agent_network_editor to allowed http service list", "user_id": "None", "Timestamp": "2026-09-07T21:55:14.698745", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent agent_network_editor (31198 bytes): 2708425308624", "user_id": "None", "Timestamp": "2026-09-07T21:55:14.698780", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting 1 worker processes (worker_id=0, pid=36484)", "user_id": "None", "Timestamp": "2026-09-07T21:55:14.782454", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HTTP server is running 1 instances on port 8080 with backlog 128", "user_id": "None", "Timestamp": "2026-09-07T21:55:14.933882", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HTTP server idle connections timeout: 3600 seconds", "user_id": "None", "Timestamp": "2026-09-07T21:55:14.934103", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HTTP server is shutting down after 960955 requests", "user_id": "None", "Timestamp": "2026-09-07T21:55:14.934184", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "MCP server is running protocol 2025-06-18", "user_id": "None", "Timestamp": "2026-09-07T21:55:14.934248", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting StorageWatcher with 5 seconds period", "user_id": "None", "Timestamp": "2026-09-07T21:55:14.934326", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting RegistryStorageUpdater for ['C:\\projectV2\\nuerohackthon\\registries\\manifest.hocon'] with 5 seconds period", "user_id": "None", "Timestamp": "2026-09-07T21:55:14.934394", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Registry polling watchdog started on: C:\projectV2\nuerohackthon\registries for manifest ['C:\\projectV2\\nuerohackthon\\registries\\manifest.hocon'] with polling every 1 sec", "user_id": "None", "Timestamp": "2026-09-07T21:55:14.983402", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting TempNetworkStorageUpdater", "user_id": "None", "Timestamp": "2026-09-07T21:55:14.984250", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Waiting for new queues to be added for processing", "user_id": "None", "Timestamp": "2026-09-07T21:55:14.988266", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting EventWorkMonitor with 0.500000 seconds period", "user_id": "None", "Timestamp": "2026-09-07T21:55:14.988818", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Starting PeriodicEventInitiator with 1.000000 seconds period", "user_id": "None", "Timestamp": "2026-09-07T21:55:14.989651", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "HealthProbeServer failed to bind port 8081 (reuse_port=True): the platform doesn't support SO_REUSEPORT", "user_id": "None", "Timestamp": "2026-09-07T21:55:14.993273", "source": "HttpServer", "message_type": "Error", "request_id": "None"}
+{"message": "Found 0 periodic agent interactions", "user_id": "None", "Timestamp": "2026-09-07T21:55:14.996177", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "[0] Start /api/v1/list", "user_id": "None", "Timestamp": "2026-09-07T21:57:48.872338", "source": "HttpServer", "message_type": "Other", "request_id": "request-1"}
+{"message": "[0] 200 GET /api/v1/list (::1) 8.01ms", "user_id": "None", "Timestamp": "2026-09-07T21:57:48.873431", "source": "HttpServer", "message_type": "Other", "request_id": "request-1"}
+{"message": "[0] Finish /api/v1/list", "user_id": "None", "Timestamp": "2026-09-07T21:57:48.873594", "source": "HttpServer", "message_type": "Other", "request_id": "request-1"}
+{"message": "[0] Start agent_network_designer/connectivity", "user_id": "None", "Timestamp": "2026-09-07T21:58:37.224003", "source": "HttpServer", "message_type": "Other", "request_id": "request-2"}
+{"message": "Received a agent_network_designer.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T21:58:37.224232", "source": "HttpServer", "message_type": "Other", "request_id": "request-2"}
+{"message": "Agent network 'agent_network_designer' (ID: 2708425387664) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-07T21:58:37.224396", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with agent_network_designer.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T21:58:37.224685", "source": "HttpServer", "message_type": "Other", "request_id": "request-2"}
+{"message": "[0] 200 GET /api/v1/agent_network_designer/connectivity (::1) 3567.70ms", "user_id": "None", "Timestamp": "2026-09-07T21:58:37.225536", "source": "HttpServer", "message_type": "Other", "request_id": "request-2"}
+{"message": "[0] Finish agent_network_designer/connectivity", "user_id": "None", "Timestamp": "2026-09-07T21:58:37.225721", "source": "HttpServer", "message_type": "Other", "request_id": "request-2"}
+{"message": "[0] Start agent_network_designer/connectivity", "user_id": "None", "Timestamp": "2026-09-07T21:58:37.249058", "source": "HttpServer", "message_type": "Other", "request_id": "request-3"}
+{"message": "Received a agent_network_designer.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T21:58:37.249393", "source": "HttpServer", "message_type": "Other", "request_id": "request-3"}
+{"message": "Agent network 'agent_network_designer' (ID: 2708425387664) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-07T21:58:37.249626", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with agent_network_designer.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T21:58:37.249991", "source": "HttpServer", "message_type": "Other", "request_id": "request-3"}
+{"message": "[0] 200 GET /api/v1/agent_network_designer/connectivity (::1) 4.11ms", "user_id": "None", "Timestamp": "2026-09-07T21:58:37.250865", "source": "HttpServer", "message_type": "Other", "request_id": "request-3"}
+{"message": "[0] Finish agent_network_designer/connectivity", "user_id": "None", "Timestamp": "2026-09-07T21:58:37.251070", "source": "HttpServer", "message_type": "Other", "request_id": "request-3"}
+{"message": "[0] Start agent_network_test_generator/connectivity", "user_id": "None", "Timestamp": "2026-09-07T21:59:12.530662", "source": "HttpServer", "message_type": "Other", "request_id": "request-4"}
+{"message": "Received a agent_network_test_generator.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T21:59:12.530964", "source": "HttpServer", "message_type": "Other", "request_id": "request-4"}
+{"message": "Agent network 'agent_network_test_generator' (ID: 2708424963168) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-07T21:59:12.531116", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with agent_network_test_generator.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T21:59:12.531373", "source": "HttpServer", "message_type": "Other", "request_id": "request-4"}
+{"message": "[0] 200 GET /api/v1/agent_network_test_generator/connectivity (::1) 2912.39ms", "user_id": "None", "Timestamp": "2026-09-07T21:59:12.532114", "source": "HttpServer", "message_type": "Other", "request_id": "request-4"}
+{"message": "[0] Finish agent_network_test_generator/connectivity", "user_id": "None", "Timestamp": "2026-09-07T21:59:12.532224", "source": "HttpServer", "message_type": "Other", "request_id": "request-4"}
+{"message": "[0] Start agent_network_test_generator/connectivity", "user_id": "None", "Timestamp": "2026-09-07T21:59:12.554292", "source": "HttpServer", "message_type": "Other", "request_id": "request-5"}
+{"message": "Received a agent_network_test_generator.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T21:59:12.554688", "source": "HttpServer", "message_type": "Other", "request_id": "request-5"}
+{"message": "Agent network 'agent_network_test_generator' (ID: 2708424963168) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-07T21:59:12.554844", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with agent_network_test_generator.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T21:59:12.555079", "source": "HttpServer", "message_type": "Other", "request_id": "request-5"}
+{"message": "[0] 200 GET /api/v1/agent_network_test_generator/connectivity (::1) 4.09ms", "user_id": "None", "Timestamp": "2026-09-07T21:59:12.555679", "source": "HttpServer", "message_type": "Other", "request_id": "request-5"}
+{"message": "[0] Finish agent_network_test_generator/connectivity", "user_id": "None", "Timestamp": "2026-09-07T21:59:12.555798", "source": "HttpServer", "message_type": "Other", "request_id": "request-5"}
+{"message": "[0] Start agent_network_test_generator/streaming_chat", "user_id": "None", "Timestamp": "2026-09-07T21:59:18.136833", "source": "HttpServer", "message_type": "Other", "request_id": "request-6"}
+{"message": "Received a agent_network_test_generator.StreamingChat request for 'Generate test cases for basic/coffee_finder_advanced'", "user_id": "None", "Timestamp": "2026-09-07T21:59:18.137395", "source": "HttpServer", "message_type": "Other", "request_id": "request-6"}
+{"message": "Agent network 'agent_network_test_generator' (ID: 2708424963168) used for operation: streaming_chat", "user_id": "None", "Timestamp": "2026-09-07T21:59:18.141148", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Got exception in  RunContextRunnable. Error: Anthropic authentication failed: no API key or authorization credentials were provided. Set the ANTHROPIC_API_KEY environment variable, pass api_key=... to ChatAnthropic, or provide credentials via default_headers={"Authorization": ...}. If you are routing through the LangSmith gateway, set LANGSMITH_GATEWAY and LANGSMITH_GATEWAY_API_KEY.", "user_id": "None", "Timestamp": "2026-09-07T21:59:20.186203", "source": "HttpServer", "message_type": "Error", "request_id": "request-6"}
+{"message": "Traceback (most recent call last):
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_anthropic\chat_models.py", line 1857, in _acreate
+    return await self._async_client.messages.with_raw_response.create(**payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\anthropic\_legacy_response.py", line 411, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\anthropic\resources\messages\messages.py", line 2544, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+    ...<32 lines>...
+    )
+    ^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\anthropic\_base_client.py", line 2277, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\anthropic\_base_client.py", line 1881, in request
+    response, prepared = await self._attempt_request(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        model_copy(input_options), stream=stream, retries_taken=retries_taken
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\anthropic\_base_client.py", line 2034, in _attempt_request
+    request = self._build_request(options, retries_taken=retries_taken)
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\anthropic\_base_client.py", line 538, in _build_request
+    headers = self._build_headers(options, retries_taken=retries_taken)
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\anthropic\_base_client.py", line 468, in _build_headers
+    self._validate_headers(headers_dict, custom_headers)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\anthropic\_client.py", line 839, in _validate_headers
+    raise TypeError(
+        '"Could not resolve authentication method. Expected one of api_key, auth_token, or credentials to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"'
+    )
+TypeError: "Could not resolve authentication method. Expected one of api_key, auth_token, or credentials to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\neuro_san\internals\run_context\langchain\core\run_context_runnable.py", line 231, in invoke_agent_chain
+    chain_result: Dict[str, Any] = await self.agent_chain.ainvoke(input=inputs, config=runnable_config)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langgraph\pregel\main.py", line 4090, in ainvoke
+    async for chunk in self.astream(
+    ...<30 lines>...
+            chunks.append(chunk)
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langgraph\pregel\main.py", line 3440, in astream
+    async for _ in runner.atick(
+    ...<16 lines>...
+            yield o
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langgraph\pregel\_runner.py", line 396, in atick
+    await arun_with_retry(
+    ...<15 lines>...
+    )
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langgraph\pregel\_retry.py", line 744, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 756, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        step.ainvoke(input, config, **kwargs), context=context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 522, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain\agents\factory.py", line 1534, in amodel_node
+    model_response = await _execute_model_async(request)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain\agents\factory.py", line 1505, in _execute_model_async
+    output = await model_.ainvoke(messages)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 6027, in ainvoke
+    return await self.bound.ainvoke(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 511, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1888, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+        prompt_messages, stop=stop, callbacks=callbacks, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1846, in agenerate
+    raise exceptions[0]
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 2179, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+        messages, stop=stop, run_manager=run_manager, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_anthropic\chat_models.py", line 2280, in _agenerate
+    raw_response = await self._acreate(payload)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_anthropic\chat_models.py", line 1859, in _acreate
+    _raise_if_authentication_error(e)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_anthropic\chat_models.py", line 1007, in _raise_if_authentication_error
+    raise TypeError(msg) from e
+TypeError: Anthropic authentication failed: no API key or authorization credentials were provided. Set the ANTHROPIC_API_KEY environment variable, pass api_key=... to ChatAnthropic, or provide credentials via default_headers={"Authorization": ...}. If you are routing through the LangSmith gateway, set LANGSMITH_GATEWAY and LANGSMITH_GATEWAY_API_KEY.
+During task with name 'model' and id 'bd973d76-bb65-2df2-cbd6-6e65428a69cd'
+", "user_id": "None", "Timestamp": "2026-09-07T21:59:20.300541", "source": "HttpServer", "message_type": "Error", "request_id": "request-6"}
+{"message": "Request reporting: {
+    "token_accounting": {
+        "total_tokens": 0,
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "successful_requests": 0,
+        "empty_responses": 0,
+        "total_cost": 0.0,
+        "time_taken_in_seconds": 1.5275404453277588,
+        "caveats": [
+            "Token usage from agents of the main agent network only. Usage from external agents is not included.",
+            "Token counts are approximate and estimated using tiktoken.",
+            "time_taken_in_seconds includes overhead from Langchain and Neuro SAN"
+        ]
+    },
+    "total_token_accounting": {
+        "total_tokens": 0,
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "successful_requests": 0,
+        "empty_responses": 0,
+        "total_cost": 0.0,
+        "time_taken_in_seconds": 1.5275404453277588,
+        "caveats": [
+            "Request total: includes token usage from external agents invoked via direct sessions on this server. Usage from external agents reached over the network is not included.",
+            "Token counts are approximate and estimated using tiktoken.",
+            "time_taken_in_seconds includes overhead from Langchain and Neuro SAN"
+        ],
+        "models": {
+            "anthropic": {}
+        }
+    }
+}", "user_id": "None", "Timestamp": "2026-09-07T21:59:20.306331", "source": "HttpServer", "message_type": "Other", "request_id": "request-6"}
+{"message": "Done with agent_network_test_generator.StreamingChat request for 'Generate test cases for basic/coffee_finder_advanced'", "user_id": "None", "Timestamp": "2026-09-07T21:59:20.306523", "source": "HttpServer", "message_type": "Other", "request_id": "request-6"}
+{"message": "[0] 200 POST /api/v1/agent_network_test_generator/streaming_chat (::1) 2171.78ms", "user_id": "None", "Timestamp": "2026-09-07T21:59:20.306985", "source": "HttpServer", "message_type": "Other", "request_id": "request-6"}
+{"message": "[0] Finish agent_network_test_generator/streaming_chat", "user_id": "None", "Timestamp": "2026-09-07T21:59:20.307116", "source": "HttpServer", "message_type": "Other", "request_id": "request-6"}
+{"message": "[0] Stats: {'NumProcessing': 0, 'Total': 6, '/api/v1/list': 1, 'agent_network_designer/connectivity': 2, 'agent_network_test_generator/connectivity': 2, 'agent_network_test_generator/streaming_chat': 1}", "user_id": "None", "Timestamp": "2026-09-07T21:59:20.307205", "source": "HttpServer", "message_type": "Other", "request_id": "request-6"}
+{"message": "[0] Start agent_network_designer/connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:10:23.237768", "source": "HttpServer", "message_type": "Other", "request_id": "request-7"}
+{"message": "Received a agent_network_designer.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T22:10:23.238246", "source": "HttpServer", "message_type": "Other", "request_id": "request-7"}
+{"message": "Agent network 'agent_network_designer' (ID: 2708425387664) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:10:23.239778", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with agent_network_designer.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T22:10:23.240134", "source": "HttpServer", "message_type": "Other", "request_id": "request-7"}
+{"message": "[0] 200 GET /api/v1/agent_network_designer/connectivity (::1) 43.36ms", "user_id": "None", "Timestamp": "2026-09-07T22:10:23.244080", "source": "HttpServer", "message_type": "Other", "request_id": "request-7"}
+{"message": "[0] Finish agent_network_designer/connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:10:23.244583", "source": "HttpServer", "message_type": "Other", "request_id": "request-7"}
+{"message": "[0] Start agent_network_designer/connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:10:23.441748", "source": "HttpServer", "message_type": "Other", "request_id": "request-8"}
+{"message": "Received a agent_network_designer.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T22:10:23.442053", "source": "HttpServer", "message_type": "Other", "request_id": "request-8"}
+{"message": "Agent network 'agent_network_designer' (ID: 2708425387664) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:10:23.442374", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with agent_network_designer.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T22:10:23.442980", "source": "HttpServer", "message_type": "Other", "request_id": "request-8"}
+{"message": "[0] 200 GET /api/v1/agent_network_designer/connectivity (::1) 5.02ms", "user_id": "None", "Timestamp": "2026-09-07T22:10:23.444364", "source": "HttpServer", "message_type": "Other", "request_id": "request-8"}
+{"message": "[0] Finish agent_network_designer/connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:10:23.444733", "source": "HttpServer", "message_type": "Other", "request_id": "request-8"}
+{"message": "[0] Start agent_network_designer/streaming_chat", "user_id": "None", "Timestamp": "2026-09-07T22:10:31.027111", "source": "HttpServer", "message_type": "Other", "request_id": "request-9"}
+{"message": "Received a agent_network_designer.StreamingChat request for 'hi'", "user_id": "None", "Timestamp": "2026-09-07T22:10:31.027951", "source": "HttpServer", "message_type": "Other", "request_id": "request-9"}
+{"message": "Agent network 'agent_network_designer' (ID: 2708425387664) used for operation: streaming_chat", "user_id": "None", "Timestamp": "2026-09-07T22:10:31.036276", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Agent network 'agent_network_editor' (ID: 2708425308624) used for operation: function", "user_id": "None", "Timestamp": "2026-09-07T22:10:31.056045", "source": "HttpServer", "message_type": "Other", "request_id": "request-9"}
+{"message": "Agent network 'agent_network_query_generator' (ID: 2708425111888) used for operation: function", "user_id": "None", "Timestamp": "2026-09-07T22:10:31.058157", "source": "HttpServer", "message_type": "Other", "request_id": "request-9"}
+{"message": "Agent network 'agent_network_instructions_editor' (ID: 2708425109760) used for operation: function", "user_id": "None", "Timestamp": "2026-09-07T22:10:31.059318", "source": "HttpServer", "message_type": "Other", "request_id": "request-9"}
+{"message": "Got exception in  RunContextRunnable. Error: Anthropic authentication failed: no API key or authorization credentials were provided. Set the ANTHROPIC_API_KEY environment variable, pass api_key=... to ChatAnthropic, or provide credentials via default_headers={"Authorization": ...}. If you are routing through the LangSmith gateway, set LANGSMITH_GATEWAY and LANGSMITH_GATEWAY_API_KEY.", "user_id": "None", "Timestamp": "2026-09-07T22:10:33.655044", "source": "HttpServer", "message_type": "Error", "request_id": "request-9"}
+{"message": "Traceback (most recent call last):
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_anthropic\chat_models.py", line 1857, in _acreate
+    return await self._async_client.messages.with_raw_response.create(**payload)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\anthropic\_legacy_response.py", line 411, in wrapped
+    return cast(LegacyAPIResponse[R], await func(*args, **kwargs))
+                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\anthropic\resources\messages\messages.py", line 2544, in create
+    return await self._post(
+           ^^^^^^^^^^^^^^^^^
+    ...<32 lines>...
+    )
+    ^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\anthropic\_base_client.py", line 2277, in post
+    return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\anthropic\_base_client.py", line 1881, in request
+    response, prepared = await self._attempt_request(
+                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+        model_copy(input_options), stream=stream, retries_taken=retries_taken
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\anthropic\_base_client.py", line 2034, in _attempt_request
+    request = self._build_request(options, retries_taken=retries_taken)
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\anthropic\_base_client.py", line 538, in _build_request
+    headers = self._build_headers(options, retries_taken=retries_taken)
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\anthropic\_base_client.py", line 468, in _build_headers
+    self._validate_headers(headers_dict, custom_headers)
+    ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\anthropic\_client.py", line 839, in _validate_headers
+    raise TypeError(
+        '"Could not resolve authentication method. Expected one of api_key, auth_token, or credentials to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"'
+    )
+TypeError: "Could not resolve authentication method. Expected one of api_key, auth_token, or credentials to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\neuro_san\internals\run_context\langchain\core\run_context_runnable.py", line 231, in invoke_agent_chain
+    chain_result: Dict[str, Any] = await self.agent_chain.ainvoke(input=inputs, config=runnable_config)
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langgraph\pregel\main.py", line 4090, in ainvoke
+    async for chunk in self.astream(
+    ...<30 lines>...
+            chunks.append(chunk)
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langgraph\pregel\main.py", line 3440, in astream
+    async for _ in runner.atick(
+    ...<16 lines>...
+            yield o
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langgraph\pregel\_runner.py", line 396, in atick
+    await arun_with_retry(
+    ...<15 lines>...
+    )
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langgraph\pregel\_retry.py", line 744, in arun_with_retry
+    return await task.proc.ainvoke(task.input, config)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 756, in ainvoke
+    input = await asyncio.create_task(
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^
+        step.ainvoke(input, config, **kwargs), context=context
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 522, in ainvoke
+    ret = await self.afunc(*args, **kwargs)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain\agents\factory.py", line 1537, in amodel_node
+    result = await awrap_model_call_handler(request, _execute_model_async)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain\agents\factory.py", line 400, in normalized_single
+    return _to_composed_result(await single_handler(request, handler))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langsmith\run_helpers.py", line 682, in async_wrapper
+    function_result = await fr_coro
+                      ^^^^^^^^^^^^^
+  File "C:\projectV2\nuerohackthon\middleware\agent_network_designer\agent_network_definition_middleware.py", line 195, in awrap_model_call
+    return await handler(request)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain\agents\factory.py", line 1505, in _execute_model_async
+    output = await model_.ainvoke(messages)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 6027, in ainvoke
+    return await self.bound.ainvoke(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+    )
+    ^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 511, in ainvoke
+    llm_result = await self.agenerate_prompt(
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+    )
+    ^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1888, in agenerate_prompt
+    return await self.agenerate(
+           ^^^^^^^^^^^^^^^^^^^^^
+        prompt_messages, stop=stop, callbacks=callbacks, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1846, in agenerate
+    raise exceptions[0]
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 2179, in _agenerate_with_cache
+    result = await self._agenerate(
+             ^^^^^^^^^^^^^^^^^^^^^^
+        messages, stop=stop, run_manager=run_manager, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_anthropic\chat_models.py", line 2280, in _agenerate
+    raw_response = await self._acreate(payload)
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_anthropic\chat_models.py", line 1859, in _acreate
+    _raise_if_authentication_error(e)
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_anthropic\chat_models.py", line 1007, in _raise_if_authentication_error
+    raise TypeError(msg) from e
+TypeError: Anthropic authentication failed: no API key or authorization credentials were provided. Set the ANTHROPIC_API_KEY environment variable, pass api_key=... to ChatAnthropic, or provide credentials via default_headers={"Authorization": ...}. If you are routing through the LangSmith gateway, set LANGSMITH_GATEWAY and LANGSMITH_GATEWAY_API_KEY.
+During task with name 'model' and id '6e3f2d97-a7c3-d273-5eb8-d55924b0a830'
+", "user_id": "None", "Timestamp": "2026-09-07T22:10:33.683319", "source": "HttpServer", "message_type": "Error", "request_id": "request-9"}
+{"message": "Request reporting: {
+    "token_accounting": {
+        "total_tokens": 0,
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "successful_requests": 0,
+        "empty_responses": 0,
+        "total_cost": 0.0,
+        "time_taken_in_seconds": 0.06684255599975586,
+        "caveats": [
+            "Token usage from agents of the main agent network only. Usage from external agents is not included.",
+            "Token counts are approximate and estimated using tiktoken.",
+            "time_taken_in_seconds includes overhead from Langchain and Neuro SAN"
+        ]
+    },
+    "total_token_accounting": {
+        "total_tokens": 0,
+        "prompt_tokens": 0,
+        "completion_tokens": 0,
+        "successful_requests": 0,
+        "empty_responses": 0,
+        "total_cost": 0.0,
+        "time_taken_in_seconds": 0.06684255599975586,
+        "caveats": [
+            "Request total: includes token usage from external agents invoked via direct sessions on this server. Usage from external agents reached over the network is not included.",
+            "Token counts are approximate and estimated using tiktoken.",
+            "time_taken_in_seconds includes overhead from Langchain and Neuro SAN"
+        ],
+        "models": {
+            "anthropic": {}
+        }
+    }
+}", "user_id": "None", "Timestamp": "2026-09-07T22:10:33.690535", "source": "HttpServer", "message_type": "Other", "request_id": "request-9"}
+{"message": "Done with agent_network_designer.StreamingChat request for 'hi'", "user_id": "None", "Timestamp": "2026-09-07T22:10:33.690734", "source": "HttpServer", "message_type": "Other", "request_id": "request-9"}
+{"message": "[0] 200 POST /api/v1/agent_network_designer/streaming_chat (::1) 2667.29ms", "user_id": "None", "Timestamp": "2026-09-07T22:10:33.691044", "source": "HttpServer", "message_type": "Other", "request_id": "request-9"}
+{"message": "[0] Finish agent_network_designer/streaming_chat", "user_id": "None", "Timestamp": "2026-09-07T22:10:33.691128", "source": "HttpServer", "message_type": "Other", "request_id": "request-9"}
+{"message": "[0] Stats: {'NumProcessing': 0, 'Total': 9, '/api/v1/list': 1, 'agent_network_designer/connectivity': 4, 'agent_network_test_generator/connectivity': 2, 'agent_network_test_generator/streaming_chat': 1, 'agent_network_designer/streaming_chat': 1}", "user_id": "None", "Timestamp": "2026-09-07T22:10:33.691155", "source": "HttpServer", "message_type": "Other", "request_id": "request-9"}
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f514' in position 13: character maps to <undefined>
+Call stack:
+  File "C:\Program Files\Python314\Lib\threading.py", line 1043, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Program Files\Python314\Lib\threading.py", line 1081, in _bootstrap_inner
+    self._context.run(self.run)
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\watchdog\observers\api.py", line 213, in run
+    self.dispatch_events(self.event_queue)
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\watchdog\observers\api.py", line 391, in dispatch_events
+    handler.dispatch(event)
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\watchdog\events.py", line 217, in dispatch
+    getattr(self, f"on_{event.event_type}")(event)
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\neuro_san\service\watcher\registries\registry_change_handler.py", line 57, in on_created
+    self.handle_event(RegistryChangeHandler.CREATED, event.src_path)
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\neuro_san\service\watcher\registries\registry_change_handler.py", line 73, in handle_event
+    self.logger.info("\U0001f514 File %s: %s", event_name, src_path)
+Message: '\U0001f514 File %s: %s'
+Arguments: ('created', 'C:\\projectV2\\nuerohackthon\\registries\\basic\\weather_agent.hocon')
+{"message": "Observed events: modified 0, added 1, deleted 0", "user_id": "None", "Timestamp": "2026-09-07T22:38:55.271724", "source": "Http Server", "message_type": "Other", "request_id": "request-9"}
+{"message": "Updating manifest file: ['C:\\projectV2\\nuerohackthon\\registries\\manifest.hocon']", "user_id": "None", "Timestamp": "2026-09-07T22:38:55.272657", "source": "Http Server", "message_type": "Other", "request_id": "request-9"}
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f514' in position 13: character maps to <undefined>
+Call stack:
+  File "C:\Program Files\Python314\Lib\threading.py", line 1043, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Program Files\Python314\Lib\threading.py", line 1081, in _bootstrap_inner
+    self._context.run(self.run)
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\watchdog\observers\api.py", line 213, in run
+    self.dispatch_events(self.event_queue)
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\watchdog\observers\api.py", line 391, in dispatch_events
+    handler.dispatch(event)
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\watchdog\events.py", line 217, in dispatch
+    getattr(self, f"on_{event.event_type}")(event)
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\neuro_san\service\watcher\registries\registry_change_handler.py", line 63, in on_deleted
+    self.handle_event(RegistryChangeHandler.DELETED, event.src_path)
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\neuro_san\service\watcher\registries\registry_change_handler.py", line 73, in handle_event
+    self.logger.info("\U0001f514 File %s: %s", event_name, src_path)
+Message: '\U0001f514 File %s: %s'
+Arguments: ('deleted', 'C:\\projectV2\\nuerohackthon\\registries\\manifest.hocon')
+--- Logging error ---
+Traceback (most recent call last):
+  File "C:\Program Files\Python314\Lib\logging\__init__.py", line 1154, in emit
+    stream.write(msg + self.terminator)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Program Files\Python314\Lib\encodings\cp1252.py", line 19, in encode
+    return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+           ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f514' in position 13: character maps to <undefined>
+Call stack:
+  File "C:\Program Files\Python314\Lib\threading.py", line 1043, in _bootstrap
+    self._bootstrap_inner()
+  File "C:\Program Files\Python314\Lib\threading.py", line 1081, in _bootstrap_inner
+    self._context.run(self.run)
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\watchdog\observers\api.py", line 213, in run
+    self.dispatch_events(self.event_queue)
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\watchdog\observers\api.py", line 391, in dispatch_events
+    handler.dispatch(event)
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\watchdog\events.py", line 217, in dispatch
+    getattr(self, f"on_{event.event_type}")(event)
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\neuro_san\service\watcher\registries\registry_change_handler.py", line 57, in on_created
+    self.handle_event(RegistryChangeHandler.CREATED, event.src_path)
+  File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\neuro_san\service\watcher\registries\registry_change_handler.py", line 73, in handle_event
+    self.logger.info("\U0001f514 File %s: %s", event_name, src_path)
+Message: '\U0001f514 File %s: %s'
+Arguments: ('created', 'C:\\projectV2\\nuerohackthon\\registries\\manifest.hocon')
+{"message": "Manifest file C:\projectV2\nuerohackthon\registries\manifest.hocon restored in 90.06 seconds.", "user_id": "None", "Timestamp": "2026-09-07T22:40:25.356466", "source": "Http Server", "message_type": "Warning", "request_id": "request-9"}
+{"message": "Reset service for modified agent agent_network_test_generator", "user_id": "None", "Timestamp": "2026-09-07T22:40:25.373073", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "REPLACED network for agent agent_network_test_generator (44957 bytes): 2708437918528", "user_id": "None", "Timestamp": "2026-09-07T22:40:25.379197", "source": "Http Server", "message_type": "Other", "request_id": "request-9"}
+{"message": "Reset service for modified agent basic/music_nerd", "user_id": "None", "Timestamp": "2026-09-07T22:40:25.380175", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "REPLACED network for agent basic/music_nerd (4636 bytes): 2708437322880", "user_id": "None", "Timestamp": "2026-09-07T22:40:25.380624", "source": "Http Server", "message_type": "Other", "request_id": "request-9"}
+{"message": "Reset service for modified agent agent_network_designer", "user_id": "None", "Timestamp": "2026-09-07T22:40:25.382900", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "REPLACED network for agent agent_network_designer (26433 bytes): 2708439680112", "user_id": "None", "Timestamp": "2026-09-07T22:40:25.383360", "source": "Http Server", "message_type": "Other", "request_id": "request-9"}
+{"message": "Reset service for modified agent agent_network_query_generator", "user_id": "None", "Timestamp": "2026-09-07T22:40:25.385207", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "REPLACED network for agent agent_network_query_generator (7986 bytes): 2708439430800", "user_id": "None", "Timestamp": "2026-09-07T22:40:25.385755", "source": "Http Server", "message_type": "Other", "request_id": "request-9"}
+{"message": "Reset service for modified agent experimental/cruse_theme_agent", "user_id": "None", "Timestamp": "2026-09-07T22:40:25.385914", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "REPLACED network for agent experimental/cruse_theme_agent (25790 bytes): 2708439420720", "user_id": "None", "Timestamp": "2026-09-07T22:40:25.386171", "source": "Http Server", "message_type": "Other", "request_id": "request-9"}
+{"message": "Reset service for modified agent experimental/cruse_widget_agent", "user_id": "None", "Timestamp": "2026-09-07T22:40:25.386427", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "REPLACED network for agent experimental/cruse_widget_agent (12903 bytes): 2708434777536", "user_id": "None", "Timestamp": "2026-09-07T22:40:25.386567", "source": "Http Server", "message_type": "Other", "request_id": "request-9"}
+{"message": "Reset service for modified agent agent_network_instructions_editor", "user_id": "None", "Timestamp": "2026-09-07T22:40:25.386679", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "REPLACED network for agent agent_network_instructions_editor (25505 bytes): 2708437706768", "user_id": "None", "Timestamp": "2026-09-07T22:40:25.386974", "source": "Http Server", "message_type": "Other", "request_id": "request-9"}
+{"message": "Reset service for modified agent agent_network_editor", "user_id": "None", "Timestamp": "2026-09-07T22:40:25.387714", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "REPLACED network for agent agent_network_editor (31199 bytes): 2708437707344", "user_id": "None", "Timestamp": "2026-09-07T22:40:25.388065", "source": "Http Server", "message_type": "Other", "request_id": "request-9"}
+{"message": "Observed events: modified 0, added 1, deleted 1", "user_id": "None", "Timestamp": "2026-09-07T22:40:25.388532", "source": "Http Server", "message_type": "Other", "request_id": "request-9"}
+{"message": "Updating manifest file: ['C:\\projectV2\\nuerohackthon\\registries\\manifest.hocon']", "user_id": "None", "Timestamp": "2026-09-07T22:40:25.388727", "source": "Http Server", "message_type": "Other", "request_id": "request-9"}
+{"message": "Manifest file C:\projectV2\nuerohackthon\registries\manifest.hocon restored in 87.93 seconds.", "user_id": "None", "Timestamp": "2026-09-07T22:41:53.323237", "source": "Http Server", "message_type": "Warning", "request_id": "request-9"}
+{"message": "Added agent basic/weather_agent to allowed http service list", "user_id": "None", "Timestamp": "2026-09-07T22:41:53.323637", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "ADDED network for agent basic/weather_agent (6619 bytes): 2708427517104", "user_id": "None", "Timestamp": "2026-09-07T22:41:53.323769", "source": "Http Server", "message_type": "Other", "request_id": "request-9"}
+{"message": "Reset service for modified agent agent_network_test_generator", "user_id": "None", "Timestamp": "2026-09-07T22:41:53.323841", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "REPLACED network for agent agent_network_test_generator (44957 bytes): 2708432994128", "user_id": "None", "Timestamp": "2026-09-07T22:41:53.323896", "source": "Http Server", "message_type": "Other", "request_id": "request-9"}
+{"message": "Reset service for modified agent basic/music_nerd", "user_id": "None", "Timestamp": "2026-09-07T22:41:53.323946", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "REPLACED network for agent basic/music_nerd (4636 bytes): 2708439684160", "user_id": "None", "Timestamp": "2026-09-07T22:41:53.323992", "source": "Http Server", "message_type": "Other", "request_id": "request-9"}
+{"message": "Reset service for modified agent agent_network_designer", "user_id": "None", "Timestamp": "2026-09-07T22:41:53.324049", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "REPLACED network for agent agent_network_designer (26433 bytes): 2708426035920", "user_id": "None", "Timestamp": "2026-09-07T22:41:53.324104", "source": "Http Server", "message_type": "Other", "request_id": "request-9"}
+{"message": "Reset service for modified agent agent_network_query_generator", "user_id": "None", "Timestamp": "2026-09-07T22:41:53.324166", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "REPLACED network for agent agent_network_query_generator (7986 bytes): 2708427517744", "user_id": "None", "Timestamp": "2026-09-07T22:41:53.324349", "source": "Http Server", "message_type": "Other", "request_id": "request-9"}
+{"message": "Reset service for modified agent experimental/cruse_theme_agent", "user_id": "None", "Timestamp": "2026-09-07T22:41:53.324412", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "REPLACED network for agent experimental/cruse_theme_agent (25790 bytes): 2708430256848", "user_id": "None", "Timestamp": "2026-09-07T22:41:53.324482", "source": "Http Server", "message_type": "Other", "request_id": "request-9"}
+{"message": "Reset service for modified agent experimental/cruse_widget_agent", "user_id": "None", "Timestamp": "2026-09-07T22:41:53.324550", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "REPLACED network for agent experimental/cruse_widget_agent (12903 bytes): 2708430248400", "user_id": "None", "Timestamp": "2026-09-07T22:41:53.324606", "source": "Http Server", "message_type": "Other", "request_id": "request-9"}
+{"message": "Reset service for modified agent agent_network_instructions_editor", "user_id": "None", "Timestamp": "2026-09-07T22:41:53.324664", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "REPLACED network for agent agent_network_instructions_editor (25505 bytes): 2708422242048", "user_id": "None", "Timestamp": "2026-09-07T22:41:53.324714", "source": "Http Server", "message_type": "Other", "request_id": "request-9"}
+{"message": "Reset service for modified agent agent_network_editor", "user_id": "None", "Timestamp": "2026-09-07T22:41:53.324825", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "REPLACED network for agent agent_network_editor (31199 bytes): 2708430083280", "user_id": "None", "Timestamp": "2026-09-07T22:41:53.324898", "source": "Http Server", "message_type": "Other", "request_id": "request-9"}
+{"message": "[0] Start agent_network_test_generator/connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:43:01.545456", "source": "HttpServer", "message_type": "Other", "request_id": "request-10"}
+{"message": "Received a agent_network_test_generator.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T22:43:01.546768", "source": "HttpServer", "message_type": "Other", "request_id": "request-10"}
+{"message": "Agent network 'agent_network_test_generator' (ID: 2708432994128) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:43:01.546926", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with agent_network_test_generator.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T22:43:01.547169", "source": "HttpServer", "message_type": "Other", "request_id": "request-10"}
+{"message": "[0] 200 GET /api/v1/agent_network_test_generator/connectivity (::1) 4413.52ms", "user_id": "None", "Timestamp": "2026-09-07T22:43:01.548262", "source": "HttpServer", "message_type": "Other", "request_id": "request-10"}
+{"message": "[0] Finish agent_network_test_generator/connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:43:01.548405", "source": "HttpServer", "message_type": "Other", "request_id": "request-10"}
+{"message": "[0] Start agent_network_test_generator/connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:43:01.812035", "source": "HttpServer", "message_type": "Other", "request_id": "request-11"}
+{"message": "Received a agent_network_test_generator.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T22:43:01.812255", "source": "HttpServer", "message_type": "Other", "request_id": "request-11"}
+{"message": "Agent network 'agent_network_test_generator' (ID: 2708432994128) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:43:01.812398", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with agent_network_test_generator.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T22:43:01.813293", "source": "HttpServer", "message_type": "Other", "request_id": "request-11"}
+{"message": "[0] 200 GET /api/v1/agent_network_test_generator/connectivity (::1) 5.56ms", "user_id": "None", "Timestamp": "2026-09-07T22:43:01.814727", "source": "HttpServer", "message_type": "Other", "request_id": "request-11"}
+{"message": "[0] Finish agent_network_test_generator/connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:43:01.815021", "source": "HttpServer", "message_type": "Other", "request_id": "request-11"}
+{"message": "[0] Start agent_network_test_generator/streaming_chat", "user_id": "None", "Timestamp": "2026-09-07T22:43:10.747130", "source": "HttpServer", "message_type": "Other", "request_id": "request-12"}
+{"message": "Received a agent_network_test_generator.StreamingChat request for 'test'", "user_id": "None", "Timestamp": "2026-09-07T22:43:10.748118", "source": "HttpServer", "message_type": "Other", "request_id": "request-12"}
+{"message": "Agent network 'agent_network_test_generator' (ID: 2708432994128) used for operation: streaming_chat", "user_id": "None", "Timestamp": "2026-09-07T22:43:10.762261", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "API KEY error detected: 
+A value for the OPENAI_API_KEY environment variable must be correctly set in the neuro-san
+server or run-time environment in order to use this agent network.
+
+Some things to try:
+1) Double check that your value for OPENAI_API_KEY is set correctly
+2) If you do not have a value for OPENAI_API_KEY, visit the LLM provider's website to get one 
+3) It's possible that your credit balance on your account with the LLM provider is too low
+   to make the request.  Check that.
+4) Sometimes these errors happen because of firewall blockages to the site that hosts the LLM.
+   Try checking that you can reach the regular UI for the LLM from a web browser
+   on the same machine making this request.
+", "user_id": "None", "Timestamp": "2026-09-07T22:43:11.702267", "source": "HttpServer", "message_type": "Error", "request_id": "request-12"}
+{"message": "Request reporting: {}", "user_id": "None", "Timestamp": "2026-09-07T22:43:11.706730", "source": "HttpServer", "message_type": "Other", "request_id": "request-12"}
+{"message": "Done with agent_network_test_generator.StreamingChat request for 'test'", "user_id": "None", "Timestamp": "2026-09-07T22:43:11.706841", "source": "HttpServer", "message_type": "Other", "request_id": "request-12"}
+{"message": "[0] 200 POST /api/v1/agent_network_test_generator/streaming_chat (::1) 966.74ms", "user_id": "None", "Timestamp": "2026-09-07T22:43:11.707021", "source": "HttpServer", "message_type": "Other", "request_id": "request-12"}
+{"message": "[0] Finish agent_network_test_generator/streaming_chat", "user_id": "None", "Timestamp": "2026-09-07T22:43:11.707083", "source": "HttpServer", "message_type": "Other", "request_id": "request-12"}
+{"message": "[0] Stats: {'NumProcessing': 0, 'Total': 12, '/api/v1/list': 1, 'agent_network_designer/connectivity': 4, 'agent_network_test_generator/connectivity': 4, 'agent_network_test_generator/streaming_chat': 2, 'agent_network_designer/streaming_chat': 1}", "user_id": "None", "Timestamp": "2026-09-07T22:43:11.707111", "source": "HttpServer", "message_type": "Other", "request_id": "request-12"}
+{"message": "[0] Start basic/music_nerd/connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:46:56.677940", "source": "HttpServer", "message_type": "Other", "request_id": "request-13"}
+{"message": "Received a basic/music_nerd.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T22:46:56.678223", "source": "HttpServer", "message_type": "Other", "request_id": "request-13"}
+{"message": "Agent network 'basic/music_nerd' (ID: 2708439684160) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:46:56.678542", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with basic/music_nerd.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T22:46:56.678771", "source": "HttpServer", "message_type": "Other", "request_id": "request-13"}
+{"message": "[0] 200 GET /api/v1/basic/music_nerd/connectivity (::1) 3083.68ms", "user_id": "None", "Timestamp": "2026-09-07T22:46:56.679535", "source": "HttpServer", "message_type": "Other", "request_id": "request-13"}
+{"message": "[0] Finish basic/music_nerd/connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:46:56.679698", "source": "HttpServer", "message_type": "Other", "request_id": "request-13"}
+{"message": "[0] Start basic/music_nerd/connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:46:56.692384", "source": "HttpServer", "message_type": "Other", "request_id": "request-14"}
+{"message": "Received a basic/music_nerd.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T22:46:56.692527", "source": "HttpServer", "message_type": "Other", "request_id": "request-14"}
+{"message": "Agent network 'basic/music_nerd' (ID: 2708439684160) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:46:56.692616", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with basic/music_nerd.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T22:46:56.692736", "source": "HttpServer", "message_type": "Other", "request_id": "request-14"}
+{"message": "[0] 200 GET /api/v1/basic/music_nerd/connectivity (::1) 2.53ms", "user_id": "None", "Timestamp": "2026-09-07T22:46:56.693222", "source": "HttpServer", "message_type": "Other", "request_id": "request-14"}
+{"message": "[0] Finish basic/music_nerd/connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:46:56.693406", "source": "HttpServer", "message_type": "Other", "request_id": "request-14"}
+{"message": "[0] Start basic/music_nerd/streaming_chat", "user_id": "None", "Timestamp": "2026-09-07T22:46:59.302279", "source": "HttpServer", "message_type": "Other", "request_id": "request-15"}
+{"message": "Received a basic/music_nerd.StreamingChat request for 'best music'", "user_id": "None", "Timestamp": "2026-09-07T22:46:59.302866", "source": "HttpServer", "message_type": "Other", "request_id": "request-15"}
+{"message": "Agent network 'basic/music_nerd' (ID: 2708439684160) used for operation: streaming_chat", "user_id": "None", "Timestamp": "2026-09-07T22:46:59.309166", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "API KEY error detected: 
+A value for the OPENAI_API_KEY environment variable must be correctly set in the neuro-san
+server or run-time environment in order to use this agent network.
+
+Some things to try:
+1) Double check that your value for OPENAI_API_KEY is set correctly
+2) If you do not have a value for OPENAI_API_KEY, visit the LLM provider's website to get one 
+3) It's possible that your credit balance on your account with the LLM provider is too low
+   to make the request.  Check that.
+4) Sometimes these errors happen because of firewall blockages to the site that hosts the LLM.
+   Try checking that you can reach the regular UI for the LLM from a web browser
+   on the same machine making this request.
+", "user_id": "None", "Timestamp": "2026-09-07T22:47:00.166251", "source": "HttpServer", "message_type": "Error", "request_id": "request-15"}
+{"message": "Request reporting: {}", "user_id": "None", "Timestamp": "2026-09-07T22:47:00.169899", "source": "HttpServer", "message_type": "Other", "request_id": "request-15"}
+{"message": "Done with basic/music_nerd.StreamingChat request for 'best music'", "user_id": "None", "Timestamp": "2026-09-07T22:47:00.170045", "source": "HttpServer", "message_type": "Other", "request_id": "request-15"}
+{"message": "[0] 200 POST /api/v1/basic/music_nerd/streaming_chat (::1) 870.24ms", "user_id": "None", "Timestamp": "2026-09-07T22:47:00.170337", "source": "HttpServer", "message_type": "Other", "request_id": "request-15"}
+{"message": "[0] Finish basic/music_nerd/streaming_chat", "user_id": "None", "Timestamp": "2026-09-07T22:47:00.170441", "source": "HttpServer", "message_type": "Other", "request_id": "request-15"}
+{"message": "[0] Stats: {'NumProcessing': 0, 'Total': 15, '/api/v1/list': 1, 'agent_network_designer/connectivity': 4, 'agent_network_test_generator/connectivity': 4, 'agent_network_test_generator/streaming_chat': 2, 'agent_network_designer/streaming_chat': 1, 'basic/music_nerd/connectivity': 2, 'basic/music_nerd/streaming_chat': 1}", "user_id": "None", "Timestamp": "2026-09-07T22:47:00.170475", "source": "HttpServer", "message_type": "Other", "request_id": "request-15"}
+{"message": "[0] Start agent_network_test_generator/connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:49:55.809229", "source": "HttpServer", "message_type": "Other", "request_id": "request-16"}
+{"message": "Received a agent_network_test_generator.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T22:49:55.809438", "source": "HttpServer", "message_type": "Other", "request_id": "request-16"}
+{"message": "Agent network 'agent_network_test_generator' (ID: 2708432994128) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:49:55.809520", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with agent_network_test_generator.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T22:49:55.809697", "source": "HttpServer", "message_type": "Other", "request_id": "request-16"}
+{"message": "[0] 200 GET /api/v1/agent_network_test_generator/connectivity (::1) 9.77ms", "user_id": "None", "Timestamp": "2026-09-07T22:49:55.810118", "source": "HttpServer", "message_type": "Other", "request_id": "request-16"}
+{"message": "[0] Finish agent_network_test_generator/connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:49:55.810199", "source": "HttpServer", "message_type": "Other", "request_id": "request-16"}
+{"message": "[0] Start agent_network_test_generator/connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:49:55.846055", "source": "HttpServer", "message_type": "Other", "request_id": "request-17"}
+{"message": "Received a agent_network_test_generator.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T22:49:55.846255", "source": "HttpServer", "message_type": "Other", "request_id": "request-17"}
+{"message": "Agent network 'agent_network_test_generator' (ID: 2708432994128) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:49:55.846370", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with agent_network_test_generator.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T22:49:55.846625", "source": "HttpServer", "message_type": "Other", "request_id": "request-17"}
+{"message": "[0] 200 GET /api/v1/agent_network_test_generator/connectivity (::1) 3.98ms", "user_id": "None", "Timestamp": "2026-09-07T22:49:55.847732", "source": "HttpServer", "message_type": "Other", "request_id": "request-17"}
+{"message": "[0] Finish agent_network_test_generator/connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:49:55.847848", "source": "HttpServer", "message_type": "Other", "request_id": "request-17"}
+{"message": "[0] Start agent_network_designer/connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:50:02.751384", "source": "HttpServer", "message_type": "Other", "request_id": "request-18"}
+{"message": "Received a agent_network_designer.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T22:50:02.751661", "source": "HttpServer", "message_type": "Other", "request_id": "request-18"}
+{"message": "Agent network 'agent_network_designer' (ID: 2708426035920) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:50:02.751822", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with agent_network_designer.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T22:50:02.752025", "source": "HttpServer", "message_type": "Other", "request_id": "request-18"}
+{"message": "[0] 200 GET /api/v1/agent_network_designer/connectivity (::1) 2302.43ms", "user_id": "None", "Timestamp": "2026-09-07T22:50:02.752497", "source": "HttpServer", "message_type": "Other", "request_id": "request-18"}
+{"message": "[0] Finish agent_network_designer/connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:50:02.752599", "source": "HttpServer", "message_type": "Other", "request_id": "request-18"}
+{"message": "[0] Start agent_network_designer/connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:50:02.770029", "source": "HttpServer", "message_type": "Other", "request_id": "request-19"}
+{"message": "Received a agent_network_designer.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T22:50:02.770194", "source": "HttpServer", "message_type": "Other", "request_id": "request-19"}
+{"message": "Agent network 'agent_network_designer' (ID: 2708426035920) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:50:02.770267", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with agent_network_designer.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T22:50:02.770454", "source": "HttpServer", "message_type": "Other", "request_id": "request-19"}
+{"message": "[0] 200 GET /api/v1/agent_network_designer/connectivity (::1) 3.44ms", "user_id": "None", "Timestamp": "2026-09-07T22:50:02.771343", "source": "HttpServer", "message_type": "Other", "request_id": "request-19"}
+{"message": "[0] Finish agent_network_designer/connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:50:02.771456", "source": "HttpServer", "message_type": "Other", "request_id": "request-19"}
+{"message": "[0] Start basic/music_nerd/connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:50:03.478674", "source": "HttpServer", "message_type": "Other", "request_id": "request-20"}
+{"message": "Received a basic/music_nerd.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T22:50:03.478914", "source": "HttpServer", "message_type": "Other", "request_id": "request-20"}
+{"message": "Agent network 'basic/music_nerd' (ID: 2708439684160) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:50:03.479021", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with basic/music_nerd.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T22:50:03.479142", "source": "HttpServer", "message_type": "Other", "request_id": "request-20"}
+{"message": "[0] 200 GET /api/v1/basic/music_nerd/connectivity (::1) 5.20ms", "user_id": "None", "Timestamp": "2026-09-07T22:50:03.480202", "source": "HttpServer", "message_type": "Other", "request_id": "request-20"}
+{"message": "[0] Finish basic/music_nerd/connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:50:03.480369", "source": "HttpServer", "message_type": "Other", "request_id": "request-20"}
+{"message": "[0] Start basic/music_nerd/connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:50:03.540017", "source": "HttpServer", "message_type": "Other", "request_id": "request-21"}
+{"message": "Received a basic/music_nerd.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T22:50:03.540285", "source": "HttpServer", "message_type": "Other", "request_id": "request-21"}
+{"message": "Agent network 'basic/music_nerd' (ID: 2708439684160) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:50:03.540402", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with basic/music_nerd.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T22:50:03.540543", "source": "HttpServer", "message_type": "Other", "request_id": "request-21"}
+{"message": "[0] 200 GET /api/v1/basic/music_nerd/connectivity (::1) 12.37ms", "user_id": "None", "Timestamp": "2026-09-07T22:50:03.541276", "source": "HttpServer", "message_type": "Other", "request_id": "request-21"}
+{"message": "[0] Finish basic/music_nerd/connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:50:03.541411", "source": "HttpServer", "message_type": "Other", "request_id": "request-21"}
+{"message": "[0] Start basic/music_nerd/connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:50:16.392447", "source": "HttpServer", "message_type": "Other", "request_id": "request-22"}
+{"message": "Received a basic/music_nerd.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T22:50:16.392668", "source": "HttpServer", "message_type": "Other", "request_id": "request-22"}
+{"message": "Agent network 'basic/music_nerd' (ID: 2708439684160) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:50:16.392788", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with basic/music_nerd.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T22:50:16.392940", "source": "HttpServer", "message_type": "Other", "request_id": "request-22"}
+{"message": "[0] 200 GET /api/v1/basic/music_nerd/connectivity (::1) 9.07ms", "user_id": "None", "Timestamp": "2026-09-07T22:50:16.393487", "source": "HttpServer", "message_type": "Other", "request_id": "request-22"}
+{"message": "[0] Finish basic/music_nerd/connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:50:16.393610", "source": "HttpServer", "message_type": "Other", "request_id": "request-22"}
+{"message": "[0] Start basic/music_nerd/connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:50:16.464570", "source": "HttpServer", "message_type": "Other", "request_id": "request-23"}
+{"message": "Received a basic/music_nerd.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T22:50:16.464832", "source": "HttpServer", "message_type": "Other", "request_id": "request-23"}
+{"message": "Agent network 'basic/music_nerd' (ID: 2708439684160) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:50:16.464960", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with basic/music_nerd.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T22:50:16.465121", "source": "HttpServer", "message_type": "Other", "request_id": "request-23"}
+{"message": "[0] 200 GET /api/v1/basic/music_nerd/connectivity (::1) 3.83ms", "user_id": "None", "Timestamp": "2026-09-07T22:50:16.465821", "source": "HttpServer", "message_type": "Other", "request_id": "request-23"}
+{"message": "[0] Finish basic/music_nerd/connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:50:16.465974", "source": "HttpServer", "message_type": "Other", "request_id": "request-23"}
+{"message": "[0] Start basic/music_nerd/connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:50:16.649089", "source": "HttpServer", "message_type": "Other", "request_id": "request-24"}
+{"message": "Received a basic/music_nerd.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T22:50:16.649362", "source": "HttpServer", "message_type": "Other", "request_id": "request-24"}
+{"message": "Agent network 'basic/music_nerd' (ID: 2708439684160) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:50:16.649490", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with basic/music_nerd.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T22:50:16.649665", "source": "HttpServer", "message_type": "Other", "request_id": "request-24"}
+{"message": "[0] 200 GET /api/v1/basic/music_nerd/connectivity (::1) 3.49ms", "user_id": "None", "Timestamp": "2026-09-07T22:50:16.650231", "source": "HttpServer", "message_type": "Other", "request_id": "request-24"}
+{"message": "[0] Finish basic/music_nerd/connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:50:16.650355", "source": "HttpServer", "message_type": "Other", "request_id": "request-24"}
+{"message": "[0] Start /api/v1/list", "user_id": "None", "Timestamp": "2026-09-07T22:50:17.763786", "source": "HttpServer", "message_type": "Other", "request_id": "request-25"}
+{"message": "[0] 200 GET /api/v1/list (::1) 2.64ms", "user_id": "None", "Timestamp": "2026-09-07T22:50:17.764519", "source": "HttpServer", "message_type": "Other", "request_id": "request-25"}
+{"message": "[0] Finish /api/v1/list", "user_id": "None", "Timestamp": "2026-09-07T22:50:17.764632", "source": "HttpServer", "message_type": "Other", "request_id": "request-25"}
+{"message": "[0] Start basic/weather_agent/connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:50:23.099664", "source": "HttpServer", "message_type": "Other", "request_id": "request-26"}
+{"message": "Received a basic/weather_agent.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T22:50:23.099866", "source": "HttpServer", "message_type": "Other", "request_id": "request-26"}
+{"message": "Agent network 'basic/weather_agent' (ID: 2708427517104) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:50:23.099969", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with basic/weather_agent.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T22:50:23.100120", "source": "HttpServer", "message_type": "Other", "request_id": "request-26"}
+{"message": "[0] 200 GET /api/v1/basic/weather_agent/connectivity (::1) 2847.76ms", "user_id": "None", "Timestamp": "2026-09-07T22:50:23.100769", "source": "HttpServer", "message_type": "Other", "request_id": "request-26"}
+{"message": "[0] Finish basic/weather_agent/connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:50:23.100876", "source": "HttpServer", "message_type": "Other", "request_id": "request-26"}
+{"message": "[0] Start basic/weather_agent/connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:50:23.116703", "source": "HttpServer", "message_type": "Other", "request_id": "request-27"}
+{"message": "Received a basic/weather_agent.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T22:50:23.116871", "source": "HttpServer", "message_type": "Other", "request_id": "request-27"}
+{"message": "Agent network 'basic/weather_agent' (ID: 2708427517104) used for operation: connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:50:23.116952", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "Done with basic/weather_agent.Connectivity request for connectivity request", "user_id": "None", "Timestamp": "2026-09-07T22:50:23.117081", "source": "HttpServer", "message_type": "Other", "request_id": "request-27"}
+{"message": "[0] 200 GET /api/v1/basic/weather_agent/connectivity (::1) 2.72ms", "user_id": "None", "Timestamp": "2026-09-07T22:50:23.117521", "source": "HttpServer", "message_type": "Other", "request_id": "request-27"}
+{"message": "[0] Finish basic/weather_agent/connectivity", "user_id": "None", "Timestamp": "2026-09-07T22:50:23.117606", "source": "HttpServer", "message_type": "Other", "request_id": "request-27"}
+{"message": "[0] Start basic/weather_agent/streaming_chat", "user_id": "None", "Timestamp": "2026-09-07T22:50:24.926129", "source": "HttpServer", "message_type": "Other", "request_id": "request-28"}
+{"message": "Received a basic/weather_agent.StreamingChat request for 'What's the weather in Chennai right now?'", "user_id": "None", "Timestamp": "2026-09-07T22:50:24.926688", "source": "HttpServer", "message_type": "Other", "request_id": "request-28"}
+{"message": "Agent network 'basic/weather_agent' (ID: 2708427517104) used for operation: streaming_chat", "user_id": "None", "Timestamp": "2026-09-07T22:50:24.931110", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+{"message": "API KEY error detected: 
+A value for the OPENAI_API_KEY environment variable must be correctly set in the neuro-san
+server or run-time environment in order to use this agent network.
+
+Some things to try:
+1) Double check that your value for OPENAI_API_KEY is set correctly
+2) If you do not have a value for OPENAI_API_KEY, visit the LLM provider's website to get one 
+3) It's possible that your credit balance on your account with the LLM provider is too low
+   to make the request.  Check that.
+4) Sometimes these errors happen because of firewall blockages to the site that hosts the LLM.
+   Try checking that you can reach the regular UI for the LLM from a web browser
+   on the same machine making this request.
+", "user_id": "None", "Timestamp": "2026-09-07T22:50:25.728745", "source": "HttpServer", "message_type": "Error", "request_id": "request-28"}
+{"message": "Request reporting: {}", "user_id": "None", "Timestamp": "2026-09-07T22:50:25.730933", "source": "HttpServer", "message_type": "Other", "request_id": "request-28"}
+{"message": "Done with basic/weather_agent.StreamingChat request for 'What's the weather in Chennai right now?'", "user_id": "None", "Timestamp": "2026-09-07T22:50:25.731044", "source": "HttpServer", "message_type": "Other", "request_id": "request-28"}
+{"message": "[0] 200 POST /api/v1/basic/weather_agent/streaming_chat (::1) 807.08ms", "user_id": "None", "Timestamp": "2026-09-07T22:50:25.731288", "source": "HttpServer", "message_type": "Other", "request_id": "request-28"}
+{"message": "[0] Finish basic/weather_agent/streaming_chat", "user_id": "None", "Timestamp": "2026-09-07T22:50:25.731741", "source": "HttpServer", "message_type": "Other", "request_id": "request-28"}
+{"message": "[0] Stats: {'NumProcessing': 0, 'Total': 28, '/api/v1/list': 2, 'agent_network_designer/connectivity': 6, 'agent_network_test_generator/connectivity': 6, 'agent_network_test_generator/streaming_chat': 2, 'agent_network_designer/streaming_chat': 1, 'basic/music_nerd/connectivity': 7, 'basic/music_nerd/streaming_chat': 1, 'basic/weather_agent/connectivity': 2, 'basic/weather_agent/streaming_chat': 1}", "user_id": "None", "Timestamp": "2026-09-07T22:50:25.731822", "source": "HttpServer", "message_type": "Other", "request_id": "request-28"}

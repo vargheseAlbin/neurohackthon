@@ -1,0 +1,150 @@
+Agent: agent_network_test_generator
+
+[SYSTEM] @ 2026-09-07 21:59:20:
+
+Only answer inquiries that are directly within your area of expertise. Do not try to help for other matters.
+Do not mention what you can NOT do. Only mention what you can do.
+ 
+You orchestrate the generation of data-driven test fixture HOCON files for existing neuro-san agent networks.
+Follow these steps carefully:
+
+1) Read the target agent network
+- Call `read_agent_network` with the user-provided HOCON file path.
+- Pass the full returned summary to the next steps.
+
+2) Plan test scenarios
+- Call `test_scenario_planner` with the network summary and the `test_level` (default "minimum" if the user did not specify one).
+- It will return a list of scenario descriptions, each describing what to test and what sly_data to use.
+
+3) Build test fixtures (batched)
+- Call `test_fixture_builder` ONCE with ALL scenarios from step 2 and the network summary.
+- It will return a JSON list of complete test fixture dictionaries — one per scenario.
+
+4) Validate each fixture
+- For each fixture from step 3, call `validate_test_fixture` with the fixture dictionary.
+- If validation fails, call `test_fixture_builder` again with ONLY the failed scenario and the error messages to fix the issues. Repeat until validation passes (up to 3 attempts per fixture).
+
+5) Persist each validated fixture
+- For each validated fixture, call `persist_test_fixture` with:
+  - `test_fixture`: the complete test case dictionary.
+  - `file_name`: a descriptive snake_case file name ending in .hocon.
+
+6) Return a summary of all generated test cases with their file paths and what each one tests.
+
+
+[HUMAN] @ 2026-09-07 21:59:20:
+Generate test cases for basic/coffee_finder_advanced
+
+[AI] @ 2026-09-07 21:59:20:
+Error from agent_network_test_generator: Agent stopped due to exception Anthropic authentication failed: no API key or authorization credentials were provided. Set the ANTHROPIC_API_KEY environment variable, pass api_key=... to ChatAnthropic, or provide credentials via default_headers={"Authorization": ...}. If you are routing through the LangSmith gateway, set LANGSMITH_GATEWAY and LANGSMITH_GATEWAY_API_KEY.
+
+[AGENT] @ 2026-09-07 21:59:20:
+```json
+{
+    "caveats": [
+        "Token usage from agents of the main agent network only. Usage from external agents is not included.",
+        "Token counts are approximate and estimated using tiktoken.",
+        "time_taken_in_seconds includes overhead from Langchain and Neuro SAN"
+    ],
+    "completion_tokens": 0,
+    "empty_responses": 0,
+    "prompt_tokens": 0,
+    "successful_requests": 0,
+    "time_taken_in_seconds": 1.5275404453277588,
+    "total_cost": 0.0,
+    "total_tokens": 0
+}
+```
+
+[AGENT] @ 2026-09-07 21:59:20:
+```json
+{
+    "caveats": [
+        "Request total: includes token usage from external agents invoked via direct sessions on this server. Usage from external agents reached over the network is not included.",
+        "Token counts are approximate and estimated using tiktoken.",
+        "time_taken_in_seconds includes overhead from Langchain and Neuro SAN"
+    ],
+    "completion_tokens": 0,
+    "empty_responses": 0,
+    "models": {
+        "anthropic": {}
+    },
+    "prompt_tokens": 0,
+    "successful_requests": 0,
+    "time_taken_in_seconds": 1.5275404453277588,
+    "total_cost": 0.0,
+    "total_tokens": 0
+}
+```
+
+[AGENT_FRAMEWORK] @ 2026-09-07 21:59:20:
+Error from agent_network_test_generator: Agent stopped due to exception Anthropic authentication failed: no API key or authorization credentials were provided. Set the ANTHROPIC_API_KEY environment variable, pass api_key=... to ChatAnthropic, or provide credentials via default_headers={"Authorization": ...}. If you are routing through the LangSmith gateway, set LANGSMITH_GATEWAY and LANGSMITH_GATEWAY_API_KEY.
+
+chat_context:
+{
+    "chat_histories": [
+        {
+            "messages": [
+                {
+                    "origin": [
+                        {
+                            "instantiation_index": 1,
+                            "tool": "agent_network_test_generator"
+                        }
+                    ],
+                    "text": "Generate test cases for basic/coffee_finder_advanced",
+                    "type": "HUMAN"
+                },
+                {
+                    "origin": [
+                        {
+                            "instantiation_index": 1,
+                            "tool": "agent_network_test_generator"
+                        }
+                    ],
+                    "text": "Error from agent_network_test_generator: Agent stopped due to exception Anthropic authentication failed: no API key or authorization credentials were provided. Set the ANTHROPIC_API_KEY environment variable, pass api_key=... to ChatAnthropic, or provide credentials via default_headers={{\"Authorization\": ...}}. If you are routing through the LangSmith gateway, set LANGSMITH_GATEWAY and LANGSMITH_GATEWAY_API_KEY.",
+                    "type": "AI"
+                }
+            ],
+            "origin": [
+                {
+                    "instantiation_index": 1,
+                    "tool": "agent_network_test_generator"
+                }
+            ]
+        }
+    ]
+}
+
+
+[SYSTEM] @ 2026-09-07 22:43:11:
+
+Only answer inquiries that are directly within your area of expertise. Do not try to help for other matters.
+Do not mention what you can NOT do. Only mention what you can do.
+ 
+You orchestrate the generation of data-driven test fixture HOCON files for existing neuro-san agent networks.
+Follow these steps carefully:
+
+1) Read the target agent network
+- Call `read_agent_network` with the user-provided HOCON file path.
+- Pass the full returned summary to the next steps.
+
+2) Plan test scenarios
+- Call `test_scenario_planner` with the network summary and the `test_level` (default "minimum" if the user did not specify one).
+- It will return a list of scenario descriptions, each describing what to test and what sly_data to use.
+
+3) Build test fixtures (batched)
+- Call `test_fixture_builder` ONCE with ALL scenarios from step 2 and the network summary.
+- It will return a JSON list of complete test fixture dictionaries — one per scenario.
+
+4) Validate each fixture
+- For each fixture from step 3, call `validate_test_fixture` with the fixture dictionary.
+- If validation fails, call `test_fixture_builder` again with ONLY the failed scenario and the error messages to fix the issues. Repeat until validation passes (up to 3 attempts per fixture).
+
+5) Persist each validated fixture
+- For each validated fixture, call `persist_test_fixture` with:
+  - `test_fixture`: the complete test case dictionary.
+  - `file_name`: a descriptive snake_case file name ending in .hocon.
+
+6) Return a summary of all generated test cases with their file paths and what each one tests.
+

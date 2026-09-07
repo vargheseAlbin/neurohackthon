@@ -1,0 +1,803 @@
+2026-09-07 21:50:00 India Standard Time | INFO     | ProcessLogBridge:_ensure_root_configured:229 - Runner logging initialized (rich console enabled)
+2026-09-07 21:50:02 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan - C:\projectV2\nuerohackthon\.venv\Lib\site-packages\neuro_san_studio\runner\neuro_san_server_wrapper.py:36: DeprecationWarning: 'asyncio.WindowsSelectorEventLoopPolicy' is deprecated and slated for removal in Python 3.16
+2026-09-07 21:50:02 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -   asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+2026-09-07 21:50:02 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan - C:\projectV2\nuerohackthon\.venv\Lib\site-packages\neuro_san_studio\runner\neuro_san_server_wrapper.py:36: DeprecationWarning: 'asyncio.set_event_loop_policy' is deprecated and slated for removal in Python 3.16
+2026-09-07 21:50:02 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -   asyncio.set_event_loop_policy(asyncio.WindowsSelectorEventLoopPolicy())
+2026-09-07 21:50:04 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     Will watch for changes in these directories: ['C:\\projectV2\\nuerohackthon']
+2026-09-07 21:50:04 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     Uvicorn running on http://localhost:4173 (Press CTRL+C to quit)
+2026-09-07 21:50:04 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     Started reloader process [23156] using StatReload
+2026-09-07 21:53:32 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan - Loading plugin: ProcessLogBridgePlugin from module: neuro_san_studio.plugins.log_bridge.process_log_bridge_plugin
+2026-09-07 21:53:32 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan - Loaded plugin: ProcessLogBridgePlugin Plugin
+2026-09-07 21:53:32 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan - Initializing plugin: ProcessLogBridgePlugin Plugin
+2026-09-07 21:53:32 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan - [ProcessLogBridgePlugin] Initializing (PID=36484)
+2026-09-07 21:53:32 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan - [ProcessLogBridgePlugin] Initialized (PID=36484)
+2026-09-07 21:53:34 India Standard Time | INFO     | nsflow:_log:823 - nsflow - C:\projectV2\nuerohackthon\.venv\Lib\site-packages\jwt\api_jwt.py:147: InsecureKeyLengthWarning: The HMAC key is 14 bytes long, which is below the minimum recommended length of 32 bytes for SHA256. See RFC 7518 Section 3.2.
+2026-09-07 21:53:34 India Standard Time | INFO     | nsflow:_log:823 - nsflow -   return self._jws.encode(
+2026-09-07 21:53:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow - C:\projectV2\nuerohackthon\.venv\Lib\site-packages\pydub\utils.py:300: SyntaxWarning: "\(" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\("? A raw string is also an option.
+2026-09-07 21:53:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow - m = re.match('([su]([0-9]{1,2})p?) \(([0-9]{1,2}) bit\)$', token)
+2026-09-07 21:53:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow - C:\projectV2\nuerohackthon\.venv\Lib\site-packages\pydub\utils.py:301: SyntaxWarning: "\(" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\("? A raw string is also an option.
+2026-09-07 21:53:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow - m2 = re.match('([su]([0-9]{1,2})p?)( \(default\))?$', token)
+2026-09-07 21:53:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow - C:\projectV2\nuerohackthon\.venv\Lib\site-packages\pydub\utils.py:310: SyntaxWarning: "\(" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\("? A raw string is also an option.
+2026-09-07 21:53:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow -   elif re.match('(flt)p?( \(default\))?$', token):
+2026-09-07 21:53:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow - C:\projectV2\nuerohackthon\.venv\Lib\site-packages\pydub\utils.py:314: SyntaxWarning: "\(" is an invalid escape sequence. Such sequences will not work in the future. Did you mean "\\("? A raw string is also an option.
+2026-09-07 21:53:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow -   elif re.match('(dbl)p?( \(default\))?$', token):
+2026-09-07 21:53:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow - C:\projectV2\nuerohackthon\.venv\Lib\site-packages\pydub\utils.py:170: RuntimeWarning: Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work
+2026-09-07 21:53:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow -   warn("Couldn't find ffmpeg or avconv - defaulting to ffmpeg, but may not work", RuntimeWarning)
+2026-09-07 21:54:15 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:54:15 - root - INFO - frontend_dist_path: C:\projectV2\nuerohackthon\.venv\Lib\site-packages\nsflow\prebuilt_frontend\dist
+2026-09-07 21:54:15 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:54:15 - root - INFO - Serving frontend from: C:\projectV2\nuerohackthon\.venv\Lib\site-packages\nsflow\prebuilt_frontend\dist
+2026-09-07 21:54:15 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     Started server process [33824]
+2026-09-07 21:54:15 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     Waiting for application startup.
+2026-09-07 21:54:15 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:54:15 - root - INFO - FastAPI is starting up...
+2026-09-07 21:54:16 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:54:15 - root - INFO - Initializing NeuroSan config from environment variables...
+2026-09-07 21:54:16 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:54:15 - root - INFO - [Startup] Default NsConfig set to http://localhost:8080
+2026-09-07 21:54:16 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:54:15 - root - INFO - Initializing local database 'nss_local.db'...
+2026-09-07 21:54:16 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:54:16 - root - INFO - Local database 'nss_local.db' initialized
+2026-09-07 21:54:16 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     Application startup complete.
+2026-09-07 21:54:46 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:56694 - "GET / HTTP/1.1" 200 OK
+2026-09-07 21:54:48 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:56694 - "GET /assets/index.js HTTP/1.1" 200 OK
+2026-09-07 21:54:48 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:60956 - "GET /assets/index.css HTTP/1.1" 200 OK
+2026-09-07 21:54:49 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:56694 - "GET /api/v1/vite_config.json HTTP/1.1" 200 OK
+2026-09-07 21:54:49 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:60956 - "GET /vite.svg HTTP/1.1" 200 OK
+2026-09-07 21:54:50 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:60956 - "GET /api/v1/version/nsflow HTTP/1.1" 200 OK
+2026-09-07 21:54:50 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:56200 - "GET /api/v1/ping HTTP/1.1" 200 OK
+2026-09-07 21:54:50 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:56694 - "GET /api/v1/get_ns_config HTTP/1.1" 200 OK
+2026-09-07 21:54:50 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:60956 - "GET /api/v1/version/neuro-san HTTP/1.1" 200 OK
+2026-09-07 21:54:50 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:56200 - "GET /api/v1/ping HTTP/1.1" 200 OK
+2026-09-07 21:54:50 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:56200 - "GET /api/v1/mcp/oauth/redirect_uri HTTP/1.1" 200 OK
+2026-09-07 21:54:50 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:56694 - "GET /api/v1/get_ns_config HTTP/1.1" 200 OK
+2026-09-07 21:54:50 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:56200 - "GET /api/v1/version/nsflow HTTP/1.1" 200 OK
+2026-09-07 21:54:50 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:60956 - "GET /api/v1/mcp/oauth/connections HTTP/1.1" 200 OK
+2026-09-07 21:54:52 India Standard Time | ERROR    | nsflow:_log:819 - nsflow - 2026-09-07 21:54:52 - root - ERROR - Failed to retrieve concierge list: 503: NeuroSan server at localhost:8080 is not reachable
+2026-09-07 21:54:52 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:56694 - "GET /api/v1/list?connection_type=http&host=localhost&port=8080 HTTP/1.1" 500 Internal Server Error
+2026-09-07 21:54:52 India Standard Time | ERROR    | nsflow:_log:819 - nsflow - Traceback (most recent call last):
+2026-09-07 21:54:52 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:60956 - "GET /api/v1/version/neuro-san HTTP/1.1" 200 OK
+2026-09-07 21:54:52 India Standard Time | INFO     | nsflow:_log:823 - nsflow -   File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\nsflow\backend\api\v1\fastapi_concierge_endpoints.py", line 45, in get_concierge_list
+2026-09-07 21:54:52 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:56200 - "GET /api/v1/get_ns_config HTTP/1.1" 200 OK
+2026-09-07 21:54:52 India Standard Time | INFO     | nsflow:_log:823 - nsflow -     result = await ns_concierge_utils.list_concierge(metadata)
+2026-09-07 21:54:52 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:56200 - "GET /api/v1/get_ns_config HTTP/1.1" 200 OK
+2026-09-07 21:54:52 India Standard Time | INFO     | nsflow:_log:823 - nsflow -              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-07 21:54:52 India Standard Time | INFO     | nsflow:_log:823 - nsflow -   File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\nsflow\backend\utils\agentutils\ns_concierge_utils.py", line 82, in list_concierge
+2026-09-07 21:54:52 India Standard Time | INFO     | nsflow:_log:823 - nsflow -     raise HTTPException(
+2026-09-07 21:54:52 India Standard Time | INFO     | nsflow:_log:823 - nsflow - status_code=503, detail=f"NeuroSan server at {self.server_host}:{self.server_port} is not reachable"
+2026-09-07 21:54:52 India Standard Time | INFO     | nsflow:_log:823 - nsflow -     )
+2026-09-07 21:54:52 India Standard Time | INFO     | nsflow:_log:823 - nsflow - fastapi.exceptions.HTTPException: 503: NeuroSan server at localhost:8080 is not reachable
+2026-09-07 21:55:06 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:60500 - "POST /api/v1/set_ns_config HTTP/1.1" 200 OK
+2026-09-07 21:55:08 India Standard Time | ERROR    | nsflow:_log:819 - nsflow - 2026-09-07 21:55:08 - root - ERROR - Failed to retrieve concierge list: 503: NeuroSan server at localhost:8080 is not reachable
+2026-09-07 21:55:08 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:60500 - "GET /api/v1/list?connection_type=http&host=localhost&port=8080 HTTP/1.1" 500 Internal Server Error
+2026-09-07 21:55:08 India Standard Time | ERROR    | nsflow:_log:819 - nsflow - Traceback (most recent call last):
+2026-09-07 21:55:08 India Standard Time | INFO     | nsflow:_log:823 - nsflow -   File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\nsflow\backend\api\v1\fastapi_concierge_endpoints.py", line 45, in get_concierge_list
+2026-09-07 21:55:08 India Standard Time | INFO     | nsflow:_log:823 - nsflow -     result = await ns_concierge_utils.list_concierge(metadata)
+2026-09-07 21:55:08 India Standard Time | INFO     | nsflow:_log:823 - nsflow -              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-07 21:55:08 India Standard Time | INFO     | nsflow:_log:823 - nsflow -   File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\nsflow\backend\utils\agentutils\ns_concierge_utils.py", line 82, in list_concierge
+2026-09-07 21:55:08 India Standard Time | INFO     | nsflow:_log:823 - nsflow -     raise HTTPException(
+2026-09-07 21:55:08 India Standard Time | INFO     | nsflow:_log:823 - nsflow - status_code=503, detail=f"NeuroSan server at {self.server_host}:{self.server_port} is not reachable"
+2026-09-07 21:55:08 India Standard Time | INFO     | nsflow:_log:823 - nsflow -     )
+2026-09-07 21:55:08 India Standard Time | INFO     | nsflow:_log:823 - nsflow - fastapi.exceptions.HTTPException: 503: NeuroSan server at localhost:8080 is not reachable
+2026-09-07 21:55:14 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan - Manifest file C:\projectV2\nuerohackthon\registries\manifest.hocon restored in 101.66 seconds.
+2026-09-07 21:55:14 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan - Reading C:\projectV2\nuerohackthon\.venv\Lib\site-packages\neuro_san\deploy\logging.hocon
+2026-09-07 21:55:14 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan - GIL state at server startup:  standard CPython build (GIL always enabled). CPython 3.14.0.  PYTHON_GIL=unset
+2026-09-07 21:55:14 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Using Authorizer: neuro_san.service.authorization.null.always_yes_authorizer.AlwaysYesAuthorizer
+2026-09-07 21:55:14 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan - >>>>>>>>>>>> Enabling MCP service...
+2026-09-07 21:55:14 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Added agent agent_network_test_generator to allowed http service list
+2026-09-07 21:55:14 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: ADDED network for agent agent_network_test_generator (44956 bytes): 2708424963168
+2026-09-07 21:55:14 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Added agent basic/music_nerd to allowed http service list
+2026-09-07 21:55:14 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: ADDED network for agent basic/music_nerd (4643 bytes): 2708425637968
+2026-09-07 21:55:14 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Added agent agent_network_designer to allowed http service list
+2026-09-07 21:55:14 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: ADDED network for agent agent_network_designer (26440 bytes): 2708425387664
+2026-09-07 21:55:14 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Added agent agent_network_query_generator to allowed http service list
+2026-09-07 21:55:14 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: ADDED network for agent agent_network_query_generator (7993 bytes): 2708425111888
+2026-09-07 21:55:14 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Added agent experimental/cruse_theme_agent to allowed http service list
+2026-09-07 21:55:14 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: ADDED network for agent experimental/cruse_theme_agent (25797 bytes): 2708424960448
+2026-09-07 21:55:14 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Added agent experimental/cruse_widget_agent to allowed http service list
+2026-09-07 21:55:14 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: ADDED network for agent experimental/cruse_widget_agent (12910 bytes): 2708425029200
+2026-09-07 21:55:14 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Added agent agent_network_instructions_editor to allowed http service list
+2026-09-07 21:55:14 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: ADDED network for agent agent_network_instructions_editor (25512 bytes): 2708425109760
+2026-09-07 21:55:14 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Added agent agent_network_editor to allowed http service list
+2026-09-07 21:55:14 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: ADDED network for agent agent_network_editor (31198 bytes): 2708425308624
+2026-09-07 21:55:14 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Starting 1 worker processes (worker_id=0, pid=36484)
+2026-09-07 21:55:14 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: HTTP server is running 1 instances on port 8080 with backlog 128
+2026-09-07 21:55:14 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: HTTP server idle connections timeout: 3600 seconds
+2026-09-07 21:55:14 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: HTTP server is shutting down after 960955 requests
+2026-09-07 21:55:14 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: MCP server is running protocol 2025-06-18
+2026-09-07 21:55:14 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Starting StorageWatcher with 5 seconds period
+2026-09-07 21:55:14 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Starting RegistryStorageUpdater for ['C:\projectV2\nuerohackthon\registries\manifest.hocon'] with 5 seconds period
+2026-09-07 21:55:14 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan - {"message": "Registry polling watchdog started on: C:\projectV2\nuerohackthon\registries for manifest ['C:\\projectV2\\nuerohackthon\\registries\\manifest.hocon'] with polling every 1 sec", "user_id": "None", "Timestamp": "2026-09-07T21:55:14.983402", "source": "HttpServer", "message_type": "Other", "request_id": "None"}
+2026-09-07 21:55:14 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Starting TempNetworkStorageUpdater
+2026-09-07 21:55:14 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Waiting for new queues to be added for processing
+2026-09-07 21:55:14 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Starting EventWorkMonitor with 0.500000 seconds period
+2026-09-07 21:55:14 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Starting PeriodicEventInitiator with 1.000000 seconds period
+2026-09-07 21:55:15 India Standard Time | ERROR    | NeuroSan:_log:819 - NeuroSan:HttpServer: HealthProbeServer failed to bind port 8081 (reuse_port=True): the platform doesn't support SO_REUSEPORT
+2026-09-07 21:55:15 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Found 0 periodic agent interactions
+2026-09-07 21:56:20 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:49666 - "POST /api/v1/set_ns_config HTTP/1.1" 200 OK
+2026-09-07 21:56:22 India Standard Time | ERROR    | nsflow:_log:819 - nsflow - 2026-09-07 21:56:22 - root - ERROR - Failed to retrieve concierge list: 503: NeuroSan server at localhost:8081 is not reachable
+2026-09-07 21:56:22 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:49666 - "GET /api/v1/list?connection_type=http&host=localhost&port=8081 HTTP/1.1" 500 Internal Server Error
+2026-09-07 21:56:22 India Standard Time | ERROR    | nsflow:_log:819 - nsflow - Traceback (most recent call last):
+2026-09-07 21:56:22 India Standard Time | INFO     | nsflow:_log:823 - nsflow -   File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\nsflow\backend\api\v1\fastapi_concierge_endpoints.py", line 45, in get_concierge_list
+2026-09-07 21:56:22 India Standard Time | INFO     | nsflow:_log:823 - nsflow -     result = await ns_concierge_utils.list_concierge(metadata)
+2026-09-07 21:56:22 India Standard Time | INFO     | nsflow:_log:823 - nsflow -              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-07 21:56:22 India Standard Time | INFO     | nsflow:_log:823 - nsflow -   File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\nsflow\backend\utils\agentutils\ns_concierge_utils.py", line 82, in list_concierge
+2026-09-07 21:56:22 India Standard Time | INFO     | nsflow:_log:823 - nsflow -     raise HTTPException(
+2026-09-07 21:56:22 India Standard Time | INFO     | nsflow:_log:823 - nsflow - status_code=503, detail=f"NeuroSan server at {self.server_host}:{self.server_port} is not reachable"
+2026-09-07 21:56:22 India Standard Time | INFO     | nsflow:_log:823 - nsflow -     )
+2026-09-07 21:56:22 India Standard Time | INFO     | nsflow:_log:823 - nsflow - fastapi.exceptions.HTTPException: 503: NeuroSan server at localhost:8081 is not reachable
+2026-09-07 21:57:46 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:61543 - "POST /api/v1/set_ns_config HTTP/1.1" 200 OK
+2026-09-07 21:57:48 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Start /api/v1/list
+2026-09-07 21:57:48 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:57:48 - httpx - INFO - HTTP Request: GET http://localhost:8080/api/v1/list "HTTP/1.1 200 OK"
+2026-09-07 21:57:48 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] 200 GET /api/v1/list (::1) 8.01ms
+2026-09-07 21:57:48 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:61543 - "GET /api/v1/list?connection_type=http&host=localhost&port=8080 HTTP/1.1" 200 OK
+2026-09-07 21:57:48 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Finish /api/v1/list
+2026-09-07 21:58:33 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:58:33 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 21:58:33 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:58:33 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 21:58:33 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:58:33 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_designer/http
+2026-09-07 21:58:37 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Start agent_network_designer/connectivity
+2026-09-07 21:58:37 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Received a agent_network_designer.Connectivity request for connectivity request
+2026-09-07 21:58:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:60816 - "GET /api/v1/connectivity/agent_network_designer HTTP/1.1" 200 OK
+2026-09-07 21:58:37 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Agent network 'agent_network_designer' (ID: 2708425387664) used for operation: connectivity
+2026-09-07 21:58:37 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Done with agent_network_designer.Connectivity request for connectivity request
+2026-09-07 21:58:37 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] 200 GET /api/v1/agent_network_designer/connectivity (::1) 3567.70ms
+2026-09-07 21:58:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:62324 - "WebSocket /api/v1/ws/logs/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 21:58:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:64886 - "GET /api/v1/mcp/oauth/required/agent_network_designer HTTP/1.1" 200 OK
+2026-09-07 21:58:37 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Finish agent_network_designer/connectivity
+2026-09-07 21:58:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 21:58:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:58:37 - agent_network_designer - INFO - New logs client connected
+2026-09-07 21:58:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:58:37 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 21:58:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:58:37 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 21:58:37 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Start agent_network_designer/connectivity
+2026-09-07 21:58:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:58:37 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_designer/http
+2026-09-07 21:58:37 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Received a agent_network_designer.Connectivity request for connectivity request
+2026-09-07 21:58:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:58:37 - root - INFO - network_name: agent_network_designer
+2026-09-07 21:58:37 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Agent network 'agent_network_designer' (ID: 2708425387664) used for operation: connectivity
+2026-09-07 21:58:37 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Done with agent_network_designer.Connectivity request for connectivity request
+2026-09-07 21:58:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:60816 - "GET /api/v1/connectivity/agent_network_designer HTTP/1.1" 200 OK
+2026-09-07 21:58:37 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] 200 GET /api/v1/agent_network_designer/connectivity (::1) 4.11ms
+2026-09-07 21:58:37 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Finish agent_network_designer/connectivity
+2026-09-07 21:58:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:50224 - "GET /vite.svg HTTP/1.1" 200 OK
+2026-09-07 21:58:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:56346 - "WebSocket /api/v1/ws/logs/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 21:58:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 21:58:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:58:37 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 21:58:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:58:37 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 21:58:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:58:37 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_designer/http
+2026-09-07 21:58:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:63217 - "WebSocket /api/v1/ws/chat/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 21:58:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 21:58:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:58:37 - agent_network_designer - INFO - Chat client session_1788798289383_e450849a78d885 connected to agent: agent_network_designer
+2026-09-07 21:58:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:49666 - "WebSocket /api/v1/ws/internalchat/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 21:58:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 21:58:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:58:37 - agent_network_designer - INFO - Internal chat connected: agent_network_designer
+2026-09-07 21:58:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:52452 - "GET /api/v1/networkconfig/agent_network_designer HTTP/1.1" 200 OK
+2026-09-07 21:58:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:60446 - "WebSocket /api/v1/ws/slydata/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 21:58:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 21:58:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:62676 - "WebSocket /api/v1/ws/progress/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 21:58:37 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 21:58:38 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:52452 - "GET /api/v1/networkconfig/agent_network_designer/agent//agent_network_query_generator HTTP/1.1" 404 Not Found
+2026-09-07 21:59:04 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:59:04 - root - INFO - network_name: agent_network_designer, agent_name: agent_network_designer
+2026-09-07 21:59:04 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:51541 - "GET /api/v1/networkconfig/agent_network_designer/agent/agent_network_designer HTTP/1.1" 200 OK
+2026-09-07 21:59:09 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:59:09 - agent_network_designer - INFO - WebSocket chat client disconnected: session_1788798289383_e450849a78d885
+2026-09-07 21:59:09 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:59:09 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 21:59:09 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:59:09 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 21:59:09 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:59:09 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_test_generator/http
+2026-09-07 21:59:12 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Start agent_network_test_generator/connectivity
+2026-09-07 21:59:12 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Received a agent_network_test_generator.Connectivity request for connectivity request
+2026-09-07 21:59:12 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:49852 - "GET /api/v1/connectivity/agent_network_test_generator HTTP/1.1" 200 OK
+2026-09-07 21:59:12 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Agent network 'agent_network_test_generator' (ID: 2708424963168) used for operation: connectivity
+2026-09-07 21:59:12 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:51541 - "GET /api/v1/mcp/oauth/required/agent_network_test_generator HTTP/1.1" 200 OK
+2026-09-07 21:59:12 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Done with agent_network_test_generator.Connectivity request for connectivity request
+2026-09-07 21:59:12 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] 200 GET /api/v1/agent_network_test_generator/connectivity (::1) 2912.39ms
+2026-09-07 21:59:12 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:51829 - "GET /vite.svg HTTP/1.1" 200 OK
+2026-09-07 21:59:12 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Finish agent_network_test_generator/connectivity
+2026-09-07 21:59:12 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:60724 - "WebSocket /api/v1/ws/logs/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 21:59:12 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 21:59:12 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:59:12 - agent_network_test_generator - INFO - New logs client connected
+2026-09-07 21:59:12 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Start agent_network_test_generator/connectivity
+2026-09-07 21:59:12 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:59:12 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 21:59:12 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:49852 - "GET /api/v1/connectivity/agent_network_test_generator HTTP/1.1" 200 OK
+2026-09-07 21:59:12 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Received a agent_network_test_generator.Connectivity request for connectivity request
+2026-09-07 21:59:12 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:59:12 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 21:59:12 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Agent network 'agent_network_test_generator' (ID: 2708424963168) used for operation: connectivity
+2026-09-07 21:59:12 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:59:12 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_test_generator/http
+2026-09-07 21:59:12 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Done with agent_network_test_generator.Connectivity request for connectivity request
+2026-09-07 21:59:12 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:59:12 - root - INFO - network_name: agent_network_test_generator
+2026-09-07 21:59:12 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] 200 GET /api/v1/agent_network_test_generator/connectivity (::1) 4.09ms
+2026-09-07 21:59:12 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:65016 - "WebSocket /api/v1/ws/logs/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 21:59:12 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Finish agent_network_test_generator/connectivity
+2026-09-07 21:59:12 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 21:59:12 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:59:12 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 21:59:12 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:59:12 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 21:59:12 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:59:12 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_test_generator/http
+2026-09-07 21:59:12 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:62390 - "WebSocket /api/v1/ws/chat/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 21:59:12 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 21:59:12 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:59:12 - agent_network_test_generator - INFO - Chat client session_1788798289383_e450849a78d885 connected to agent: agent_network_test_generator
+2026-09-07 21:59:12 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:53871 - "WebSocket /api/v1/ws/internalchat/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 21:59:12 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 21:59:12 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:59:12 - agent_network_test_generator - INFO - Internal chat connected: agent_network_test_generator
+2026-09-07 21:59:12 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:64884 - "WebSocket /api/v1/ws/slydata/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 21:59:12 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 21:59:12 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:62325 - "GET /api/v1/networkconfig/agent_network_test_generator HTTP/1.1" 200 OK
+2026-09-07 21:59:12 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:53078 - "WebSocket /api/v1/ws/progress/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 21:59:12 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 21:59:14 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:59:14 - root - INFO - network_name: agent_network_test_generator, agent_name: test_scenario_planner
+2026-09-07 21:59:15 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:62325 - "GET /api/v1/networkconfig/agent_network_test_generator/agent/test_scenario_planner HTTP/1.1" 200 OK
+2026-09-07 21:59:15 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:59:15 - root - INFO - network_name: agent_network_test_generator, agent_name: agent_network_test_generator
+2026-09-07 21:59:15 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:62325 - "GET /api/v1/networkconfig/agent_network_test_generator/agent/agent_network_test_generator HTTP/1.1" 200 OK
+2026-09-07 21:59:18 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Start agent_network_test_generator/streaming_chat
+2026-09-07 21:59:18 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Received a agent_network_test_generator.StreamingChat request for 'Generate test cases for basic/coffee_finder_advanced'
+2026-09-07 21:59:18 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Agent network 'agent_network_test_generator' (ID: 2708424963168) used for operation: streaming_chat
+2026-09-07 21:59:20 India Standard Time | ERROR    | NeuroSan:_log:819 - NeuroSan - {"message": "Got exception in  RunContextRunnable. Error: Anthropic authentication failed: no API key or authorization credentials were provided. Set the ANTHROPIC_API_KEY environment variable, pass api_key=... to ChatAnthropic, or provide credentials via default_headers={"Authorization": ...}. If you are routing through the LangSmith gateway, set LANGSMITH_GATEWAY and LANGSMITH_GATEWAY_API_KEY.", "user_id": "None", "Timestamp": "2026-09-07T21:59:20.186203", "source": "HttpServer", "message_type": "Error", "request_id": "request-6"}
+2026-09-07 21:59:20 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:59:20 - agent_network_test_generator - INFO - {'otrace': ['agent_network_test_generator'], 'text': None}
+2026-09-07 21:59:20 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:59:20 - agent_network_test_generator - INFO - {'otrace': ['agent_network_test_generator'], 'text': ''}
+2026-09-07 21:59:20 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:59:20 - agent_network_test_generator - INFO - {'otrace': ['agent_network_test_generator'], 'text': ''}
+2026-09-07 21:59:20 India Standard Time | ERROR    | NeuroSan:_log:819 - NeuroSan - {"message": "Traceback (most recent call last): File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_anthropic\chat_models.py", line 1857, in _acreate return await self._async_client.messages.with_raw_response.create(**payload) ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\anthropic\_legacy_response.py", line 411, in wrapped return cast(LegacyAPIResponse[R], await func(*args, **kwargs)) ^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\anthropic\resources\messages\messages.py", line 2544, in create return await self._post( ^^^^^^^^^^^^^^^^^ ...<32 lines>... ) ^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\anthropic\_base_client.py", line 2277, in post return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls) ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\anthropic\_base_client.py", line 1881, in request response, prepared = await self._attempt_request( ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ model_copy(input_options), stream=stream, retries_taken=retries_taken ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ) ^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\anthropic\_base_client.py", line 2034, in _attempt_request request = self._build_request(options, retries_taken=retries_taken) File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\anthropic\_base_client.py", line 538, in _build_request headers = self._build_headers(options, retries_taken=retries_taken) File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\anthropic\_base_client.py", line 468, in _build_headers self._validate_headers(headers_dict, custom_headers) ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\anthropic\_client.py", line 839, in _validate_headers raise TypeError( '"Could not resolve authentication method. Expected one of api_key, auth_token, or credentials to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"' ) TypeError: "Could not resolve authentication method. Expected one of api_key, auth_token, or credentials to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted" The above exception was the direct cause of the following exception: Traceback (most recent call last): File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\neuro_san\internals\run_context\langchain\core\run_context_runnable.py", line 231, in invoke_agent_chain chain_result: Dict[str, Any] = await self.agent_chain.ainvoke(input=inputs, config=runnable_config) ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langgraph\pregel\main.py", line 4090, in ainvoke async for chunk in self.astream( ...<30 lines>... chunks.append(chunk) File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langgraph\pregel\main.py", line 3440, in astream async for _ in runner.atick( ...<16 lines>... yield o File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langgraph\pregel\_runner.py", line 396, in atick await arun_with_retry( ...<15 lines>... ) File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langgraph\pregel\_retry.py", line 744, in arun_with_retry return await task.proc.ainvoke(task.input, config) ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 756, in ainvoke input = await asyncio.create_task( ^^^^^^^^^^^^^^^^^^^^^^^^^^ step.ainvoke(input, config, **kwargs), context=context ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ) ^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 522, in ainvoke ret = await self.afunc(*args, **kwargs) ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain\agents\factory.py", line 1534, in amodel_node model_response = await _execute_model_async(request) ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain\agents\factory.py", line 1505, in _execute_model_async output = await model_.ainvoke(messages) ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 6027, in ainvoke return await self.bound.ainvoke( ^^^^^^^^^^^^^^^^^^^^^^^^^ ...<3 lines>... ) ^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 511, in ainvoke llm_result = await self.agenerate_prompt( ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ...<8 lines>... ) ^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1888, in agenerate_prompt return await self.agenerate( ^^^^^^^^^^^^^^^^^^^^^ prompt_messages, stop=stop, callbacks=callbacks, **kwargs ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ) ^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1846, in agenerate raise exceptions[0] File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 2179, in _agenerate_with_cache result = await self._agenerate( ^^^^^^^^^^^^^^^^^^^^^^ messages, stop=stop, run_manager=run_manager, **kwargs ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ) ^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_anthropic\chat_models.py", line 2280, in _agenerate raw_response = await self._acreate(payload) ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_anthropic\chat_models.py", line 1859, in _acreate _raise_if_authentication_error(e) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_anthropic\chat_models.py", line 1007, in _raise_if_authentication_error raise TypeError(msg) from e TypeError: Anthropic authentication failed: no API key or authorization credentials were provided. Set the ANTHROPIC_API_KEY environment variable, pass api_key=... to ChatAnthropic, or provide credentials via default_headers={"Authorization": ...}. If you are routing through the LangSmith gateway, set LANGSMITH_GATEWAY and LANGSMITH_GATEWAY_API_KEY. During task with name 'model' and id 'bd973d76-bb65-2df2-cbd6-6e65428a69cd' ", "user_id": "None", "Timestamp": "2026-09-07T21:59:20.300541", "source": "HttpServer", "message_type": "Error", "request_id": "request-6"}
+2026-09-07 21:59:20 India Standard Time | INFO     | nsflow:_log:823 - nsflow: {"type": "AI", "text": "Error from agent_network_test_generator: Agent stopped due to exception Anthropic authentication failed: no API key or authorization credentials were provided. Set the ANTHROPIC_API_KEY environment variable, pass api_key=... to ChatAnthropic, or provide credentials via default_headers={\"Authorization\": ...}. If you are routing through the LangSmith gateway, set LANGSMITH_GATEWAY and LANGSMITH_GATEWAY_API_KEY."}
+2026-09-07 21:59:20 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 21:59:20 - agent_network_test_generator - INFO - Streaming chat finished for client: session_1788798289383_e450849a78d885
+2026-09-07 21:59:20 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan: time_taken_in_seconds includes overhead from Langchain and Neuro SAN
+2026-09-07 21:59:20 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan: time_taken_in_seconds includes overhead from Langchain and Neuro SAN
+2026-09-07 21:59:20 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: {"token_accounting": {"total_tokens": 0, "prompt_tokens": 0, "completion_tokens": 0, "successful_requests": 0, "empty_responses": 0, "total_cost": 0.0, "time_taken_in_seconds": 1.5275404453277588, "caveats": ["Token usage from agents of the main agent network only. Usage from external agents is not included.", "Token counts are approximate and estimated using tiktoken."]}, "total_token_accounting": {"total_tokens": 0, "prompt_tokens": 0, "completion_tokens": 0, "successful_requests": 0, "empty_responses": 0, "total_cost": 0.0, "time_taken_in_seconds": 1.5275404453277588, "caveats": ["Request total: includes token usage from external agents invoked via direct sessions on this server. Usage from external agents reached over the network is not included.", "Token counts are approximate and estimated using tiktoken."], "models": {}}}
+2026-09-07 21:59:20 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Done with agent_network_test_generator.StreamingChat request for 'Generate test cases for basic/coffee_finder_advanced'
+2026-09-07 21:59:20 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] 200 POST /api/v1/agent_network_test_generator/streaming_chat (::1) 2171.78ms
+2026-09-07 21:59:20 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Finish agent_network_test_generator/streaming_chat
+2026-09-07 21:59:20 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Stats: {'NumProcessing': 0, 'Total': 6, '/api/v1/list': 1, 'agent_network_designer/connectivity': 2, 'agent_network_test_generator/connectivity': 2, 'agent_network_test_generator/streaming_chat': 1}
+2026-09-07 22:04:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:04:02 - root - INFO - network_name: agent_network_test_generator, agent_name: validate_test_fixture
+2026-09-07 22:04:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:59283 - "GET /api/v1/networkconfig/agent_network_test_generator/agent/validate_test_fixture HTTP/1.1" 200 OK
+2026-09-07 22:10:16 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:10:16 - root - INFO - network_name: agent_network_test_generator, agent_name: persist_test_fixture
+2026-09-07 22:10:16 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:52262 - "GET /api/v1/networkconfig/agent_network_test_generator/agent/persist_test_fixture HTTP/1.1" 200 OK
+2026-09-07 22:10:22 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:10:22 - agent_network_test_generator - INFO - WebSocket chat client disconnected: session_1788798289383_e450849a78d885
+2026-09-07 22:10:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:56447 - "WebSocket /api/v1/ws/logs/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:10:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:10:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:10:23 - agent_network_designer - INFO - New logs client connected
+2026-09-07 22:10:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:10:23 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:10:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:10:23 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:10:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:10:23 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_designer/http
+2026-09-07 22:10:23 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Start agent_network_designer/connectivity
+2026-09-07 22:10:23 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Received a agent_network_designer.Connectivity request for connectivity request
+2026-09-07 22:10:23 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Agent network 'agent_network_designer' (ID: 2708425387664) used for operation: connectivity
+2026-09-07 22:10:23 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Done with agent_network_designer.Connectivity request for connectivity request
+2026-09-07 22:10:23 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] 200 GET /api/v1/agent_network_designer/connectivity (::1) 43.36ms
+2026-09-07 22:10:23 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Finish agent_network_designer/connectivity
+2026-09-07 22:10:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:53639 - "GET /api/v1/connectivity/agent_network_designer HTTP/1.1" 200 OK
+2026-09-07 22:10:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:10:23 - root - INFO - network_name: agent_network_designer
+2026-09-07 22:10:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:10:23 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:10:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:10:23 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:10:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:10:23 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_designer/http
+2026-09-07 22:10:23 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Start agent_network_designer/connectivity
+2026-09-07 22:10:23 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Received a agent_network_designer.Connectivity request for connectivity request
+2026-09-07 22:10:23 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Agent network 'agent_network_designer' (ID: 2708425387664) used for operation: connectivity
+2026-09-07 22:10:23 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Done with agent_network_designer.Connectivity request for connectivity request
+2026-09-07 22:10:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:53639 - "GET /api/v1/connectivity/agent_network_designer HTTP/1.1" 200 OK
+2026-09-07 22:10:23 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] 200 GET /api/v1/agent_network_designer/connectivity (::1) 5.02ms
+2026-09-07 22:10:23 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Finish agent_network_designer/connectivity
+2026-09-07 22:10:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:56672 - "GET /vite.svg HTTP/1.1" 200 OK
+2026-09-07 22:10:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:61993 - "WebSocket /api/v1/ws/logs/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:10:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:53887 - "GET /api/v1/mcp/oauth/required/agent_network_designer HTTP/1.1" 200 OK
+2026-09-07 22:10:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:10:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:10:23 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:10:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:10:23 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:10:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:10:23 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_designer/http
+2026-09-07 22:10:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:60929 - "WebSocket /api/v1/ws/chat/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:10:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:10:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:10:23 - agent_network_designer - INFO - Chat client session_1788798289383_e450849a78d885 connected to agent: agent_network_designer
+2026-09-07 22:10:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:52732 - "WebSocket /api/v1/ws/internalchat/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:10:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:10:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:10:23 - agent_network_designer - INFO - Internal chat connected: agent_network_designer
+2026-09-07 22:10:24 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:56365 - "GET /api/v1/networkconfig/agent_network_designer HTTP/1.1" 200 OK
+2026-09-07 22:10:24 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:53241 - "WebSocket /api/v1/ws/slydata/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:10:24 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:10:24 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:63401 - "WebSocket /api/v1/ws/progress/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:10:24 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:10:24 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:59691 - "WebSocket /api/v1/ws/sustainability/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:10:24 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:10:24 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:10:24 - root - INFO - network_name: agent_network_designer, agent_name: agent_network_designer
+2026-09-07 22:10:24 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:56365 - "GET /api/v1/networkconfig/agent_network_designer/agent/agent_network_designer HTTP/1.1" 200 OK
+2026-09-07 22:10:31 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Start agent_network_designer/streaming_chat
+2026-09-07 22:10:31 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Received a agent_network_designer.StreamingChat request for 'hi'
+2026-09-07 22:10:31 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Agent network 'agent_network_designer' (ID: 2708425387664) used for operation: streaming_chat
+2026-09-07 22:10:31 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Agent network 'agent_network_editor' (ID: 2708425308624) used for operation: function
+2026-09-07 22:10:31 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Agent network 'agent_network_query_generator' (ID: 2708425111888) used for operation: function
+2026-09-07 22:10:31 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Agent network 'agent_network_instructions_editor' (ID: 2708425109760) used for operation: function
+2026-09-07 22:10:33 India Standard Time | ERROR    | NeuroSan:_log:819 - NeuroSan - {"message": "Got exception in  RunContextRunnable. Error: Anthropic authentication failed: no API key or authorization credentials were provided. Set the ANTHROPIC_API_KEY environment variable, pass api_key=... to ChatAnthropic, or provide credentials via default_headers={"Authorization": ...}. If you are routing through the LangSmith gateway, set LANGSMITH_GATEWAY and LANGSMITH_GATEWAY_API_KEY.", "user_id": "None", "Timestamp": "2026-09-07T22:10:33.655044", "source": "HttpServer", "message_type": "Error", "request_id": "request-9"}
+2026-09-07 22:10:33 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:10:33 - agent_network_designer - INFO - {'otrace': ['agent_network_designer'], 'text': None}
+2026-09-07 22:10:33 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:10:33 - agent_network_designer - INFO - {'otrace': ['agent_network_designer'], 'text': ''}
+2026-09-07 22:10:33 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:10:33 - agent_network_designer - INFO - {'otrace': ['agent_network_designer'], 'text': ''}
+2026-09-07 22:10:33 India Standard Time | ERROR    | NeuroSan:_log:819 - NeuroSan - {"message": "Traceback (most recent call last): File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_anthropic\chat_models.py", line 1857, in _acreate return await self._async_client.messages.with_raw_response.create(**payload) ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\anthropic\_legacy_response.py", line 411, in wrapped return cast(LegacyAPIResponse[R], await func(*args, **kwargs)) ^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\anthropic\resources\messages\messages.py", line 2544, in create return await self._post( ^^^^^^^^^^^^^^^^^ ...<32 lines>... ) ^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\anthropic\_base_client.py", line 2277, in post return await self.request(cast_to, opts, stream=stream, stream_cls=stream_cls) ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\anthropic\_base_client.py", line 1881, in request response, prepared = await self._attempt_request( ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ model_copy(input_options), stream=stream, retries_taken=retries_taken ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ) ^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\anthropic\_base_client.py", line 2034, in _attempt_request request = self._build_request(options, retries_taken=retries_taken) File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\anthropic\_base_client.py", line 538, in _build_request headers = self._build_headers(options, retries_taken=retries_taken) File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\anthropic\_base_client.py", line 468, in _build_headers self._validate_headers(headers_dict, custom_headers) ~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\anthropic\_client.py", line 839, in _validate_headers raise TypeError( '"Could not resolve authentication method. Expected one of api_key, auth_token, or credentials to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted"' ) TypeError: "Could not resolve authentication method. Expected one of api_key, auth_token, or credentials to be set. Or for one of the `X-Api-Key` or `Authorization` headers to be explicitly omitted" The above exception was the direct cause of the following exception: Traceback (most recent call last): File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\neuro_san\internals\run_context\langchain\core\run_context_runnable.py", line 231, in invoke_agent_chain chain_result: Dict[str, Any] = await self.agent_chain.ainvoke(input=inputs, config=runnable_config) ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langgraph\pregel\main.py", line 4090, in ainvoke async for chunk in self.astream( ...<30 lines>... chunks.append(chunk) File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langgraph\pregel\main.py", line 3440, in astream async for _ in runner.atick( ...<16 lines>... yield o File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langgraph\pregel\_runner.py", line 396, in atick await arun_with_retry( ...<15 lines>... ) File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langgraph\pregel\_retry.py", line 744, in arun_with_retry return await task.proc.ainvoke(task.input, config) ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 756, in ainvoke input = await asyncio.create_task( ^^^^^^^^^^^^^^^^^^^^^^^^^^ step.ainvoke(input, config, **kwargs), context=context ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ) ^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langgraph\_internal\_runnable.py", line 522, in ainvoke ret = await self.afunc(*args, **kwargs) ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain\agents\factory.py", line 1537, in amodel_node result = await awrap_model_call_handler(request, _execute_model_async) ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain\agents\factory.py", line 400, in normalized_single return _to_composed_result(await single_handler(request, handler)) ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langsmith\run_helpers.py", line 682, in async_wrapper function_result = await fr_coro ^^^^^^^^^^^^^ File "C:\projectV2\nuerohackthon\middleware\agent_network_designer\agent_network_definition_middleware.py", line 195, in awrap_model_call return await handler(request) ^^^^^^^^^^^^^^^^^^^^^^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain\agents\factory.py", line 1505, in _execute_model_async output = await model_.ainvoke(messages) ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_core\runnables\base.py", line 6027, in ainvoke return await self.bound.ainvoke( ^^^^^^^^^^^^^^^^^^^^^^^^^ ...<3 lines>... ) ^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 511, in ainvoke llm_result = await self.agenerate_prompt( ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ...<8 lines>... ) ^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1888, in agenerate_prompt return await self.agenerate( ^^^^^^^^^^^^^^^^^^^^^ prompt_messages, stop=stop, callbacks=callbacks, **kwargs ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ) ^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 1846, in agenerate raise exceptions[0] File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_core\language_models\chat_models.py", line 2179, in _agenerate_with_cache result = await self._agenerate( ^^^^^^^^^^^^^^^^^^^^^^ messages, stop=stop, run_manager=run_manager, **kwargs ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^ ) ^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_anthropic\chat_models.py", line 2280, in _agenerate raw_response = await self._acreate(payload) ^^^^^^^^^^^^^^^^^^^^^^^^^^^^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_anthropic\chat_models.py", line 1859, in _acreate _raise_if_authentication_error(e) ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^ File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\langchain_anthropic\chat_models.py", line 1007, in _raise_if_authentication_error raise TypeError(msg) from e TypeError: Anthropic authentication failed: no API key or authorization credentials were provided. Set the ANTHROPIC_API_KEY environment variable, pass api_key=... to ChatAnthropic, or provide credentials via default_headers={"Authorization": ...}. If you are routing through the LangSmith gateway, set LANGSMITH_GATEWAY and LANGSMITH_GATEWAY_API_KEY. During task with name 'model' and id '6e3f2d97-a7c3-d273-5eb8-d55924b0a830' ", "user_id": "None", "Timestamp": "2026-09-07T22:10:33.683319", "source": "HttpServer", "message_type": "Error", "request_id": "request-9"}
+2026-09-07 22:10:33 India Standard Time | INFO     | nsflow:_log:823 - nsflow: {"type": "AI", "text": "\n```json\n{\n    \"error\": \"Agent stopped due to exception Anthropic authentication failed: no API key or authorization credentials were provided. Set the ANTHROPIC_API_KEY environment variable, pass api_key=... to ChatAnthropic, or provide credentials via default_headers={\\\"Authorization\\\": ...}. If you are routing through the LangSmith gateway, set LANGSMITH_GATEWAY and LANGSMITH_GATEWAY_API_KEY.\",\n    \"tool\": \"agent_network_designer\"\n}\n```"}
+2026-09-07 22:10:33 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:10:33 - agent_network_designer - INFO - Streaming chat finished for client: session_1788798289383_e450849a78d885
+2026-09-07 22:10:33 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan: time_taken_in_seconds includes overhead from Langchain and Neuro SAN
+2026-09-07 22:10:33 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan: time_taken_in_seconds includes overhead from Langchain and Neuro SAN
+2026-09-07 22:10:33 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: {"token_accounting": {"total_tokens": 0, "prompt_tokens": 0, "completion_tokens": 0, "successful_requests": 0, "empty_responses": 0, "total_cost": 0.0, "time_taken_in_seconds": 0.06684255599975586, "caveats": ["Token usage from agents of the main agent network only. Usage from external agents is not included.", "Token counts are approximate and estimated using tiktoken."]}, "total_token_accounting": {"total_tokens": 0, "prompt_tokens": 0, "completion_tokens": 0, "successful_requests": 0, "empty_responses": 0, "total_cost": 0.0, "time_taken_in_seconds": 0.06684255599975586, "caveats": ["Request total: includes token usage from external agents invoked via direct sessions on this server. Usage from external agents reached over the network is not included.", "Token counts are approximate and estimated using tiktoken."], "models": {}}}
+2026-09-07 22:10:33 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Done with agent_network_designer.StreamingChat request for 'hi'
+2026-09-07 22:10:33 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] 200 POST /api/v1/agent_network_designer/streaming_chat (::1) 2667.29ms
+2026-09-07 22:10:33 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Finish agent_network_designer/streaming_chat
+2026-09-07 22:10:33 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Stats: {'NumProcessing': 0, 'Total': 9, '/api/v1/list': 1, 'agent_network_designer/connectivity': 4, 'agent_network_test_generator/connectivity': 2, 'agent_network_test_generator/streaming_chat': 1, 'agent_network_designer/streaming_chat': 1}
+2026-09-07 22:11:04 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:58063 - "GET /api/v1/networkconfig/agent_network_designer/agent//agent_network_query_generator HTTP/1.1" 404 Not Found
+2026-09-07 22:38:52 India Standard Time | ERROR    | NeuroSan:_log:819 - NeuroSan - --- Logging error ---
+2026-09-07 22:38:52 India Standard Time | ERROR    | NeuroSan:_log:819 - NeuroSan - Traceback (most recent call last):
+2026-09-07 22:38:52 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -   File "C:\Program Files\Python314\Lib\logging\__init__.py", line 1154, in emit
+2026-09-07 22:38:52 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -     stream.write(msg + self.terminator)
+2026-09-07 22:38:52 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -     ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-07 22:38:52 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -   File "C:\Program Files\Python314\Lib\encodings\cp1252.py", line 19, in encode
+2026-09-07 22:38:52 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -     return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+2026-09-07 22:38:52 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-07 22:38:52 India Standard Time | ERROR    | NeuroSan:_log:819 - NeuroSan - UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f514' in position 13: character maps to <undefined>
+2026-09-07 22:38:52 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan - Call stack:
+2026-09-07 22:38:52 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -   File "C:\Program Files\Python314\Lib\threading.py", line 1043, in _bootstrap
+2026-09-07 22:38:52 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -     self._bootstrap_inner()
+2026-09-07 22:38:52 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -   File "C:\Program Files\Python314\Lib\threading.py", line 1081, in _bootstrap_inner
+2026-09-07 22:38:52 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -     self._context.run(self.run)
+2026-09-07 22:38:52 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -   File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\watchdog\observers\api.py", line 213, in run
+2026-09-07 22:38:52 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -     self.dispatch_events(self.event_queue)
+2026-09-07 22:38:52 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -   File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\watchdog\observers\api.py", line 391, in dispatch_events
+2026-09-07 22:38:52 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -     handler.dispatch(event)
+2026-09-07 22:38:52 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -   File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\watchdog\events.py", line 217, in dispatch
+2026-09-07 22:38:52 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan - getattr(self, f"on_{event.event_type}")(event)
+2026-09-07 22:38:52 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -   File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\neuro_san\service\watcher\registries\registry_change_handler.py", line 57, in on_created
+2026-09-07 22:38:52 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -     self.handle_event(RegistryChangeHandler.CREATED, event.src_path)
+2026-09-07 22:38:52 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -   File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\neuro_san\service\watcher\registries\registry_change_handler.py", line 73, in handle_event
+2026-09-07 22:38:52 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -     self.logger.info("\U0001f514 File %s: %s", event_name, src_path)
+2026-09-07 22:38:52 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan - Message: '\U0001f514 File %s: %s'
+2026-09-07 22:38:52 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan - Arguments: ('created', 'C:\\projectV2\\nuerohackthon\\registries\\basic\\weather_agent.hocon')
+2026-09-07 22:38:55 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:Http Server: Observed events: modified 0, added 1, deleted 0
+2026-09-07 22:38:55 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:Http Server: Updating manifest file: ['C:\projectV2\nuerohackthon\registries\manifest.hocon']
+2026-09-07 22:38:57 India Standard Time | ERROR    | NeuroSan:_log:819 - NeuroSan - --- Logging error ---
+2026-09-07 22:38:57 India Standard Time | ERROR    | NeuroSan:_log:819 - NeuroSan - Traceback (most recent call last):
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -   File "C:\Program Files\Python314\Lib\logging\__init__.py", line 1154, in emit
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -     stream.write(msg + self.terminator)
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -     ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -   File "C:\Program Files\Python314\Lib\encodings\cp1252.py", line 19, in encode
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -     return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-07 22:38:57 India Standard Time | ERROR    | NeuroSan:_log:819 - NeuroSan - UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f514' in position 13: character maps to <undefined>
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan - Call stack:
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -   File "C:\Program Files\Python314\Lib\threading.py", line 1043, in _bootstrap
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -     self._bootstrap_inner()
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -   File "C:\Program Files\Python314\Lib\threading.py", line 1081, in _bootstrap_inner
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -     self._context.run(self.run)
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -   File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\watchdog\observers\api.py", line 213, in run
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -     self.dispatch_events(self.event_queue)
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -   File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\watchdog\observers\api.py", line 391, in dispatch_events
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -     handler.dispatch(event)
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -   File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\watchdog\events.py", line 217, in dispatch
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan - getattr(self, f"on_{event.event_type}")(event)
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -   File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\neuro_san\service\watcher\registries\registry_change_handler.py", line 63, in on_deleted
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -     self.handle_event(RegistryChangeHandler.DELETED, event.src_path)
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -   File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\neuro_san\service\watcher\registries\registry_change_handler.py", line 73, in handle_event
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -     self.logger.info("\U0001f514 File %s: %s", event_name, src_path)
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan - Message: '\U0001f514 File %s: %s'
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan - Arguments: ('deleted', 'C:\\projectV2\\nuerohackthon\\registries\\manifest.hocon')
+2026-09-07 22:38:57 India Standard Time | ERROR    | NeuroSan:_log:819 - NeuroSan - --- Logging error ---
+2026-09-07 22:38:57 India Standard Time | ERROR    | NeuroSan:_log:819 - NeuroSan - Traceback (most recent call last):
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -   File "C:\Program Files\Python314\Lib\logging\__init__.py", line 1154, in emit
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -     stream.write(msg + self.terminator)
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -     ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -   File "C:\Program Files\Python314\Lib\encodings\cp1252.py", line 19, in encode
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -     return codecs.charmap_encode(input,self.errors,encoding_table)[0]
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -            ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+2026-09-07 22:38:57 India Standard Time | ERROR    | NeuroSan:_log:819 - NeuroSan - UnicodeEncodeError: 'charmap' codec can't encode character '\U0001f514' in position 13: character maps to <undefined>
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan - Call stack:
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -   File "C:\Program Files\Python314\Lib\threading.py", line 1043, in _bootstrap
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -     self._bootstrap_inner()
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -   File "C:\Program Files\Python314\Lib\threading.py", line 1081, in _bootstrap_inner
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -     self._context.run(self.run)
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -   File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\watchdog\observers\api.py", line 213, in run
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -     self.dispatch_events(self.event_queue)
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -   File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\watchdog\observers\api.py", line 391, in dispatch_events
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -     handler.dispatch(event)
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -   File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\watchdog\events.py", line 217, in dispatch
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan - getattr(self, f"on_{event.event_type}")(event)
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -   File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\neuro_san\service\watcher\registries\registry_change_handler.py", line 57, in on_created
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -     self.handle_event(RegistryChangeHandler.CREATED, event.src_path)
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -   File "C:\projectV2\nuerohackthon\.venv\Lib\site-packages\neuro_san\service\watcher\registries\registry_change_handler.py", line 73, in handle_event
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan -     self.logger.info("\U0001f514 File %s: %s", event_name, src_path)
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan - Message: '\U0001f514 File %s: %s'
+2026-09-07 22:38:57 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan - Arguments: ('created', 'C:\\projectV2\\nuerohackthon\\registries\\manifest.hocon')
+2026-09-07 22:40:25 India Standard Time | WARNING  | NeuroSan:_log:821 - NeuroSan - {"message": "Manifest file C:\projectV2\nuerohackthon\registries\manifest.hocon restored in 90.06 seconds.", "user_id": "None", "Timestamp": "2026-09-07T22:40:25.356466", "source": "Http Server", "message_type": "Warning", "request_id": "request-9"}
+2026-09-07 22:40:25 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Reset service for modified agent agent_network_test_generator
+2026-09-07 22:40:25 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:Http Server: REPLACED network for agent agent_network_test_generator (44957 bytes): 2708437918528
+2026-09-07 22:40:25 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Reset service for modified agent basic/music_nerd
+2026-09-07 22:40:25 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:Http Server: REPLACED network for agent basic/music_nerd (4636 bytes): 2708437322880
+2026-09-07 22:40:25 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Reset service for modified agent agent_network_designer
+2026-09-07 22:40:25 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:Http Server: REPLACED network for agent agent_network_designer (26433 bytes): 2708439680112
+2026-09-07 22:40:25 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Reset service for modified agent agent_network_query_generator
+2026-09-07 22:40:25 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:Http Server: REPLACED network for agent agent_network_query_generator (7986 bytes): 2708439430800
+2026-09-07 22:40:25 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Reset service for modified agent experimental/cruse_theme_agent
+2026-09-07 22:40:25 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:Http Server: REPLACED network for agent experimental/cruse_theme_agent (25790 bytes): 2708439420720
+2026-09-07 22:40:25 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Reset service for modified agent experimental/cruse_widget_agent
+2026-09-07 22:40:25 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:Http Server: REPLACED network for agent experimental/cruse_widget_agent (12903 bytes): 2708434777536
+2026-09-07 22:40:25 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Reset service for modified agent agent_network_instructions_editor
+2026-09-07 22:40:25 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:Http Server: REPLACED network for agent agent_network_instructions_editor (25505 bytes): 2708437706768
+2026-09-07 22:40:25 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Reset service for modified agent agent_network_editor
+2026-09-07 22:40:25 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:Http Server: REPLACED network for agent agent_network_editor (31199 bytes): 2708437707344
+2026-09-07 22:40:25 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:Http Server: Observed events: modified 0, added 1, deleted 1
+2026-09-07 22:40:25 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:Http Server: Updating manifest file: ['C:\projectV2\nuerohackthon\registries\manifest.hocon']
+2026-09-07 22:41:53 India Standard Time | WARNING  | NeuroSan:_log:821 - NeuroSan - {"message": "Manifest file C:\projectV2\nuerohackthon\registries\manifest.hocon restored in 87.93 seconds.", "user_id": "None", "Timestamp": "2026-09-07T22:41:53.323237", "source": "Http Server", "message_type": "Warning", "request_id": "request-9"}
+2026-09-07 22:41:53 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Added agent basic/weather_agent to allowed http service list
+2026-09-07 22:41:53 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:Http Server: ADDED network for agent basic/weather_agent (6619 bytes): 2708427517104
+2026-09-07 22:41:53 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Reset service for modified agent agent_network_test_generator
+2026-09-07 22:41:53 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:Http Server: REPLACED network for agent agent_network_test_generator (44957 bytes): 2708432994128
+2026-09-07 22:41:53 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Reset service for modified agent basic/music_nerd
+2026-09-07 22:41:53 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:Http Server: REPLACED network for agent basic/music_nerd (4636 bytes): 2708439684160
+2026-09-07 22:41:53 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Reset service for modified agent agent_network_designer
+2026-09-07 22:41:53 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:Http Server: REPLACED network for agent agent_network_designer (26433 bytes): 2708426035920
+2026-09-07 22:41:53 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Reset service for modified agent agent_network_query_generator
+2026-09-07 22:41:53 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:Http Server: REPLACED network for agent agent_network_query_generator (7986 bytes): 2708427517744
+2026-09-07 22:41:53 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Reset service for modified agent experimental/cruse_theme_agent
+2026-09-07 22:41:53 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:Http Server: REPLACED network for agent experimental/cruse_theme_agent (25790 bytes): 2708430256848
+2026-09-07 22:41:53 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Reset service for modified agent experimental/cruse_widget_agent
+2026-09-07 22:41:53 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:Http Server: REPLACED network for agent experimental/cruse_widget_agent (12903 bytes): 2708430248400
+2026-09-07 22:41:53 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Reset service for modified agent agent_network_instructions_editor
+2026-09-07 22:41:53 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:Http Server: REPLACED network for agent agent_network_instructions_editor (25505 bytes): 2708422242048
+2026-09-07 22:41:53 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Reset service for modified agent agent_network_editor
+2026-09-07 22:41:53 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:Http Server: REPLACED network for agent agent_network_editor (31199 bytes): 2708430083280
+2026-09-07 22:42:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:42:56 - agent_network_designer - INFO - WebSocket chat client disconnected: session_1788798289383_e450849a78d885
+2026-09-07 22:42:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:50668 - "WebSocket /api/v1/ws/logs/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:42:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:42:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:42:56 - agent_network_test_generator - INFO - New logs client connected
+2026-09-07 22:42:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:42:56 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:42:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:42:56 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:42:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:42:56 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_test_generator/http
+2026-09-07 22:43:01 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Start agent_network_test_generator/connectivity
+2026-09-07 22:43:01 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Received a agent_network_test_generator.Connectivity request for connectivity request
+2026-09-07 22:43:01 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Agent network 'agent_network_test_generator' (ID: 2708432994128) used for operation: connectivity
+2026-09-07 22:43:01 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Done with agent_network_test_generator.Connectivity request for connectivity request
+2026-09-07 22:43:01 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] 200 GET /api/v1/agent_network_test_generator/connectivity (::1) 4413.52ms
+2026-09-07 22:43:01 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Finish agent_network_test_generator/connectivity
+2026-09-07 22:43:01 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:59884 - "GET /api/v1/connectivity/agent_network_test_generator HTTP/1.1" 200 OK
+2026-09-07 22:43:01 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:43:01 - root - INFO - network_name: agent_network_test_generator
+2026-09-07 22:43:01 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:43:01 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:43:01 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:43:01 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:43:01 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:43:01 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_test_generator/http
+2026-09-07 22:43:01 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Start agent_network_test_generator/connectivity
+2026-09-07 22:43:01 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Received a agent_network_test_generator.Connectivity request for connectivity request
+2026-09-07 22:43:01 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Agent network 'agent_network_test_generator' (ID: 2708432994128) used for operation: connectivity
+2026-09-07 22:43:01 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Done with agent_network_test_generator.Connectivity request for connectivity request
+2026-09-07 22:43:01 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] 200 GET /api/v1/agent_network_test_generator/connectivity (::1) 5.56ms
+2026-09-07 22:43:01 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Finish agent_network_test_generator/connectivity
+2026-09-07 22:43:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:59884 - "GET /api/v1/connectivity/agent_network_test_generator HTTP/1.1" 200 OK
+2026-09-07 22:43:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:60310 - "GET /api/v1/mcp/oauth/required/agent_network_test_generator HTTP/1.1" 200 OK
+2026-09-07 22:43:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:50451 - "WebSocket /api/v1/ws/logs/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:43:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:43:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:52532 - "GET /vite.svg HTTP/1.1" 200 OK
+2026-09-07 22:43:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:55458 - "GET /api/v1/networkconfig/agent_network_test_generator HTTP/1.1" 200 OK
+2026-09-07 22:43:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:43:02 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:43:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:43:02 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:43:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:43:02 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_test_generator/http
+2026-09-07 22:43:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:57296 - "WebSocket /api/v1/ws/chat/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:43:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:43:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:43:02 - agent_network_test_generator - INFO - Chat client session_1788798289383_e450849a78d885 connected to agent: agent_network_test_generator
+2026-09-07 22:43:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:58743 - "WebSocket /api/v1/ws/internalchat/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:43:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:43:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:43:02 - agent_network_test_generator - INFO - Internal chat connected: agent_network_test_generator
+2026-09-07 22:43:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:58692 - "WebSocket /api/v1/ws/slydata/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:43:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:43:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:55754 - "WebSocket /api/v1/ws/progress/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:43:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:43:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:43:03 - root - INFO - network_name: agent_network_test_generator, agent_name: test_scenario_planner
+2026-09-07 22:43:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:55458 - "GET /api/v1/networkconfig/agent_network_test_generator/agent/test_scenario_planner HTTP/1.1" 200 OK
+2026-09-07 22:43:10 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Start agent_network_test_generator/streaming_chat
+2026-09-07 22:43:10 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Received a agent_network_test_generator.StreamingChat request for 'test'
+2026-09-07 22:43:10 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Agent network 'agent_network_test_generator' (ID: 2708432994128) used for operation: streaming_chat
+2026-09-07 22:43:11 India Standard Time | ERROR    | NeuroSan:_log:819 - NeuroSan - {"message": "API KEY error detected: A value for the OPENAI_API_KEY environment variable must be correctly set in the neuro-san server or run-time environment in order to use this agent network. Some things to try: 1) Double check that your value for OPENAI_API_KEY is set correctly 2) If you do not have a value for OPENAI_API_KEY, visit the LLM provider's website to get one 3) It's possible that your credit balance on your account with the LLM provider is too low to make the request.  Check that. 4) Sometimes these errors happen because of firewall blockages to the site that hosts the LLM. Try checking that you can reach the regular UI for the LLM from a web browser on the same machine making this request. ", "user_id": "None", "Timestamp": "2026-09-07T22:43:11.702267", "source": "HttpServer", "message_type": "Error", "request_id": "request-12"}
+2026-09-07 22:43:11 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Request reporting: {}
+2026-09-07 22:43:11 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Done with agent_network_test_generator.StreamingChat request for 'test'
+2026-09-07 22:43:11 India Standard Time | ERROR    | nsflow:_log:819 - nsflow: {"type": "AI", "text": "No fully-specified LLM found in llm_config or fallbacks.\n\nLLM operation for this agent requires at least one LLM provider API key to be set as an environment variable.\nThe following errors occurred while looking for LLM API keys:\n\nA value for the OPENAI_API_KEY environment variable must be correctly set in the neuro-san\nserver or run-time environment in order to use this agent network.\n\nSome things to try:\n1) Double check that your value for OPENAI_API_KEY is set correctly\n2) If you do not have a value for OPENAI_API_KEY, visit the LLM provider's website to get one \n3) It's possible that your credit balance on your account with the LLM provider is too low\n   to make the request.  Check that.\n4) Sometimes these errors happen because of firewall blockages to the site that hosts the LLM.\n   Try checking that you can reach the regular UI for the LLM from a web browser\n   on the same machine making this request.\n"}
+2026-09-07 22:43:11 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] 200 POST /api/v1/agent_network_test_generator/streaming_chat (::1) 966.74ms
+2026-09-07 22:43:11 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:43:11 - agent_network_test_generator - INFO - Streaming chat finished for client: session_1788798289383_e450849a78d885
+2026-09-07 22:43:11 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Finish agent_network_test_generator/streaming_chat
+2026-09-07 22:43:11 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Stats: {'NumProcessing': 0, 'Total': 12, '/api/v1/list': 1, 'agent_network_designer/connectivity': 4, 'agent_network_test_generator/connectivity': 4, 'agent_network_test_generator/streaming_chat': 2, 'agent_network_designer/streaming_chat': 1}
+2026-09-07 22:46:53 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:46:53 - agent_network_test_generator - INFO - WebSocket chat client disconnected: session_1788798289383_e450849a78d885
+2026-09-07 22:46:53 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:46:53 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:46:53 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:46:53 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:46:53 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:46:53 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/basic/music_nerd/http
+2026-09-07 22:46:56 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Start basic/music_nerd/connectivity
+2026-09-07 22:46:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:63441 - "GET /api/v1/connectivity/basic/music_nerd HTTP/1.1" 200 OK
+2026-09-07 22:46:56 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Received a basic/music_nerd.Connectivity request for connectivity request
+2026-09-07 22:46:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:59760 - "WebSocket /api/v1/ws/logs/basic/music_nerd/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:46:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:55189 - "GET /api/v1/networkconfig/basic/music_nerd HTTP/1.1" 404 Not Found
+2026-09-07 22:46:56 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Agent network 'basic/music_nerd' (ID: 2708439684160) used for operation: connectivity
+2026-09-07 22:46:56 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Done with basic/music_nerd.Connectivity request for connectivity request
+2026-09-07 22:46:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:46:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:63441 - "GET /api/v1/connectivity/basic/music_nerd HTTP/1.1" 200 OK
+2026-09-07 22:46:56 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] 200 GET /api/v1/basic/music_nerd/connectivity (::1) 3083.68ms
+2026-09-07 22:46:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:46:56 - basic/music_nerd - INFO - New logs client connected
+2026-09-07 22:46:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:49951 - "GET /api/v1/mcp/oauth/required/basic/music_nerd HTTP/1.1" 200 OK
+2026-09-07 22:46:56 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Finish basic/music_nerd/connectivity
+2026-09-07 22:46:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:46:56 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:46:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:56235 - "GET /vite.svg HTTP/1.1" 200 OK
+2026-09-07 22:46:56 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Start basic/music_nerd/connectivity
+2026-09-07 22:46:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:46:56 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:46:56 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Received a basic/music_nerd.Connectivity request for connectivity request
+2026-09-07 22:46:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:46:56 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/basic/music_nerd/http
+2026-09-07 22:46:56 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Agent network 'basic/music_nerd' (ID: 2708439684160) used for operation: connectivity
+2026-09-07 22:46:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:51998 - "WebSocket /api/v1/ws/logs/basic/music_nerd/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:46:56 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Done with basic/music_nerd.Connectivity request for connectivity request
+2026-09-07 22:46:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:46:56 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] 200 GET /api/v1/basic/music_nerd/connectivity (::1) 2.53ms
+2026-09-07 22:46:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:46:56 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:46:56 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Finish basic/music_nerd/connectivity
+2026-09-07 22:46:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:46:56 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:46:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:46:56 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/basic/music_nerd/http
+2026-09-07 22:46:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:61307 - "WebSocket /api/v1/ws/chat/basic/music_nerd/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:46:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:46:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:46:56 - basic/music_nerd - INFO - Chat client session_1788798289383_e450849a78d885 connected to agent: basic/music_nerd
+2026-09-07 22:46:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:60760 - "WebSocket /api/v1/ws/internalchat/basic/music_nerd/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:46:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:46:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:46:56 - basic/music_nerd - INFO - Internal chat connected: basic/music_nerd
+2026-09-07 22:46:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:53842 - "WebSocket /api/v1/ws/slydata/basic/music_nerd/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:46:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:46:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:61514 - "WebSocket /api/v1/ws/progress/basic/music_nerd/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:46:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:46:59 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Start basic/music_nerd/streaming_chat
+2026-09-07 22:46:59 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Received a basic/music_nerd.StreamingChat request for 'best music'
+2026-09-07 22:46:59 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Agent network 'basic/music_nerd' (ID: 2708439684160) used for operation: streaming_chat
+2026-09-07 22:47:00 India Standard Time | ERROR    | NeuroSan:_log:819 - NeuroSan - {"message": "API KEY error detected: A value for the OPENAI_API_KEY environment variable must be correctly set in the neuro-san server or run-time environment in order to use this agent network. Some things to try: 1) Double check that your value for OPENAI_API_KEY is set correctly 2) If you do not have a value for OPENAI_API_KEY, visit the LLM provider's website to get one 3) It's possible that your credit balance on your account with the LLM provider is too low to make the request.  Check that. 4) Sometimes these errors happen because of firewall blockages to the site that hosts the LLM. Try checking that you can reach the regular UI for the LLM from a web browser on the same machine making this request. ", "user_id": "None", "Timestamp": "2026-09-07T22:47:00.166251", "source": "HttpServer", "message_type": "Error", "request_id": "request-15"}
+2026-09-07 22:47:00 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Request reporting: {}
+2026-09-07 22:47:00 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Done with basic/music_nerd.StreamingChat request for 'best music'
+2026-09-07 22:47:00 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] 200 POST /api/v1/basic/music_nerd/streaming_chat (::1) 870.24ms
+2026-09-07 22:47:00 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Finish basic/music_nerd/streaming_chat
+2026-09-07 22:47:00 India Standard Time | ERROR    | nsflow:_log:819 - nsflow: {"type": "AI", "text": "No fully-specified LLM found in llm_config or fallbacks.\n\nLLM operation for this agent requires at least one LLM provider API key to be set as an environment variable.\nThe following errors occurred while looking for LLM API keys:\n\nA value for the OPENAI_API_KEY environment variable must be correctly set in the neuro-san\nserver or run-time environment in order to use this agent network.\n\nSome things to try:\n1) Double check that your value for OPENAI_API_KEY is set correctly\n2) If you do not have a value for OPENAI_API_KEY, visit the LLM provider's website to get one \n3) It's possible that your credit balance on your account with the LLM provider is too low\n   to make the request.  Check that.\n4) Sometimes these errors happen because of firewall blockages to the site that hosts the LLM.\n   Try checking that you can reach the regular UI for the LLM from a web browser\n   on the same machine making this request.\n"}
+2026-09-07 22:47:00 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Stats: {'NumProcessing': 0, 'Total': 15, '/api/v1/list': 1, 'agent_network_designer/connectivity': 4, 'agent_network_test_generator/connectivity': 4, 'agent_network_test_generator/streaming_chat': 2, 'agent_network_designer/streaming_chat': 1, 'basic/music_nerd/connectivity': 2, 'basic/music_nerd/streaming_chat': 1}
+2026-09-07 22:47:00 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:47:00 - basic/music_nerd - INFO - Streaming chat finished for client: session_1788798289383_e450849a78d885
+2026-09-07 22:49:55 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:49:55 - basic/music_nerd - INFO - WebSocket chat client disconnected: session_1788798289383_e450849a78d885
+2026-09-07 22:49:55 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:54728 - "WebSocket /api/v1/ws/logs/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:49:55 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:49:55 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:49:55 - agent_network_test_generator - INFO - New logs client connected
+2026-09-07 22:49:55 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:49:55 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:49:55 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:49:55 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:49:55 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:49:55 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_test_generator/http
+2026-09-07 22:49:55 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Start agent_network_test_generator/connectivity
+2026-09-07 22:49:55 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Received a agent_network_test_generator.Connectivity request for connectivity request
+2026-09-07 22:49:55 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:60487 - "GET /api/v1/connectivity/agent_network_test_generator HTTP/1.1" 200 OK
+2026-09-07 22:49:55 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Agent network 'agent_network_test_generator' (ID: 2708432994128) used for operation: connectivity
+2026-09-07 22:49:55 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:49:55 - root - INFO - network_name: agent_network_test_generator
+2026-09-07 22:49:55 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Done with agent_network_test_generator.Connectivity request for connectivity request
+2026-09-07 22:49:55 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] 200 GET /api/v1/agent_network_test_generator/connectivity (::1) 9.77ms
+2026-09-07 22:49:55 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:60487 - "GET /vite.svg HTTP/1.1" 200 OK
+2026-09-07 22:49:55 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Finish agent_network_test_generator/connectivity
+2026-09-07 22:49:55 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:52804 - "WebSocket /api/v1/ws/logs/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:49:55 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:49:55 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:49:55 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:49:55 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:49:55 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:49:55 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:49:55 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_test_generator/http
+2026-09-07 22:49:55 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Start agent_network_test_generator/connectivity
+2026-09-07 22:49:55 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Received a agent_network_test_generator.Connectivity request for connectivity request
+2026-09-07 22:49:55 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Agent network 'agent_network_test_generator' (ID: 2708432994128) used for operation: connectivity
+2026-09-07 22:49:55 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Done with agent_network_test_generator.Connectivity request for connectivity request
+2026-09-07 22:49:55 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] 200 GET /api/v1/agent_network_test_generator/connectivity (::1) 3.98ms
+2026-09-07 22:49:55 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Finish agent_network_test_generator/connectivity
+2026-09-07 22:49:55 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:60487 - "GET /api/v1/connectivity/agent_network_test_generator HTTP/1.1" 200 OK
+2026-09-07 22:49:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:49:56 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:49:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:49:56 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:49:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:49:56 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_test_generator/http
+2026-09-07 22:49:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:54242 - "WebSocket /api/v1/ws/chat/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:49:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:49:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:49:56 - agent_network_test_generator - INFO - Chat client session_1788798289383_e450849a78d885 connected to agent: agent_network_test_generator
+2026-09-07 22:49:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:56125 - "WebSocket /api/v1/ws/internalchat/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:49:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:49:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:49:56 - agent_network_test_generator - INFO - Internal chat connected: agent_network_test_generator
+2026-09-07 22:49:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:58625 - "WebSocket /api/v1/ws/slydata/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:49:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:49:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:54518 - "GET /api/v1/mcp/oauth/required/agent_network_test_generator HTTP/1.1" 200 OK
+2026-09-07 22:49:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:49667 - "WebSocket /api/v1/ws/progress/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:49:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:49:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:62558 - "WebSocket /api/v1/ws/sustainability/agent_network_test_generator/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:49:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:49:56 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:63897 - "GET /api/v1/networkconfig/agent_network_test_generator HTTP/1.1" 200 OK
+2026-09-07 22:50:00 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:00 - agent_network_test_generator - INFO - WebSocket chat client disconnected: session_1788798289383_e450849a78d885
+2026-09-07 22:50:00 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:00 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:50:00 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:00 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:50:00 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:00 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_designer/http
+2026-09-07 22:50:02 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Start agent_network_designer/connectivity
+2026-09-07 22:50:02 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Received a agent_network_designer.Connectivity request for connectivity request
+2026-09-07 22:50:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:54518 - "GET /api/v1/connectivity/agent_network_designer HTTP/1.1" 200 OK
+2026-09-07 22:50:02 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Agent network 'agent_network_designer' (ID: 2708426035920) used for operation: connectivity
+2026-09-07 22:50:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:52344 - "GET /vite.svg HTTP/1.1" 200 OK
+2026-09-07 22:50:02 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Done with agent_network_designer.Connectivity request for connectivity request
+2026-09-07 22:50:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:02 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:50:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:63897 - "GET /api/v1/mcp/oauth/required/agent_network_designer HTTP/1.1" 200 OK
+2026-09-07 22:50:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:02 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:50:02 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] 200 GET /api/v1/agent_network_designer/connectivity (::1) 2302.43ms
+2026-09-07 22:50:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:02 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_designer/http
+2026-09-07 22:50:02 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Finish agent_network_designer/connectivity
+2026-09-07 22:50:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:02 - root - INFO - network_name: agent_network_designer
+2026-09-07 22:50:02 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Start agent_network_designer/connectivity
+2026-09-07 22:50:02 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Received a agent_network_designer.Connectivity request for connectivity request
+2026-09-07 22:50:02 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Agent network 'agent_network_designer' (ID: 2708426035920) used for operation: connectivity
+2026-09-07 22:50:02 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Done with agent_network_designer.Connectivity request for connectivity request
+2026-09-07 22:50:02 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] 200 GET /api/v1/agent_network_designer/connectivity (::1) 3.44ms
+2026-09-07 22:50:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:54518 - "GET /api/v1/connectivity/agent_network_designer HTTP/1.1" 200 OK
+2026-09-07 22:50:02 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Finish agent_network_designer/connectivity
+2026-09-07 22:50:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:63621 - "WebSocket /api/v1/ws/logs/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:50:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:50:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:02 - agent_network_designer - INFO - New logs client connected
+2026-09-07 22:50:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:57001 - "WebSocket /api/v1/ws/logs/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:50:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:50:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:02 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:50:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:02 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:50:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:02 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/agent_network_designer/http
+2026-09-07 22:50:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:61840 - "WebSocket /api/v1/ws/chat/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:50:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:50:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:02 - agent_network_designer - INFO - Chat client session_1788798289383_e450849a78d885 connected to agent: agent_network_designer
+2026-09-07 22:50:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:59545 - "WebSocket /api/v1/ws/internalchat/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:50:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:50:02 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:02 - agent_network_designer - INFO - Internal chat connected: agent_network_designer
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:60487 - "GET /api/v1/networkconfig/agent_network_designer HTTP/1.1" 200 OK
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:64005 - "WebSocket /api/v1/ws/slydata/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:50716 - "WebSocket /api/v1/ws/progress/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:50879 - "WebSocket /api/v1/ws/sustainability/agent_network_designer/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:03 - agent_network_designer - INFO - WebSocket chat client disconnected: session_1788798289383_e450849a78d885
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:03 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:03 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:03 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/basic/music_nerd/http
+2026-09-07 22:50:03 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Start basic/music_nerd/connectivity
+2026-09-07 22:50:03 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Received a basic/music_nerd.Connectivity request for connectivity request
+2026-09-07 22:50:03 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Agent network 'basic/music_nerd' (ID: 2708439684160) used for operation: connectivity
+2026-09-07 22:50:03 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Done with basic/music_nerd.Connectivity request for connectivity request
+2026-09-07 22:50:03 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] 200 GET /api/v1/basic/music_nerd/connectivity (::1) 5.20ms
+2026-09-07 22:50:03 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Finish basic/music_nerd/connectivity
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:54518 - "GET /api/v1/connectivity/basic/music_nerd HTTP/1.1" 200 OK
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:63897 - "GET /api/v1/networkconfig/basic/music_nerd HTTP/1.1" 404 Not Found
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:03 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:03 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:03 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/basic/music_nerd/http
+2026-09-07 22:50:03 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Start basic/music_nerd/connectivity
+2026-09-07 22:50:03 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Received a basic/music_nerd.Connectivity request for connectivity request
+2026-09-07 22:50:03 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Agent network 'basic/music_nerd' (ID: 2708439684160) used for operation: connectivity
+2026-09-07 22:50:03 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Done with basic/music_nerd.Connectivity request for connectivity request
+2026-09-07 22:50:03 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] 200 GET /api/v1/basic/music_nerd/connectivity (::1) 12.37ms
+2026-09-07 22:50:03 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Finish basic/music_nerd/connectivity
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:54518 - "GET /api/v1/connectivity/basic/music_nerd HTTP/1.1" 200 OK
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:63897 - "GET /vite.svg HTTP/1.1" 200 OK
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:60487 - "GET /api/v1/mcp/oauth/required/basic/music_nerd HTTP/1.1" 200 OK
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:56035 - "WebSocket /api/v1/ws/logs/basic/music_nerd/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:03 - basic/music_nerd - INFO - New logs client connected
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:51259 - "WebSocket /api/v1/ws/logs/basic/music_nerd/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:03 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:03 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:03 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/basic/music_nerd/http
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:59832 - "WebSocket /api/v1/ws/chat/basic/music_nerd/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:03 - basic/music_nerd - INFO - Chat client session_1788798289383_e450849a78d885 connected to agent: basic/music_nerd
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:62653 - "WebSocket /api/v1/ws/internalchat/basic/music_nerd/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:03 - basic/music_nerd - INFO - Internal chat connected: basic/music_nerd
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:55116 - "WebSocket /api/v1/ws/slydata/basic/music_nerd/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:60815 - "WebSocket /api/v1/ws/progress/basic/music_nerd/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:56077 - "WebSocket /api/v1/ws/sustainability/basic/music_nerd/session_1788798289383_e450849a78d885" [accepted]
+2026-09-07 22:50:03 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:50:15 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:58947 - "GET /?network=basic%2Fmusic_nerd HTTP/1.1" 200 OK
+2026-09-07 22:50:15 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:15 - basic/music_nerd - INFO - WebSocket chat client disconnected: session_1788798289383_e450849a78d885
+2026-09-07 22:50:15 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:62763 - "GET /assets/index.css HTTP/1.1" 304 Not Modified
+2026-09-07 22:50:15 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:58947 - "GET /assets/index.js HTTP/1.1" 304 Not Modified
+2026-09-07 22:50:16 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:58947 - "GET /api/v1/vite_config.json HTTP/1.1" 200 OK
+2026-09-07 22:50:16 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:58947 - "GET /vite.svg HTTP/1.1" 200 OK
+2026-09-07 22:50:16 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:58947 - "GET /api/v1/version/nsflow HTTP/1.1" 200 OK
+2026-09-07 22:50:16 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:58947 - "GET /api/v1/ping HTTP/1.1" 200 OK
+2026-09-07 22:50:16 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:62763 - "GET /api/v1/get_ns_config HTTP/1.1" 200 OK
+2026-09-07 22:50:16 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:16 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:50:16 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:16 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:50:16 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:16 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/basic/music_nerd/http
+2026-09-07 22:50:16 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Start basic/music_nerd/connectivity
+2026-09-07 22:50:16 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:58947 - "GET /api/v1/connectivity/basic/music_nerd HTTP/1.1" 200 OK
+2026-09-07 22:50:16 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Received a basic/music_nerd.Connectivity request for connectivity request
+2026-09-07 22:50:16 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:62763 - "GET /api/v1/networkconfig/basic/music_nerd HTTP/1.1" 404 Not Found
+2026-09-07 22:50:16 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Agent network 'basic/music_nerd' (ID: 2708439684160) used for operation: connectivity
+2026-09-07 22:50:16 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:58947 - "GET /api/v1/ping HTTP/1.1" 200 OK
+2026-09-07 22:50:16 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Done with basic/music_nerd.Connectivity request for connectivity request
+2026-09-07 22:50:16 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:62763 - "GET /api/v1/get_ns_config HTTP/1.1" 200 OK
+2026-09-07 22:50:16 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] 200 GET /api/v1/basic/music_nerd/connectivity (::1) 9.07ms
+2026-09-07 22:50:16 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Finish basic/music_nerd/connectivity
+2026-09-07 22:50:16 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:16 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:50:16 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:16 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:50:16 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:16 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/basic/music_nerd/http
+2026-09-07 22:50:16 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Start basic/music_nerd/connectivity
+2026-09-07 22:50:16 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Received a basic/music_nerd.Connectivity request for connectivity request
+2026-09-07 22:50:16 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Agent network 'basic/music_nerd' (ID: 2708439684160) used for operation: connectivity
+2026-09-07 22:50:16 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Done with basic/music_nerd.Connectivity request for connectivity request
+2026-09-07 22:50:16 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] 200 GET /api/v1/basic/music_nerd/connectivity (::1) 3.83ms
+2026-09-07 22:50:16 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Finish basic/music_nerd/connectivity
+2026-09-07 22:50:16 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:58947 - "GET /api/v1/connectivity/basic/music_nerd HTTP/1.1" 200 OK
+2026-09-07 22:50:16 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:58947 - "GET /api/v1/version/nsflow HTTP/1.1" 200 OK
+2026-09-07 22:50:16 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:58947 - "GET /api/v1/mcp/oauth/connections HTTP/1.1" 200 OK
+2026-09-07 22:50:16 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:58947 - "GET /api/v1/mcp/oauth/redirect_uri HTTP/1.1" 200 OK
+2026-09-07 22:50:16 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:58947 - "GET /api/v1/get_ns_config HTTP/1.1" 200 OK
+2026-09-07 22:50:16 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:59470 - "GET /api/v1/version/neuro-san HTTP/1.1" 200 OK
+2026-09-07 22:50:16 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:16 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:50:16 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:16 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:50:16 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:16 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/basic/music_nerd/http
+2026-09-07 22:50:16 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Start basic/music_nerd/connectivity
+2026-09-07 22:50:16 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:58947 - "GET /api/v1/connectivity/basic/music_nerd HTTP/1.1" 200 OK
+2026-09-07 22:50:16 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Received a basic/music_nerd.Connectivity request for connectivity request
+2026-09-07 22:50:16 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:62763 - "GET /api/v1/mcp/oauth/required/basic/music_nerd HTTP/1.1" 200 OK
+2026-09-07 22:50:16 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Agent network 'basic/music_nerd' (ID: 2708439684160) used for operation: connectivity
+2026-09-07 22:50:16 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:59470 - "GET /api/v1/version/neuro-san HTTP/1.1" 200 OK
+2026-09-07 22:50:16 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Done with basic/music_nerd.Connectivity request for connectivity request
+2026-09-07 22:50:16 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] 200 GET /api/v1/basic/music_nerd/connectivity (::1) 3.49ms
+2026-09-07 22:50:16 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Finish basic/music_nerd/connectivity
+2026-09-07 22:50:17 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:61002 - "GET /api/v1/get_ns_config HTTP/1.1" 200 OK
+2026-09-07 22:50:17 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:51424 - "WebSocket /api/v1/ws/logs/basic/music_nerd/session_1788801616101_4bef6ffcf99cd8" [accepted]
+2026-09-07 22:50:17 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:50:17 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:17 - basic/music_nerd - INFO - New logs client connected
+2026-09-07 22:50:17 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Start /api/v1/list
+2026-09-07 22:50:17 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:17 - httpx - INFO - HTTP Request: GET http://localhost:8080/api/v1/list "HTTP/1.1 200 OK"
+2026-09-07 22:50:17 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:60020 - "GET /api/v1/list?connection_type=http&host=localhost&port=8080 HTTP/1.1" 200 OK
+2026-09-07 22:50:17 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] 200 GET /api/v1/list (::1) 2.64ms
+2026-09-07 22:50:17 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:64807 - "WebSocket /api/v1/ws/logs/basic/music_nerd/session_1788801616101_4bef6ffcf99cd8" [accepted]
+2026-09-07 22:50:17 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Finish /api/v1/list
+2026-09-07 22:50:17 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:50:17 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:17 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:50:17 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:17 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:50:17 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:17 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/basic/music_nerd/http
+2026-09-07 22:50:17 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:52042 - "WebSocket /api/v1/ws/chat/basic/music_nerd/session_1788801616101_4bef6ffcf99cd8" [accepted]
+2026-09-07 22:50:17 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:50:17 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:17 - basic/music_nerd - INFO - Chat client session_1788801616101_4bef6ffcf99cd8 connected to agent: basic/music_nerd
+2026-09-07 22:50:17 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:53720 - "WebSocket /api/v1/ws/internalchat/basic/music_nerd/session_1788801616101_4bef6ffcf99cd8" [accepted]
+2026-09-07 22:50:17 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:50:17 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:17 - basic/music_nerd - INFO - Internal chat connected: basic/music_nerd
+2026-09-07 22:50:17 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:58387 - "WebSocket /api/v1/ws/progress/basic/music_nerd/session_1788801616101_4bef6ffcf99cd8" [accepted]
+2026-09-07 22:50:17 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:50:17 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:63376 - "WebSocket /api/v1/ws/slydata/basic/music_nerd/session_1788801616101_4bef6ffcf99cd8" [accepted]
+2026-09-07 22:50:17 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:50:17 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:55542 - "WebSocket /api/v1/ws/sustainability/basic/music_nerd/session_1788801616101_4bef6ffcf99cd8" [accepted]
+2026-09-07 22:50:17 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:50:18 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:18 - root - INFO - network_name: basic/music_nerd, agent_name: MusicNerd
+2026-09-07 22:50:18 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:60020 - "GET /api/v1/networkconfig/basic/music_nerd/agent/MusicNerd HTTP/1.1" 200 OK
+2026-09-07 22:50:20 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:20 - basic/music_nerd - INFO - WebSocket chat client disconnected: session_1788801616101_4bef6ffcf99cd8
+2026-09-07 22:50:20 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:20 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:50:20 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:20 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:50:20 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:20 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/basic/weather_agent/http
+2026-09-07 22:50:23 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Start basic/weather_agent/connectivity
+2026-09-07 22:50:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:61002 - "GET /api/v1/connectivity/basic/weather_agent HTTP/1.1" 200 OK
+2026-09-07 22:50:23 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Received a basic/weather_agent.Connectivity request for connectivity request
+2026-09-07 22:50:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:59470 - "GET /api/v1/networkconfig/basic/weather_agent HTTP/1.1" 404 Not Found
+2026-09-07 22:50:23 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Agent network 'basic/weather_agent' (ID: 2708427517104) used for operation: connectivity
+2026-09-07 22:50:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:62763 - "GET /vite.svg HTTP/1.1" 200 OK
+2026-09-07 22:50:23 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Done with basic/weather_agent.Connectivity request for connectivity request
+2026-09-07 22:50:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:23 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:50:23 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] 200 GET /api/v1/basic/weather_agent/connectivity (::1) 2847.76ms
+2026-09-07 22:50:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:23 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:50:23 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Finish basic/weather_agent/connectivity
+2026-09-07 22:50:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:61002 - "GET /api/v1/connectivity/basic/weather_agent HTTP/1.1" 200 OK
+2026-09-07 22:50:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:23 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/basic/weather_agent/http
+2026-09-07 22:50:23 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Start basic/weather_agent/connectivity
+2026-09-07 22:50:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:60020 - "GET /api/v1/mcp/oauth/required/basic/weather_agent HTTP/1.1" 200 OK
+2026-09-07 22:50:23 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Received a basic/weather_agent.Connectivity request for connectivity request
+2026-09-07 22:50:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:62964 - "WebSocket /api/v1/ws/logs/basic/weather_agent/session_1788801616101_4bef6ffcf99cd8" [accepted]
+2026-09-07 22:50:23 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Agent network 'basic/weather_agent' (ID: 2708427517104) used for operation: connectivity
+2026-09-07 22:50:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:50:23 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Done with basic/weather_agent.Connectivity request for connectivity request
+2026-09-07 22:50:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:23 - basic/weather_agent - INFO - New logs client connected
+2026-09-07 22:50:23 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] 200 GET /api/v1/basic/weather_agent/connectivity (::1) 2.72ms
+2026-09-07 22:50:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:56057 - "WebSocket /api/v1/ws/logs/basic/weather_agent/session_1788801616101_4bef6ffcf99cd8" [accepted]
+2026-09-07 22:50:23 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Finish basic/weather_agent/connectivity
+2026-09-07 22:50:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:50:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:23 - root - INFO - Using thinking file: C:\projectV2\nuerohackthon\logs\agent_thinking.txt
+2026-09-07 22:50:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:23 - root - INFO - Using thinking dir: C:\projectV2\nuerohackthon\logs\thinking_dir
+2026-09-07 22:50:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:23 - root - INFO - Created agent session for agent: http://localhost:8080/api/v1/basic/weather_agent/http
+2026-09-07 22:50:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:56682 - "WebSocket /api/v1/ws/chat/basic/weather_agent/session_1788801616101_4bef6ffcf99cd8" [accepted]
+2026-09-07 22:50:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:50:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:23 - basic/weather_agent - INFO - Chat client session_1788801616101_4bef6ffcf99cd8 connected to agent: basic/weather_agent
+2026-09-07 22:50:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:56621 - "WebSocket /api/v1/ws/internalchat/basic/weather_agent/session_1788801616101_4bef6ffcf99cd8" [accepted]
+2026-09-07 22:50:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:50:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:23 - basic/weather_agent - INFO - Internal chat connected: basic/weather_agent
+2026-09-07 22:50:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:64651 - "WebSocket /api/v1/ws/slydata/basic/weather_agent/session_1788801616101_4bef6ffcf99cd8" [accepted]
+2026-09-07 22:50:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:50:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:62406 - "WebSocket /api/v1/ws/progress/basic/weather_agent/session_1788801616101_4bef6ffcf99cd8" [accepted]
+2026-09-07 22:50:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:50:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     127.0.0.1:62746 - "WebSocket /api/v1/ws/sustainability/basic/weather_agent/session_1788801616101_4bef6ffcf99cd8" [accepted]
+2026-09-07 22:50:23 India Standard Time | INFO     | nsflow:_log:823 - nsflow - INFO:     connection open
+2026-09-07 22:50:24 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Start basic/weather_agent/streaming_chat
+2026-09-07 22:50:24 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Received a basic/weather_agent.StreamingChat request for 'What's the weather in Chennai right now?'
+2026-09-07 22:50:24 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Agent network 'basic/weather_agent' (ID: 2708427517104) used for operation: streaming_chat
+2026-09-07 22:50:25 India Standard Time | ERROR    | NeuroSan:_log:819 - NeuroSan - {"message": "API KEY error detected: A value for the OPENAI_API_KEY environment variable must be correctly set in the neuro-san server or run-time environment in order to use this agent network. Some things to try: 1) Double check that your value for OPENAI_API_KEY is set correctly 2) If you do not have a value for OPENAI_API_KEY, visit the LLM provider's website to get one 3) It's possible that your credit balance on your account with the LLM provider is too low to make the request.  Check that. 4) Sometimes these errors happen because of firewall blockages to the site that hosts the LLM. Try checking that you can reach the regular UI for the LLM from a web browser on the same machine making this request. ", "user_id": "None", "Timestamp": "2026-09-07T22:50:25.728745", "source": "HttpServer", "message_type": "Error", "request_id": "request-28"}
+2026-09-07 22:50:25 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Request reporting: {}
+2026-09-07 22:50:25 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: Done with basic/weather_agent.StreamingChat request for 'What's the weather in Chennai right now?'
+2026-09-07 22:50:25 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] 200 POST /api/v1/basic/weather_agent/streaming_chat (::1) 807.08ms
+2026-09-07 22:50:25 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Finish basic/weather_agent/streaming_chat
+2026-09-07 22:50:25 India Standard Time | INFO     | NeuroSan:_log:823 - NeuroSan:HttpServer: [0] Stats: {'NumProcessing': 0, 'Total': 28, '/api/v1/list': 2, 'agent_network_designer/connectivity': 6, 'agent_network_test_generator/connectivity': 6, 'agent_network_test_generator/streaming_chat': 2, 'agent_network_designer/streaming_chat': 1, 'basic/music_nerd/connectivity': 7, 'basic/music_nerd/streaming_chat': 1, 'basic/weather_agent/connectivity': 2, 'basic/weather_agent/streaming_chat': 1}
+2026-09-07 22:50:25 India Standard Time | ERROR    | nsflow:_log:819 - nsflow: {"type": "AI", "text": "No fully-specified LLM found in llm_config or fallbacks.\n\nLLM operation for this agent requires at least one LLM provider API key to be set as an environment variable.\nThe following errors occurred while looking for LLM API keys:\n\nA value for the OPENAI_API_KEY environment variable must be correctly set in the neuro-san\nserver or run-time environment in order to use this agent network.\n\nSome things to try:\n1) Double check that your value for OPENAI_API_KEY is set correctly\n2) If you do not have a value for OPENAI_API_KEY, visit the LLM provider's website to get one \n3) It's possible that your credit balance on your account with the LLM provider is too low\n   to make the request.  Check that.\n4) Sometimes these errors happen because of firewall blockages to the site that hosts the LLM.\n   Try checking that you can reach the regular UI for the LLM from a web browser\n   on the same machine making this request.\n"}
+2026-09-07 22:50:25 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 22:50:25 - basic/weather_agent - INFO - Streaming chat finished for client: session_1788801616101_4bef6ffcf99cd8
+2026-09-07 23:03:11 India Standard Time | INFO     | nsflow:_log:823 - nsflow - 2026-09-07 23:03:11 - basic/weather_agent - INFO - WebSocket chat client disconnected: session_1788801616101_4bef6ffcf99cd8

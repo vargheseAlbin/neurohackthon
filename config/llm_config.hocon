@@ -1,0 +1,11 @@
+{
+    # Shared LLM configuration for every agent network that includes this file.
+    # Requires the OPENAI_API_KEY environment variable to be set.
+    #
+    # Other OpenAI models available out of the box include "gpt-4o-mini" (cheaper),
+    # "gpt-4.1", "gpt-5.2" and "gpt-5.4". The full list of supported models and
+    # per-model parameters lives in neuro-san's default_llm_info.hocon.
+    "llm_config": {
+        "model_name": "gpt-4o"
+    }
+}
